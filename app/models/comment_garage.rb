@@ -1,0 +1,2 @@
+class CommentGarage < ApplicationRecord
+end
