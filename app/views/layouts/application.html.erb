@@ -6,9 +6,72 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=devise-width, initial-scale=1.0">
   </head>
 
   <body>
-    <%= yield %>
+    <!-- navigation bar -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <%= link_to "Car Service", root_path, class: "navbar-brand"%>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <%= link_to "Головна", root_path, class: "nav-link"%>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Подати заявку на СТО", class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Про нас", about_index_path, class: "nav-link" %>
+            </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Administrator
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  navbar admin
+                </div>
+              </li>
+
+          </ul>
+        </div>
+        <div class="sign_on/Sign_out_links">
+          <% if user_signed_in? %>
+          <div class="btn-group dropbottom ">
+            <button class="btn btn-secondary btn-sm dropdown-toggle user_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="name_user"><%= "Hello, " + current_user.username %></span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <%= link_to 'Configuration ', edit_user_registration_path, class:"dropdown-item", type: "button"%>
+              <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class:"dropdown-item", type: "button" %>
+            </div>
+          </div>
+
+
+          <% else %>
+          <%= link_to 'Sign in ', new_user_session_path%>|<%= link_to ' Sign up', new_user_registration_path%>
+          <% end %>
+        </div>
+      </nav>
+    </div>
+<!-- end navigation bar -->
+
+      <div class="content">
+        <%= yield %>
+      </div>
+    <div class="footer">
+      footer
+    </div>
+    </div>
   </body>
 </html>
