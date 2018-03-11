@@ -1,0 +1,12 @@
+<div class="admin_form">
+  <%= form_for :car, url: admin_car_models_path do |form| %>
+
+    <p>Інформація про авто</p>
+    <p>Марка
+      <%= form.select("brand_id", Brand.all.collect{|p| [ p.brand, p.id] }) %>
+    </p>
+    <p>Модель
+      <%= form.text_field :model %></p>
+    <p><%= form.submit 'Додати модель авто' %></p>
+  <% end %>
+</div>

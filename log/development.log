@@ -903,3 +903,2697 @@ Migrating to MaskForUser (20180311081429)
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4523761724947694355)[0m
   [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:01:19 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:01:19 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:01:20 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?class=nav-link" for 127.0.0.1 at 2018-03-11 11:01:20 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"class"=>"nav-link"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:01:21 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:01:22 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:01:22 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:02:51 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:02:53 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 75ms (Views: 30.8ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:03:26 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:03:39 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:03:41 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:03:46 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:04:07 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:04:08 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:04:09 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-11 11:04:10 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:04:11 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 67ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:05:52 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (327.6ms)
+Completed 200 OK in 1577ms (Views: 1575.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:05:58 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 84ms (Views: 82.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:07:25 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:07:27 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:07:29 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:07:30 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:07:31 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 51ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:08:16 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.2ms)
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:08:19 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3903ms (Views: 3901.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 1134ms (Views: 1132.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:08:22 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-11 11:08:23 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 207ms (Views: 205.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-11 11:08:24 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:08:24 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 64ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:08:26 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:08:27 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 26.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:08:34 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:08:35 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:09:01 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 35ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:09:03 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:09:04 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 35ms (Views: 32.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:09:05 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:09:08 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 39ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:09:08 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:09:09 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:09:09 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:09:10 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:10:28 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.4ms)
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:10:31 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:10:31 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12903ms (Views: 12901.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 9441ms (Views: 9432.6ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 10081ms (Views: 10079.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:10:43 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-11 11:10:44 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:10:45 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 72ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:10:46 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:10:46 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:10:46 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:10:47 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:10:47 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 124ms (Views: 122.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:10:48 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:10:48 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:10:51 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 67ms (Views: 65.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:10:51 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:12:27 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:12:28 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:12:29 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:12:30 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 67ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:12:31 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:12:54 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:13:25 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (330.1ms)
+Completed 200 OK in 919ms (Views: 903.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:13:45 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:14:00 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 80ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?class=nav-link" for 127.0.0.1 at 2018-03-11 11:14:02 +0200
+Processing by HomeController#index as HTML
+  Parameters: {"class"=>"nav-link"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:14:03 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:14:14 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:14:17 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:14:57 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 401 Unauthorized in 695ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_service_path' for #<#<Class:0x00000005e855f8>:0x00000005317f40>
+Did you mean?  new_session_path):
+    27:               <%= link_to "Головна", root_path, class: "nav-link"%>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <%= link_to "Подати заявку на СТО", new_service_path, class: "nav-link" %>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:               <%= link_to "Про нас", about_index_path, class: "nav-link" %>
+  
+app/views/layouts/application.html.erb:30:in `_app_views_layouts_application_html_erb__1383520762635921461_42121360'
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:21:15 +0200
+  [1m[35m (38.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (25.1ms)
+Completed 401 Unauthorized in 2315ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_service_path' for #<#<Class:0x00000006bfa030>:0x007f829418d350>
+Did you mean?  new_session_path):
+    27:               <%= link_to "Головна", root_path, class: "nav-link"%>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <%= link_to "Подати заявку на СТО", new_service_path, class: "nav-link" %>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:               <%= link_to "Про нас", about_index_path, class: "nav-link" %>
+  
+app/views/layouts/application.html.erb:30:in `_app_views_layouts_application_html_erb__3155521993586253408_70099403629060'
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:21:39 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 401 Unauthorized in 403ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_service_path' for #<#<Class:0x00000006bfa030>:0x007f829418ff38>
+Did you mean?  new_session_path):
+    27:               <%= link_to "Головна", root_path, class: "nav-link"%>
+    28:             </li>
+    29:             <li class="nav-item">
+    30:               <%= link_to "Подати заявку на СТО", new_service_path, class: "nav-link" %>
+    31:             </li>
+    32:             <li class="nav-item">
+    33:               <%= link_to "Про нас", about_index_path, class: "nav-link" %>
+  
+app/views/layouts/application.html.erb:30:in `_app_views_layouts_application_html_erb__3155521993586253408_70099436362100'
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:22:08 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:22:11 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 48ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:22:12 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:22:13 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (273.9ms)
+Completed 200 OK in 436ms (Views: 312.6ms | ActiveRecord: 70.8ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-11 11:22:14 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 192ms (Views: 190.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:22:15 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:22:29 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:22:31 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 53ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-11 11:22:32 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:22:32 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 70ms (Views: 67.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:22:33 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:22:34 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:22:34 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:22:35 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:23:28 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:23:29 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 67ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:23:40 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:23:41 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:23:42 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:23:47 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:23:49 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:24:04 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:24:05 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:24:05 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:24:06 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:24:07 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:24:07 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:24:08 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:24:09 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:24:36 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:24:37 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:24:38 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:24:38 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:24:57 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:25:20 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:25:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 52ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:25:29 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:25:29 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 61ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:25:31 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:25:32 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:34:18 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7149ms (Views: 7146.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:34:30 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:34:31 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:34:32 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:38:17 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:38:19 +0200
+Processing by Admin::BrandsController#index as HTML
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:38:19 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 115ms (Views: 62.5ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:39:00 +0200
+Processing by Admin::BrandsController#index as HTML
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:39:00 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 141ms (Views: 72.7ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-11 11:39:04 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 139ms (Views: 72.9ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-11 11:39:06 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:39:08 +0200
+Processing by Admin::BrandsController#index as HTML
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (3.9ms)
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    3:         <th onclick="sort_car_table(0)">Brand</th>
+    4:         <th onclick="sort_car_table(1)">Model</th>
+    5:       </tr>
+    6:   <% @cars.each do |brand, cars| %>
+    7:     <tr>
+    8:       <td>
+    9:         <%= brand %>
+  
+app/views/admin/brands/index.html.erb:6:in `_app_views_admin_brands_index_html_erb__2545597080260348165_70099445367360'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:40:01 +0200
+Processing by Admin::BrandsController#index as HTML
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Ability):
+  
+cancancan (2.1.3) lib/cancan/controller_additions.rb:351:in `current_ability'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:132:in `current_ability'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:74:in `load_collection?'
+cancancan (2.1.3) lib/cancan/controller_resource_loader.rb:16:in `load_resource'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:31:in `load_and_authorize_resource'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:15:in `block in add_before_action'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `instance_exec'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.5) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.5) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:40:19 +0200
+Processing by Admin::BrandsController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Ability):
+  
+cancancan (2.1.3) lib/cancan/controller_additions.rb:351:in `current_ability'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:132:in `current_ability'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:74:in `load_collection?'
+cancancan (2.1.3) lib/cancan/controller_resource_loader.rb:16:in `load_resource'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:31:in `load_and_authorize_resource'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:15:in `block in add_before_action'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `instance_exec'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.5) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.5) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:40:21 +0200
+Processing by Admin::BrandsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Ability):
+  
+cancancan (2.1.3) lib/cancan/controller_additions.rb:351:in `current_ability'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:132:in `current_ability'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:74:in `load_collection?'
+cancancan (2.1.3) lib/cancan/controller_resource_loader.rb:16:in `load_resource'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:31:in `load_and_authorize_resource'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:15:in `block in add_before_action'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `instance_exec'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.5) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.5) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:41:16 +0200
+Processing by Admin::BrandsController#index as HTML
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+CanCan::AccessDenied (You are not authorized to access this page.):
+  
+cancancan (2.1.3) lib/cancan/ability.rb:176:in `authorize!'
+cancancan (2.1.3) lib/cancan/controller_additions.rb:336:in `authorize!'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:37:in `authorize_resource'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:32:in `load_and_authorize_resource'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:15:in `block in add_before_action'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `instance_exec'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.5) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.5) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:42:37 +0200
+Processing by Admin::BrandsController#index as HTML
+Completed 401 Unauthorized in 99ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'Brand' to association named 'cars'; perhaps you misspelled it?):
+  
+app/controllers/admin/brands_controller.rb:7:in `index'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:44:32 +0200
+Processing by Admin::BrandsController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'Brand' to association named 'cars'; perhaps you misspelled it?):
+  
+app/controllers/admin/brands_controller.rb:8:in `index'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:44:33 +0200
+Processing by Admin::BrandsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'Brand' to association named 'cars'; perhaps you misspelled it?):
+  
+app/controllers/admin/brands_controller.rb:8:in `index'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:45:28 +0200
+Processing by Admin::BrandsController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'Brand' to association named 'car_model'; perhaps you misspelled it?):
+  
+app/controllers/admin/brands_controller.rb:8:in `index'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:47:25 +0200
+Processing by Admin::BrandsController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'Brand' to association named 'car_models'; perhaps you misspelled it?):
+  
+app/controllers/admin/brands_controller.rb:8:in `index'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:47:46 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (1.5ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 161ms (Views: 74.0ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:47:50 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:47:50 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:47:51 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 57ms (Views: 51.8ms | ActiveRecord: 0.8ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (9.4ms)[0m  [1m[32mINSERT INTO "brands" ("brand", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["brand", "BMW"], ["created_at", "2018-03-11 09:48:47.288646"], ["updated_at", "2018-03-11 09:48:47.288646"]]
+  [1m[35m (14.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:48:52 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (5.7ms)
+Completed 401 Unauthorized in 41ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Car):
+    20:           <div class="dropdown pull-right">
+    21:             <button type="button" class="btn btn-default btn-xs dropdown-toggle btn-xs-caret" data-toggle="dropdown"> <span class="caret"></span></button>
+    22:             <ul class="dropdown-menu">
+    23:               <% if can? :create, Car %>
+    24:                 <li><%= link_to "Додати модель автомобіля",  new_admin_car_path %></li>
+    25:               <% end %>
+    26:               <% if can? :update, Car %>
+  
+app/views/admin/brands/index.html.erb:23:in `block (2 levels) in _app_views_admin_brands_index_html_erb__2545597080260348165_70099204024580'
+app/views/admin/brands/index.html.erb:13:in `each'
+app/views/admin/brands/index.html.erb:13:in `block in _app_views_admin_brands_index_html_erb__2545597080260348165_70099204024580'
+app/views/admin/brands/index.html.erb:6:in `each'
+app/views/admin/brands/index.html.erb:6:in `_app_views_admin_brands_index_html_erb__2545597080260348165_70099204024580'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:49:36 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 52ms (Views: 47.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:50:11 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (355.8ms)
+Completed 401 Unauthorized in 366ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_admin_car_path' for #<#<Class:0x007f827c6d7378>:0x000000061936a0>
+Did you mean?  new_admin_car_model_path
+               new_admin_brand_path):
+    21:             <button type="button" class="btn btn-default btn-xs dropdown-toggle btn-xs-caret" data-toggle="dropdown"> <span class="caret"></span></button>
+    22:             <ul class="dropdown-menu">
+    23: 
+    24:                 <li><%= link_to "Додати модель автомобіля",  new_admin_car_path %></li>
+    25:               
+    26:               <% if can? :update, CarModel %>
+    27:                 <li><a href="/admin/cars/<%= key["id"] %>/edit">Редагувати модель</a></li>
+  
+app/views/admin/brands/index.html.erb:24:in `block (2 levels) in _app_views_admin_brands_index_html_erb__2545597080260348165_51195560'
+app/views/admin/brands/index.html.erb:13:in `each'
+app/views/admin/brands/index.html.erb:13:in `block in _app_views_admin_brands_index_html_erb__2545597080260348165_51195560'
+app/views/admin/brands/index.html.erb:6:in `each'
+app/views/admin/brands/index.html.erb:6:in `_app_views_admin_brands_index_html_erb__2545597080260348165_51195560'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:50:27 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 50ms (Views: 45.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:52:02 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 55ms (Views: 51.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-11 11:52:09 +0200
+Processing by Admin::CarModelsController#new as HTML
+Completed 401 Unauthorized in 24ms (ActiveRecord: 5.5ms)
+
+
+  
+CanCan::AccessDenied (You are not authorized to access this page.):
+  
+cancancan (2.1.3) lib/cancan/ability.rb:176:in `authorize!'
+cancancan (2.1.3) lib/cancan/controller_additions.rb:336:in `authorize!'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:37:in `authorize_resource'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:32:in `load_and_authorize_resource'
+cancancan (2.1.3) lib/cancan/controller_resource.rb:15:in `block in add_before_action'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `instance_exec'
+activesupport (5.1.5) lib/active_support/callbacks.rb:413:in `block in make_lambda'
+activesupport (5.1.5) lib/active_support/callbacks.rb:197:in `block (2 levels) in halting'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.1.5) lib/active_support/callbacks.rb:198:in `block in halting'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `block in invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `each'
+activesupport (5.1.5) lib/active_support/callbacks.rb:507:in `invoke_before'
+activesupport (5.1.5) lib/active_support/callbacks.rb:130:in `run_callbacks'
+actionpack (5.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.5) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.5) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-11 11:53:43 +0200
+Processing by Admin::CarModelsController#new as HTML
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Brand Load (0.1ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered admin/car_models/new.html.erb within layouts/application (397.5ms)
+Completed 401 Unauthorized in 410ms (ActiveRecord: 5.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `admin_cars_path' for #<#<Class:0x00000007345588>:0x00000006f26808>
+Did you mean?  admin_brands_path
+               admin_car_models_path
+               admin_car_model_path
+               admin_brand_path):
+    1: <div class="admin_form">
+    2:   <%= form_for :car_model, url: admin_cars_path do |form| %>
+    3: 
+    4:     <p>Інформація про авто</p>
+    5:     <p>Марка
+  
+app/views/admin/car_models/new.html.erb:2:in `_app_views_admin_car_models_new_html_erb__3051913702941171193_60436280'
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-11 11:55:03 +0200
+Processing by Admin::CarModelsController#new as HTML
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" LIMIT $1[0m  [["LIMIT", 11]]
+  Rendered admin/car_models/new.html.erb within layouts/application (474.2ms)
+Completed 401 Unauthorized in 478ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `admin_cars_path' for #<#<Class:0x00000007345588>:0x00000006c68850>
+Did you mean?  admin_brands_path
+               admin_car_models_path
+               admin_car_model_path
+               admin_brand_path):
+    1: <div class="admin_form">
+    2:   <%= form_for :car_model, url: admin_cars_path do |form| %>
+    3: 
+    4:     <p>Інформація про авто</p>
+    5:     <p>Марка
+  
+app/views/admin/car_models/new.html.erb:2:in `_app_views_admin_car_models_new_html_erb__3051913702941171193_56838960'
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-11 11:55:46 +0200
+Processing by Admin::CarModelsController#new as HTML
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 79ms (Views: 77.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-11 11:55:54 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IyHVEXuIMMj52Y6BvIGkXzKUy1fVB5FRE4YkVeAs7Fk5aPeLXv6SRpc48lsxEVCPgNP3f7NFZRbtp9jc2PqgRQ==", "car_model"=>{"brand_id"=>"1", "model"=>"520"}, "commit"=>"Додати модель авто"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: car_mode):
+  
+app/controllers/admin/car_models_controller.rb:35:in `brand_p'
+app/controllers/admin/car_models_controller.rb:8:in `create'
+Started GET "/admin/car_models" for 127.0.0.1 at 2018-03-11 11:56:12 +0200
+Processing by Admin::CarModelsController#index as HTML
+  Rendering admin/car_models/index.html.erb within layouts/application
+  Rendered admin/car_models/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 142ms (Views: 140.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:56:14 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:56:14 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 42ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:56:15 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 66ms (Views: 39.5ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-11 11:56:18 +0200
+Processing by Admin::CarModelsController#new as HTML
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 56ms (Views: 53.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-11 11:56:21 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0jYQlkwySByyEQeTUXKBAYkxjYVH/ymyDv31RnzqiOg/LT2+PLJ8GL1l10umPHMHdw+1GpyJ4877Ol4CUN5lHw==", "car_model"=>{"brand_id"=>"1", "model"=>"520"}, "commit"=>"Додати модель авто"}
+Unpermitted parameter: :model
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 79ms (ActiveRecord: 1.6ms)
+
+
+  
+NoMethodError (undefined method `cars' for #<Brand:0x007f82984b1dc0>):
+  
+app/controllers/admin/car_models_controller.rb:9:in `create'
+Started GET "/admin/car_models" for 127.0.0.1 at 2018-03-11 11:56:43 +0200
+Processing by Admin::CarModelsController#index as HTML
+  Rendering admin/car_models/index.html.erb within layouts/application
+  Rendered admin/car_models/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-11 11:56:45 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:56:45 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 67ms (Views: 38.9ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-11 11:56:49 +0200
+Processing by Admin::CarModelsController#new as HTML
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-11 11:56:51 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9OpWP6VzYZ3VQ22qQCRtR2iyiJSLi2wAoz4wl29Ip80Z8XsX1fNVmdo3vXK3ap9BloywC1D9pnxW+ZvTQ3xKOg==", "car_model"=>{"brand_id"=>"1", "model"=>"520"}, "commit"=>"Додати модель авто"}
+Unpermitted parameter: :model
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :brand_id
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (10.6ms)[0m  [1m[32mINSERT INTO "car_models" ("model", "brand_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["model", "520"], ["brand_id", 1], ["created_at", "2018-03-11 09:56:52.179644"], ["updated_at", "2018-03-11 09:56:52.179644"]]
+  [1m[35m (14.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 313ms (ActiveRecord: 33.1ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:56:52 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/brands/new" for 127.0.0.1 at 2018-03-11 11:56:54 +0200
+Processing by Admin::BrandsController#new as HTML
+  Rendering admin/brands/new.html.erb within layouts/application
+  Rendered admin/brands/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/brands" for 127.0.0.1 at 2018-03-11 11:57:02 +0200
+Processing by Admin::BrandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DR5/ykI94wjDgZ3HthnITV3gK+S2WRAYaqlBlmt1vNp6mifeVTdndWF1ltU9BLp68PYnUyK8Hgr84CtS7DSe+w==", "brand_form"=>{"brand"=>"Honda"}, "commit"=>"Додати марку авто"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: brand):
+  
+app/controllers/admin/brands_controller.rb:40:in `brand_params'
+app/controllers/admin/brands_controller.rb:14:in `create'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:57:13 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:59:20 +0200
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:59:21 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (36.9ms)
+Completed 200 OK in 919ms (Views: 547.8ms | ActiveRecord: 62.3ms)
+
+
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 70ms (Views: 45.2ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/admin/brands/new" for 127.0.0.1 at 2018-03-11 11:59:50 +0200
+Processing by Admin::BrandsController#new as HTML
+  Rendering admin/brands/new.html.erb within layouts/application
+  Rendered admin/brands/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/brands" for 127.0.0.1 at 2018-03-11 11:59:55 +0200
+Processing by Admin::BrandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cySQp5g0oGSe2g7F/IYE3vAmvrMDFLS3VzkNxf2sy2MEoMizjz4kGTwuBdd3m3bpXTCyBJfxuqXBcGcBeu3pQg==", "brand"=>{"brand"=>"Fiat"}, "commit"=>"Додати марку авто"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "brands" ("brand", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["brand", "Fiat"], ["created_at", "2018-03-11 09:59:56.060588"], ["updated_at", "2018-03-11 09:59:56.060588"]]
+  [1m[35m (41.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 60ms (ActiveRecord: 42.9ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 11:59:56 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 44ms (Views: 40.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/brands//edit" for 127.0.0.1 at 2018-03-11 12:00:03 +0200
+Processing by Admin::BrandsController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering admin/brands/show.html.erb within layouts/application
+  Rendered admin/brands/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/brands/1/edit" for 127.0.0.1 at 2018-03-11 12:00:09 +0200
+Processing by Admin::BrandsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/brands/edit.html.erb within layouts/application
+  Rendered admin/brands/edit.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 104ms (Views: 44.2ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/admin/brands/1" for 127.0.0.1 at 2018-03-11 12:00:12 +0200
+Processing by Admin::BrandsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kFtjql4qiQocvjNCwUVApVuIyCZFq84tSA8ZCqdN7p3to5AVzVj9/JrVlXRaSf5gpG0p2JUcxa7HhxxzYoeeWA==", "brand"=>{"brand"=>"BMW"}, "commit"=>"Оновити марку авто", "id"=>"1"}
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 24ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:00:12 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 48ms (Views: 44.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-11 12:00:15 +0200
+Processing by Admin::CarModelsController#new as HTML
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 85ms (Views: 49.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-11 12:00:23 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LxfTlqP8tI5zpIrvA/C+NvNGjEDEr6BtQZhWYz9WCmTCDP6+03yAinzQWjf0vkwwDXi03x/ZahG0X/0nE2Lnkw==", "car_model"=>{"brand_id"=>"2", "model"=>"Scudo"}, "commit"=>"Додати модель авто"}
+Unpermitted parameter: :model
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :brand_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "car_models" ("model", "brand_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["model", "Scudo"], ["brand_id", 2], ["created_at", "2018-03-11 10:00:23.199750"], ["updated_at", "2018-03-11 10:00:23.199750"]]
+  [1m[35m (37.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 61ms (ActiveRecord: 42.3ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:00:23 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 45ms (Views: 40.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-11 12:00:25 +0200
+Processing by Admin::CarModelsController#new as HTML
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 54ms (Views: 51.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:00:35 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (3.8ms)
+Completed 401 Unauthorized in 32ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/car_models", :id=>nil}, missing required keys: [:id]):
+    1: <div class="admin_form">
+    2:   <%= form_for :car_model, url: admin_car_model_path(@car_model), method: :put  do |form| %>
+    3:     <p>Інформація про авто</p>
+    4:     <p>Модель
+    5:       <%= form.text_field :model %></p>
+  
+app/views/admin/car_models/edit.html.erb:2:in `_app_views_admin_car_models_edit_html_erb__2918881479464587007_27688060'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:01:05 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 51ms (Views: 46.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/brands/2/edit" for 127.0.0.1 at 2018-03-11 12:01:08 +0200
+Processing by Admin::BrandsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/brands/edit.html.erb within layouts/application
+  Rendered admin/brands/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 50ms (Views: 46.5ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/admin/brands/2" for 127.0.0.1 at 2018-03-11 12:01:15 +0200
+Processing by Admin::BrandsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RdSLGwfa3grZrYqS8GTsx8P0R7im6YN4N4kUTxgRh5p915+wvXzAhaL2S0DN+4SxjioNWVzTL0Mni75wSH3eOg==", "brand"=>{"brand"=>"Honda"}, "commit"=>"Оновити марку авто", "id"=>"2"}
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "brands" SET "brand" = $1, "updated_at" = $2 WHERE "brands"."id" = $3[0m  [["brand", "Honda"], ["updated_at", "2018-03-11 10:01:15.100218"], ["id", 2]]
+  [1m[35m (41.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 54ms (ActiveRecord: 43.2ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:01:15 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (1.0ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 49ms (Views: 44.5ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/admin/brands/2" for 127.0.0.1 at 2018-03-11 12:01:21 +0200
+Processing by Admin::BrandsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"U3J48eeJLDG1zWsFMFOEdd0rVaUp6CJ+wvo24eRDp2ZJO1prwv+Ov9ssF9+9w3Clb2xpjU+q1jk828po3JXreg==", "id"=>"2"}
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 2]]
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "car_models" WHERE "car_models"."id" = $1[0m  [["id", 2]]
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "brands" WHERE "brands"."id" = $1[0m  [["id", 2]]
+  [1m[35m (12.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 25ms (ActiveRecord: 14.6ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:01:21 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (1.7ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 45ms (Views: 40.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/brands/new" for 127.0.0.1 at 2018-03-11 12:03:15 +0200
+Processing by Admin::BrandsController#new as HTML
+  Rendering admin/brands/new.html.erb within layouts/application
+  Rendered admin/brands/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 53ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/brands" for 127.0.0.1 at 2018-03-11 12:03:17 +0200
+Processing by Admin::BrandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5efzIhRzFsFm1NoPWW5cTfa47oDr3DrytqJiRwIwkbmSY6s2A3mSvMQg0R3Scy56W67iN385NOAg6wiDhXGzmA==", "brand"=>{"brand"=>"Honda"}, "commit"=>"Додати марку авто"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "brands" ("brand", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["brand", "Honda"], ["created_at", "2018-03-11 10:03:17.614001"], ["updated_at", "2018-03-11 10:03:17.614001"]]
+  [1m[35m (54.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 61ms (ActiveRecord: 55.7ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:03:17 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (1.4ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 49ms (Views: 43.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-11 12:03:22 +0200
+Processing by Admin::CarModelsController#new as HTML
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 56ms (Views: 53.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-11 12:03:29 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xzKK3UUp7Vo/DTYrtNypq+toaaax8sawZOUrunFVZFoqKaf1NanZXjB55vNDklutFVZROWqEDMyRIoD+XWGJrQ==", "car_model"=>{"brand_id"=>"3", "model"=>"Civic"}, "commit"=>"Додати модель авто"}
+Unpermitted parameter: :model
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Unpermitted parameter: :brand_id
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "car_models" ("model", "brand_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["model", "Civic"], ["brand_id", 3], ["created_at", "2018-03-11 10:03:29.312110"], ["updated_at", "2018-03-11 10:03:29.312110"]]
+  [1m[35m (107.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 121ms (ActiveRecord: 109.3ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:03:29 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 50ms (Views: 46.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:03:32 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (3.2ms)
+Completed 401 Unauthorized in 13ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/car_models", :id=>nil}, missing required keys: [:id]):
+    1: <div class="admin_form">
+    2:   <%= form_for :car_model, url: admin_car_model_path(@car_model), method: :put  do |form| %>
+    3:     <p>Інформація про авто</p>
+    4:     <p>Модель
+    5:       <%= form.text_field :model %></p>
+  
+app/views/admin/car_models/edit.html.erb:2:in `_app_views_admin_car_models_edit_html_erb__2918881479464587007_70099417991700'
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:04:14 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (1.6ms)
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/car_models", :id=>nil}, missing required keys: [:id]):
+    1: <div class="admin_form">
+    2:   <%= form_for :car_model, url: admin_car_model_path(@car_models), method: :put  do |form| %>
+    3:     <p>Інформація про авто</p>
+    4:     <p>Модель
+    5:       <%= form.text_field :model %></p>
+  
+app/views/admin/car_models/edit.html.erb:2:in `_app_views_admin_car_models_edit_html_erb__2918881479464587007_20349980'
+Started GET "/" for 127.0.0.1 at 2018-03-11 12:04:17 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 53ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:04:18 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 59ms (Views: 54.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:04:20 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (2.5ms)
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/car_models", :id=>nil}, missing required keys: [:id]):
+    1: <div class="admin_form">
+    2:   <%= form_for :car_model, url: admin_car_model_path(@car_models), method: :put  do |form| %>
+    3:     <p>Інформація про авто</p>
+    4:     <p>Модель
+    5:       <%= form.text_field :model %></p>
+  
+app/views/admin/car_models/edit.html.erb:2:in `_app_views_admin_car_models_edit_html_erb__2918881479464587007_70099505703400'
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:04:28 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (1.2ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 51ms (Views: 45.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:04:53 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 49ms (Views: 44.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:04:56 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 50ms (Views: 46.6ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/admin/car_models" for 127.0.0.1 at 2018-03-11 12:05:05 +0200
+  
+ActionController::RoutingError (No route matches [PUT] "/admin/car_models"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:05:17 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (2.7ms)
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/car_models", :id=>nil}, missing required keys: [:id]):
+    1: <div class="admin_form">
+    2:   <%= form_for :car_model, url: admin_car_model_path(@car_model), method: :put  do |form| %>
+    3:     <p>Інформація про авто</p>
+    4:     <p>Модель
+    5:       <%= form.text_field :model %></p>
+  
+app/views/admin/car_models/edit.html.erb:2:in `_app_views_admin_car_models_edit_html_erb__2918881479464587007_35773540'
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:05:47 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (2.3ms)
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/car_models", :id=>nil}, missing required keys: [:id]):
+    1: <div class="admin_form">
+    2:   <%= form_for :car_model, url: admin_car_model_path(@car_model), method: :put  do |form| %>
+    3:     <p>Інформація про авто</p>
+    4:     <p>Модель
+    5:       <%= form.text_field :model %></p>
+  
+app/views/admin/car_models/edit.html.erb:2:in `_app_views_admin_car_models_edit_html_erb__2918881479464587007_70099464602080'
+Started GET "/admin/car_model//1/edit" for 127.0.0.1 at 2018-03-11 12:05:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/admin/car_model/1/edit"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-11 12:05:54 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:05:56 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (1.0ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 58ms (Views: 52.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/car_model/1/edit" for 127.0.0.1 at 2018-03-11 12:05:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/admin/car_model/1/edit"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/car_model/1/edit" for 127.0.0.1 at 2018-03-11 12:06:57 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/admin/car_model/1/edit"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-11 12:06:59 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:07:01 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 54ms (Views: 49.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:07:02 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (2.8ms)
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/car_models", :id=>nil}, missing required keys: [:id]):
+    1: <div class="admin_form">
+    2:   <%= form_for :car_model, url: admin_car_model_path(@car_model), method: :put  do |form| %>
+    3:     <p>Інформація про авто</p>
+    4:     <p>Модель
+    5:       <%= form.text_field :model %></p>
+  
+app/views/admin/car_models/edit.html.erb:2:in `_app_views_admin_car_models_edit_html_erb__2918881479464587007_37760220'
+Started GET "/" for 127.0.0.1 at 2018-03-11 12:07:52 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:07:54 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 51ms (Views: 46.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:07:56 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (3.4ms)
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/car_models", :id=>nil}, missing required keys: [:id]):
+    1: <div class="admin_form">
+    2:   <%= form_for :car_model, url: admin_car_model_path(@car_model), method: :put  do |form| %>
+    3:     <p>Інформація про авто</p>
+    4:     <p>Модель
+    5:       <%= form.text_field :model %></p>
+  
+app/views/admin/car_models/edit.html.erb:2:in `_app_views_admin_car_models_edit_html_erb__2918881479464587007_70099443831260'
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:08:11 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (1.9ms)
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/car_models", :id=>nil}, missing required keys: [:id]):
+    1: <div class="admin_form">
+    2:   <%= form_for :car, url: admin_car_model_path(@car_model), method: :put  do |form| %>
+    3:     <p>Інформація про авто</p>
+    4:     <p>Модель
+    5:       <%= form.text_field :model %></p>
+  
+app/views/admin/car_models/edit.html.erb:2:in `_app_views_admin_car_models_edit_html_erb__2918881479464587007_70099461269960'
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:08:28 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/admin/car_models/1" for 127.0.0.1 at 2018-03-11 12:08:32 +0200
+Processing by Admin::CarModelsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h24/FRKoRpq+BJE02mMm8Y5gmlNbfWaCVt4dVXKZq2ydJx2PN97kFNDl7e5X89IhPCemez0/ksWo/+HcSk/ncA==", "car"=>{"model"=>"530"}, "commit"=>"Редагувати модель авто", "id"=>"1"}
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: car_model):
+  
+app/controllers/admin/car_models_controller.rb:39:in `car_params'
+app/controllers/admin/car_models_controller.rb:19:in `update'
+Started GET "/admin/car_models/1" for 127.0.0.1 at 2018-03-11 12:08:47 +0200
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Admin::CarModelsController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-11 12:08:50 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:08:52 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 50ms (Views: 45.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:08:54 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 55ms (Views: 50.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:08:58 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 61ms (Views: 58.2ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/admin/car_models/1" for 127.0.0.1 at 2018-03-11 12:09:03 +0200
+Processing by Admin::CarModelsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qav5Ljt7tWiRQaZxTeDFcfHbigGzkeYXcgloyitdt3OkvVFvMEJjbw5+ZLj4eAN2OUbRPGd5IIwLjeFwEawifw==", "car_model"=>{"model"=>"530"}, "commit"=>"Редагувати модель авто", "id"=>"1"}
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "car_models" SET "model" = $1, "updated_at" = $2 WHERE "car_models"."id" = $3[0m  [["model", "530"], ["updated_at", "2018-03-11 10:09:03.764805"], ["id", 1]]
+  [1m[35m (74.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 87ms (ActiveRecord: 76.7ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:09:03 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 45ms (Views: 40.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:09:12 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 45ms (Views: 39.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:09:14 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 54ms (Views: 50.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:09:40 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 108ms (Views: 50.0ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/admin/car_models/1/edit" for 127.0.0.1 at 2018-03-11 12:09:43 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 73ms (Views: 48.6ms | ActiveRecord: 7.3ms)
+
+
+Started PUT "/admin/car_models/1" for 127.0.0.1 at 2018-03-11 12:09:47 +0200
+Processing by Admin::CarModelsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rUn18tAaVZfMzSPp3WTb1cRWEqsZh3PhCDFWlC3mJTOgX12z2yODkFPy4SBo/B3SDMtJls1vtXpxtd8uFxewPw==", "car"=>{"model"=>"640"}, "commit"=>"Редагувати модель авто", "id"=>"1"}
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "car_models" SET "model" = $1, "updated_at" = $2 WHERE "car_models"."id" = $3[0m  [["model", "640"], ["updated_at", "2018-03-11 10:09:47.053510"], ["id", 1]]
+  [1m[35m (103.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 117ms (ActiveRecord: 105.7ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:09:47 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (1.0ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 46.9ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/admin/car_models/1" for 127.0.0.1 at 2018-03-11 12:09:51 +0200
+Processing by Admin::CarModelsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"R/kX1D2iCrWBqQwR7GzK1NrtbjKEDrHkfkm3k627eHtdsDVOGNSoO+9IcMth/D4EaKpSGuJMRaOAaEsalW00Zw==", "id"=>"1"}
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "car_models" WHERE "car_models"."id" = $1[0m  [["id", 1]]
+  [1m[35m (12.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 18ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:09:51 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (1.1ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 48ms (Views: 42.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-11 12:09:55 +0200
+Processing by Admin::CarModelsController#new as HTML
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-11 12:09:58 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gSZoCZ5vQqpg/uACFoVYWXuIZLQtXFdDo6SDMOufBSJsPUUh7u92rm+KMNrhy6pfhbZcK/YqnT9WYyh0x6vo1Q==", "car_model"=>{"brand_id"=>"1", "model"=>"550"}, "commit"=>"Додати модель авто"}
+Unpermitted parameter: :model
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: car):
+  
+app/controllers/admin/car_models_controller.rb:39:in `car_params'
+app/controllers/admin/car_models_controller.rb:9:in `create'
+Started GET "/admin/car_models" for 127.0.0.1 at 2018-03-11 12:10:40 +0200
+Processing by Admin::CarModelsController#index as HTML
+  Rendering admin/car_models/index.html.erb within layouts/application
+  Rendered admin/car_models/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 141ms (Views: 139.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:10:43 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 48.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-11 12:10:44 +0200
+Processing by Admin::CarModelsController#new as HTML
+  Rendering admin/car_models/new.html.erb within layouts/application
+  Rendered admin/car_models/new.html.erb within layouts/application (2.9ms)
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/car_models"}, missing required keys: [:id]):
+    1: <div class="admin_form">
+    2:   <%= form_for :car, url: admin_car_model_path do |form| %>
+    3: 
+    4:     <p>Інформація про авто</p>
+    5:     <p>Марка
+  
+app/views/admin/car_models/new.html.erb:2:in `_app_views_admin_car_models_new_html_erb__3051913702941171193_70099470893840'
+Started GET "/admin/car_models" for 127.0.0.1 at 2018-03-11 12:10:51 +0200
+Processing by Admin::CarModelsController#index as HTML
+  Rendering admin/car_models/index.html.erb within layouts/application
+  Rendered admin/car_models/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:10:52 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 45.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-11 12:10:54 +0200
+Processing by Admin::CarModelsController#new as HTML
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (1.4ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-11 12:10:57 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OIc4EoZKxkuf8cbhpXMcVHC7EAtsZ9/OUhfpSFORpu/VnBU69sryT5CFFjlSPe5SjoUolLcRFbKn0EIMf6VLGA==", "car"=>{"brand_id"=>"1", "model"=>"550"}, "commit"=>"Додати модель авто"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: car_model):
+  
+app/controllers/admin/car_models_controller.rb:35:in `brand_p'
+app/controllers/admin/car_models_controller.rb:8:in `create'
+Started GET "/" for 127.0.0.1 at 2018-03-11 12:11:18 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 68ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:11:20 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 88ms (Views: 61.9ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-11 12:11:22 +0200
+Processing by Admin::CarModelsController#new as HTML
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 51ms (Views: 48.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-11 12:11:25 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7g2QpgFirHgxImPSOseKoMdu0D+1ZZQt9euIuRXXaDwDFr2OceKYfD5WswrNiXimOVDooG4TXlEALCP9OeOFyw==", "car"=>{"brand_id"=>"1", "model"=>"550"}, "commit"=>"Додати модель авто"}
+Unpermitted parameter: :model
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :brand_id
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (185.1ms)[0m  [1m[32mINSERT INTO "car_models" ("model", "brand_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["model", "550"], ["brand_id", 1], ["created_at", "2018-03-11 10:11:25.825285"], ["updated_at", "2018-03-11 10:11:25.825285"]]
+  [1m[35m (24.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 238ms (ActiveRecord: 215.7ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-11 12:11:26 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 50ms (Views: 44.1ms | ActiveRecord: 0.8ms)
+
+

@@ -1,3 +1,33 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header{
+  border-style: solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.sidebar{
+  border-style: solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+
+}
+.content{
+  border-style: solid;
+  border-color: red;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+
+}
+.footer{
+  border-style: solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+
+
+}

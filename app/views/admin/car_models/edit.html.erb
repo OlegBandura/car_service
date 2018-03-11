@@ -1,0 +1,8 @@
+<div class="admin_form">
+  <%= form_for :car, url: admin_car_model_path(@car), method: :put  do |form| %>
+    <p>Інформація про авто</p>
+    <p>Модель
+      <%= form.text_field :model %></p>
+    <p><%= form.submit 'Редагувати модель авто' %></p>
+  <% end %>
+</div>

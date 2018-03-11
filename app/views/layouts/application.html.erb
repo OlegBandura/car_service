@@ -3,14 +3,14 @@
   <head>
     <title>CarService</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="viewport" content="width=devise-width, initial-scale=1.0">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
@@ -27,7 +27,7 @@
               <%= link_to "Головна", root_path, class: "nav-link"%>
             </li>
             <li class="nav-item">
-              <%= link_to "Подати заявку на СТО", class: "nav-link" %>
+              <%= link_to "Подати заявку на СТО", about_index_path, class: "nav-link" %>
             </li>
             <li class="nav-item">
               <%= link_to "Про нас", about_index_path, class: "nav-link" %>
@@ -39,7 +39,8 @@
                   Administrator
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  navbar admin
+                  <%= link_to "Робота з автомобілями", admin_brands_path, class: "dropdown-item" %>
+
                 </div>
               </li>
 
@@ -57,7 +58,6 @@
             </div>
           </div>
 
-
           <% else %>
           <%= link_to 'Sign in ', new_user_session_path%>|<%= link_to ' Sign up', new_user_registration_path%>
           <% end %>
@@ -66,12 +66,12 @@
     </div>
 <!-- end navigation bar -->
 
-      <div class="content">
-        <%= yield %>
-      </div>
+    <div class="content">
+      <%= yield %>
+    </div>
     <div class="footer">
       footer
     </div>
-    </div>
+
   </body>
 </html>

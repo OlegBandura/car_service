@@ -1,0 +1,106 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+body{
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+
+
+  -webkit-font-smoothing: antialised;
+  -webkit-owerflow-scrolling: touch;
+  margin-top: 70px;
+}
+
+h1, h2,h3, h4, h5, h6{
+  font-family: "Raleway";
+  font-weight: 300;
+  color: #333;
+}
+
+.centeted{
+  text-align: center;
+}
+
+a{
+  color: #f85c37;
+  font-family:sans-serif;
+}
+
+a:hover, a:focus{
+  color: #7b7b7b;
+}
+
+.field_with_errors input{
+  border-color: red
+}
+
+.error_message{
+  color: red;
+}
+
+.card{
+  position: fixed;
+}
+
+.name_user{
+  color: #ffffff;
+}
+
+.user_menu{
+  background-color: #343a40;
+  border: none;
+}
+
+.user_table{
+  size: auto;
+}
+// Table
+table {
+    border-spacing: 1;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+.options_user{
+  text-align: right;
+}
+
+.car_model{
+  float: left;
+  margin-right: 8px;
+}
+
+.model_title{
+  float: left;
+  margin-right: 5px;
+}
+
+.tools_menu{
+  float: left;
+}
+// end table
