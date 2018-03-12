@@ -3,7 +3,7 @@ class CreateBreakSubCategories < ActiveRecord::Migration[5.1]
     create_table :break_sub_categories do |t|
       t.references :category, index: true
       t.string :name
-      t.money :price
+      t.float :price
 
       t.timestamps
     end

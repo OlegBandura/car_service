@@ -40,6 +40,8 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <%= link_to "Робота з автомобілями", admin_brands_path, class: "dropdown-item" %>
+                  <%= link_to "Робота з категоріями поломок авто",  admin_break_categories_path, class: "dropdown-item" %>
+                  <%= link_to "Робота з автосервісами", admin_garages_path, class: "dropdown-item" %>
 
                 </div>
               </li>
@@ -50,7 +52,7 @@
           <% if user_signed_in? %>
           <div class="btn-group dropbottom ">
             <button class="btn btn-secondary btn-sm dropdown-toggle user_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="name_user"><%= "Hello, " + current_user.username %></span>
+              <span class="name_user"><%= "Hello, " + current_user.name + " " + current_user.surname %></span>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
               <%= link_to 'Configuration ', edit_user_registration_path, class:"dropdown-item", type: "button"%>

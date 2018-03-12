@@ -1,0 +1,56 @@
+<div id="car_nav_bar">
+
+  <ul>
+    <li><%= link_to "Додати новий автосервіс",  new_admin_garage_path %></li>
+  </ul>
+
+</div>
+
+<input type="text" id="searsh_input" onkeyup="myFunction()" placeholder="Search for names..">
+<table id="autoservice_table">
+  <tr>
+    <th onclick="sort_services_table(0)">Image</th>
+    <th onclick="sort_services_table(1)">Name</th>
+    <th onclick="sort_services_table(2)">Director</th>
+    <th onclick="sort_services_table(3)">City</th>
+    <th onclick="sort_services_table(4)">Address</th>
+    <th onclick="sort_services_table(5)">Description</th>
+    <th onclick="sort_services_table(6)">Phone</th>
+    <th onclick="sort_services_table(7)">Diller</th>
+    <th onclick="sort_services_table(8)">Garage rating</th>
+    <th onclick="sort_services_table(9)">Garage types</th>
+    <th onclick="sort_services_table(10)">Work shedule</th>
+    <th>Edit  / Delete</th>
+  </tr>
+<%  @garages.each do |garage| %>
+  <tr>
+    <td></td>
+    <td><%= garage.garage_name %></td>
+    <td><%= garage.name %> <%= garage.surname %></td>
+    <td><%= garage.city %></td>
+    <td><%= garage.address %></td>
+    <td><%= garage.description %></td>
+    <td><%= garage.phone %></td>
+
+    <td>
+      <%= if garage.diler == true
+        "Диллер сервіс"
+      else
+        ""
+      end %>
+    </td>
+    <td><%= garage.garage_rating %></td>
+    <td><%= garage.garage_types %></td>
+    <td><%= garage.work_shedule %></td>
+
+
+
+
+          <td><%= link_to "Edit"  %>
+
+
+          |<%= link_to "Delete", method: :delete, data: {confirm: 'Are you sure?' } %>
+
+  </tr>
+<% end %>
+</table>

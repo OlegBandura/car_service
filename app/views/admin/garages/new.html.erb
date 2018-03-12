@@ -1,0 +1,44 @@
+<div class="admin_form">
+  <%= form_for :garage, url: admin_garages_path do |form| %>
+
+    <p>Інформація про СТО</p>
+      <p>Назва СТО
+      <%= form.text_field :garage_name %></p>
+      <p>Власник
+        <%= form.select("user_id", User.all.collect{|p| [ p.surname,  p.id] }) %>
+      </p>
+      <p>Місто
+        <%= form.text_field :city %></p>
+      <p>Адреса
+    <%= form.text_field :address %></p>
+    <p>Номер телефону
+      <%= form.text_field :phone %></p>
+    <p>Тип сервісу:</br>
+      <div class="serviceTypes">
+        <%= form.label "Майстерня" %>
+        <%= form.check_box :service %>
+        <%= form.label "Вулканізація" %>
+        <%= form.check_box :vulcanization %>
+        <%= form.label "Автомийка" %>
+        <%= form.check_box :car_wash  %>
+
+      </div>
+  </p>
+  <p>Графік роботи</br>
+    Пн-Пт
+    <%= form.text_field :workday %></br>
+    Сб
+    <%= form.text_field :saturday %></br>
+    Нд
+    <%= form.text_field :sunday %>
+  </p>
+    <p>Диллерська компанія:
+      <%= form.check_box :diler %></p>
+    <p>Додати логотип<br>
+    <%= form.file_field :image_url %></p>
+
+    <%= form.text_field :remote_image_url %>
+    <small>Enter URL to an image</small>
+    <p><%= form.submit 'Додати СТО' %></p>
+  <% end %>
+</div>
