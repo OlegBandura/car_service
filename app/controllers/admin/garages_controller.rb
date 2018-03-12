@@ -5,13 +5,19 @@ class Admin::GaragesController < Admin::BaseController
       garages.garage_types, garages.work_shedule')
   end
 
+  def new
+
+  end
   def create
+    render plain: garage_p.inspect
 
   end
 
-  protected
+  private
 
-  def garage_params
-    params.require(:garage).permit(:user_id, :name, :city, :address, :description, :phone, :diler, :image_url, :service, :vulcanization, :car_wash , :workday, :saturday, :sunday)
+  def garage_p
+    params.require(:garage).permit(:user_id, :garage_name, :city, :address, :description,
+      :phone, :diler, :image_url, :service, :vulcanization, :car_wash , :workday,
+      :saturday, :sunday, @a)
   end
 end
