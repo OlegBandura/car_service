@@ -1,5 +1,5 @@
 <div class="admin_form">
-  <%= form_for :garage, url: admin_garages_path do |form| %>
+  <%= form_for :garage, url: admin_garages_path, html: { multipart: true } do |form| %>
 
     <p>Інформація про СТО</p>
       <p>Назва СТО
@@ -16,11 +16,11 @@
     <p>Тип сервісу:</br>
       <div class="serviceTypes">
         <%= form.label "Майстерня" %>
-        <%= form.check_box :service %>
+        <%= check_box_tag 's[garage_types][]', 'service', checked('service') %>
         <%= form.label "Вулканізація" %>
-        <%= form.check_box :vulcanization %>
+        <%= check_box_tag 's[garage_types][]', 'vulcanization', checked('vulcanization') %>
         <%= form.label "Автомийка" %>
-        <%= form.check_box :car_wash  %>
+        <%= check_box_tag 's[garage_types][]', 'car_wash', checked('car_wash')  %>
 
       </div>
   </p>

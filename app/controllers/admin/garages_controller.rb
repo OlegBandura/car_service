@@ -1,7 +1,7 @@
 class Admin::GaragesController < Admin::BaseController
   def index
     @garages = Garage.left_joins(:user).select('users.surname, users.name, garages.garage_name, garages.description,
-      garages.city, garages.address, garages.phone, garages.diler, garages.image_url, garages.garage_rating,
+      garages.city, garages.address, garages.phone, garages.diler, garages.image, garages.garage_rating,
       garages.garage_types, garages.work_shedule')
   end
 
@@ -9,7 +9,7 @@ class Admin::GaragesController < Admin::BaseController
 
   end
   def create
-    render plain: garage_p.inspect
+    render plain: garage_p
 
   end
 
@@ -17,7 +17,6 @@ class Admin::GaragesController < Admin::BaseController
 
   def garage_p
     params.require(:garage).permit(:user_id, :garage_name, :city, :address, :description,
-      :phone, :diler, :image_url, :service, :vulcanization, :car_wash , :workday,
-      :saturday, :sunday, @a)
+      :phone, :diler, :image_url, :workday, :saturday, :sunday, garage_types:[])
   end
 end

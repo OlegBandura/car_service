@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180312123904) do
+ActiveRecord::Schema.define(version: 20180312163924) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,7 +65,7 @@ ActiveRecord::Schema.define(version: 20180312123904) do
     t.string "address"
     t.string "phone"
     t.boolean "diler"
-    t.text "image_url"
+    t.text "image"
     t.string "garage_rating"
     t.string "garage_types", default: [], array: true
     t.string "work_shedule", default: [], array: true

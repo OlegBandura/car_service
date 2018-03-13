@@ -1,24 +1,25 @@
-
 <table id="user_table">
   <tr>
     <th onclick="sort_services_table(0)">Name</th>
     <th onclick="sort_services_table(1)">Surname</th>
     <th onclick="sort_services_table(2)">Email</th>
-    <th onclick="sort_services_table(3)">Last sign in at</th>
-    <th onclick="sort_services_table(4)">role mask</th>
-
-    <th>Edit  / Delete</th>
+    <th>Sign in count</th>
+    <th>Last sign in</th>
+    <th>Created account</th>
+    <th onclick="sort_services_table(6)">role mask</th>
+    <th>Options</th>
   </tr>
 <%  @users.each do |user| %>
   <tr>
     <td><%= user.name %></td>
     <td><%= user.surname %></td>
     <td><%= user.email %></td>
-    <td><%= user.last_sign_in_at %></td>
+    <td><%= user.sign_in_count%></td>
+    <td><%= user.last_sign_in_at%></td>
+    <td><%= user.created_at%></td>
     <td><%= user.roles_mask %></td>
-          <td><%= link_to "Edit Role"  %>
-          |<%= link_to "Block",  method: :delete, data: {confirm: 'Are you sure?' } %>
-
+    <td><%= link_to "Edit Role"  %>
+      |<%= link_to "Block",  method: :delete, data: {confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>

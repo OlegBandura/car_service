@@ -22,9 +22,10 @@
     <th onclick="sort_services_table(10)">Work shedule</th>
     <th>Edit  / Delete</th>
   </tr>
+
 <%  @garages.each do |garage| %>
   <tr>
-    <td></td>
+    <td><%= image_tag(garage.image, :alt => "logo", size: "80x50")  if garage.image? %></td>
     <td><%= garage.garage_name %></td>
     <td><%= garage.name %> <%= garage.surname %></td>
     <td><%= garage.city %></td>
