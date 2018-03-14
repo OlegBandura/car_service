@@ -15,14 +15,12 @@
     <p>Тип сервісу:</br>
       <div class="serviceTypes">
         <%= f.label "Майстерня" %>
-        <%= f.check_box :service %>
-        <%= f.input :garage_types, collection: [:service, :vulcanization, :car_wash], input_html: { multiple: true } %>
-
+        <%= f.input :garage_types, collection: [:service, :vulcanization, :car_wash], as: :check_boxes %>
       </div>
   </p>
   <p>Графік роботи</br>
     Пн-Пт
-    <%= f.input :workday %></br>
+    <%= f.input :work_shedule ,:collection => @locations,:label_method => :location_name,:value_method => :id %>
     Сб
     <%= f.input :saturday %></br>
     Нд

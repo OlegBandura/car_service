@@ -21,8 +21,7 @@ module Admin
     def garage_params
       params.require(:garage).permit(
         :user_id, :garage_name, :city, :address, :description,
-        :phone, :diler, :image_url, :workday, :saturday, :sunday,
-        garage_types: []
+        :phone, :diler, :image_url, garage_types: [], work_shedule: []
         # :service, :vulcanization, :car_wash
       )
     end
