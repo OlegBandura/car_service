@@ -1,22 +1,29 @@
-class Admin::GaragesController < Admin::BaseController
-  def index
-    @garages = Garage.left_joins(:user).select('users.surname, users.name, garages.garage_name, garages.description,
-      garages.city, garages.address, garages.phone, garages.diler, garages.image, garages.garage_rating,
-      garages.garage_types, garages.work_shedule')
-  end
+module Admin
+  # GaragesController
+  class GaragesController < BaseController
+    def index
+      @garages = Garage.left_joins(:user).select(
+        'users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule'
+      )
+    end
 
-  def new
+    def new; end
 
-  end
-  def create
-    render plain: garage_p
+    def create
+      render plain: garage_params
+    end
 
-  end
+    private
 
-  private
-
-  def garage_p
-    params.require(:garage).permit(:user_id, :garage_name, :city, :address, :description,
-      :phone, :diler, :image_url, :workday, :saturday, :sunday)
+    def garage_params
+      params.require(:garage).permit(
+        :user_id, :garage_name, :city, :address, :description,
+        :phone, :diler, :image_url, :workday, :saturday, :sunday,
+        garage_types: []
+      )
+    end
   end
 end

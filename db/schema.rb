@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180314070619) do
+ActiveRecord::Schema.define(version: 20180314134513) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,7 +39,6 @@ ActiveRecord::Schema.define(version: 20180314070619) do
   end
 
   create_table "car_models", force: :cascade do |t|
-    t.bigint "id_brand"
     t.string "model"
     t.bigint "brand_id"
     t.datetime "created_at", null: false
@@ -47,14 +46,14 @@ ActiveRecord::Schema.define(version: 20180314070619) do
     t.index ["brand_id"], name: "index_car_models_on_brand_id"
   end
 
-  create_table "comment_garages", force: :cascade do |t|
+  create_table "garage_comments", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "garage_id"
     t.string "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["garage_id"], name: "index_comment_garages_on_garage_id"
-    t.index ["user_id"], name: "index_comment_garages_on_user_id"
+    t.index ["garage_id"], name: "index_garage_comments_on_garage_id"
+    t.index ["user_id"], name: "index_garage_comments_on_user_id"
   end
 
   create_table "garages", force: :cascade do |t|

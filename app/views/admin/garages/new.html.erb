@@ -1,6 +1,5 @@
 <div class="admin_form">
   <%= form_for :garage, url: admin_garages_path, html: { multipart: true } do |form| %>
-
     <p>Інформація про СТО</p>
       <p>Назва СТО
       <%= form.text_field :garage_name %></p>
@@ -16,12 +15,11 @@
     <p>Тип сервісу:</br>
       <div class="serviceTypes">
         <%= form.label "Майстерня" %>
-        <%= check_box_tag 's[garage_types][]', 'service', checked('service') %>
+        <%= form.check_box :garage_types %>
         <%= form.label "Вулканізація" %>
-        <%= check_box_tag 's[garage_types][]', 'vulcanization', checked('vulcanization') %>
+        <%= form.check_box :vulcanization %>
         <%= form.label "Автомийка" %>
-        <%= check_box_tag 's[garage_types][]', 'car_wash', checked('car_wash')  %>
-
+        <%= form.check_box :car_wash %>
       </div>
   </p>
   <p>Графік роботи</br>
@@ -32,12 +30,10 @@
     Нд
     <%= form.text_field :sunday %>
   </p>
-
     <p>Диллерська компанія:
       <%= form.check_box :diler %></p>
     <p>Додати логотип<br>
     <%= form.file_field :image_url %></p>
-
     <%= form.text_field :remote_image_url %>
     <small>Enter URL to an image</small>
     <p><%= form.submit 'Додати СТО' %></p>

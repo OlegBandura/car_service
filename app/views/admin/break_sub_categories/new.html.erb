@@ -1,0 +1,14 @@
+<div class="admin_form">
+  <%= form_for :break_categories, url: admin_break_sub_categories_path do |form| %>
+
+    <p>Інформація про поломки авто</p>
+    <p>Назва категорії поломки авто
+      <%= form.select("break_category_id", BreakCategory.all.collect{|p| [ p.name, p.id ] }) %>
+    </p>
+    <p>Назва поломки
+      <%= form.text_field :break_sub_category_name %></p>
+      <p>Ціна ремонту поломки
+        <%= form.text_field :price %></p>
+    <p><%= form.submit 'Додати нову поломку авто' %></p>
+  <% end %>
+</div>
