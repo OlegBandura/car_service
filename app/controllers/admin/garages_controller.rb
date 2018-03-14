@@ -17,6 +17,6 @@ class Admin::GaragesController < Admin::BaseController
 
   def garage_p
     params.require(:garage).permit(:user_id, :garage_name, :city, :address, :description,
-      :phone, :diler, :image_url, :workday, :saturday, :sunday, garage_types:[])
+      :phone, :diler, :image_url, :workday, :saturday, :sunday)
   end
 end
