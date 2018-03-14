@@ -1,0 +1,38 @@
+<table id="car_table">
+      <tr>
+        <th onclick="sort_car_table(0)">Category</th>
+        <th onclick="sort_car_table(1)">Sub Category</th>
+      </tr>
+  <% @categories.each do |brand, cars| %>
+    <tr>
+      <td>
+        <%= brand %>
+      </td>
+      <% models = Array.new %>
+    <td>
+      <% cars.each do |key| %>
+      <div class="car_model">
+        <div class="model_title">
+          <%= key["break_sub_category_name"] %></br>
+          Price:<%= key["price"] %>
+        </div>
+        <div class="td-caret tools_menu">
+          <div class="dropdown pull-right">
+            <button type="button" class="btn btn-default btn-xs dropdown-toggle btn-xs-caret" data-toggle="dropdown"> <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><%= link_to "Додати модель автомобіля",  new_admin_car_model_path %></li>
+                <li><a href="/admin/car_models/<%= key["id"] %>/edit">Редагувати модель</a></li>
+                <li><a href="/admin/car_models/<%= key["id"] %>" data-confirm="Are you sure?" data-method="delete" >Видалити модель</a></li>
+              <hr>
+                <li><%= link_to "Додати марку автомобіля",  new_admin_brand_path %></li>
+                <li><a href="/admin/brands/<%= key["brand_id"] %>/edit">Редагувати марку</a></li>
+                <li><a href="/admin/brands/<%= key["brand_id"] %>" data-confirm="Are you sure?" data-method="delete" >Видалити марку</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </td>
+  <% end %>
+  </tr>
+</table>

@@ -11728,3 +11728,1152 @@ LINE 2: ...gories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub...
        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"):
   
 app/controllers/admin/break_categories_controller.rb:7:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:21:11 +0200
+  
+SyntaxError (/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:7: syntax error, unexpected ->, expecting keyword_end
+    $this->BreakCategory->select("*")
+           ^
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:7: formal argument cannot be a constant
+    $this->BreakCategory->select("*")
+                        ^
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:7: syntax error, unexpected ')', expecting keyword_end
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:8: syntax error, unexpected ')', expecting keyword_end
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:9: syntax error, unexpected ',', expecting keyword_end
+...b->join('break_sub_categories','break_sub_categories.categor...
+...                               ^
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:9: syntax error, unexpected ')', expecting keyword_end
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:10: syntax error, unexpected ',', expecting keyword_end
+...     $this->db->join('garages','garages.id=break_categories....
+...                               ^
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:10: syntax error, unexpected ')', expecting keyword_end
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:11: syntax error, unexpected ->, expecting keyword_end
+            $query = $this->db->get()
+                            ^):
+  
+app/controllers/admin/break_categories_controller.rb:7: syntax error, unexpected ->, expecting keyword_end
+app/controllers/admin/break_categories_controller.rb:7: formal argument cannot be a constant
+app/controllers/admin/break_categories_controller.rb:7: syntax error, unexpected ')', expecting keyword_end
+app/controllers/admin/break_categories_controller.rb:8: syntax error, unexpected ')', expecting keyword_end
+app/controllers/admin/break_categories_controller.rb:9: syntax error, unexpected ',', expecting keyword_end
+app/controllers/admin/break_categories_controller.rb:9: syntax error, unexpected ')', expecting keyword_end
+app/controllers/admin/break_categories_controller.rb:10: syntax error, unexpected ',', expecting keyword_end
+app/controllers/admin/break_categories_controller.rb:10: syntax error, unexpected ')', expecting keyword_end
+app/controllers/admin/break_categories_controller.rb:11: syntax error, unexpected ->, expecting keyword_end
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:21:31 +0200
+  
+SyntaxError (/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:7: syntax error, unexpected ->, expecting keyword_end
+    $this->db->select("*")
+           ^
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:7: syntax error, unexpected ')', expecting keyword_end
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:8: syntax error, unexpected ')', expecting keyword_end
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:9: syntax error, unexpected ',', expecting keyword_end
+...b->join('break_sub_categories','break_sub_categories.categor...
+...                               ^
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:9: syntax error, unexpected ')', expecting keyword_end
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:10: syntax error, unexpected ',', expecting keyword_end
+...     $this->db->join('garages','garages.id=break_categories....
+...                               ^
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:10: syntax error, unexpected ')', expecting keyword_end
+/home/olko/rails/car_service/app/controllers/admin/break_categories_controller.rb:11: syntax error, unexpected ->, expecting keyword_end
+            $query = $this->db->get()
+                            ^):
+  
+app/controllers/admin/break_categories_controller.rb:7: syntax error, unexpected ->, expecting keyword_end
+app/controllers/admin/break_categories_controller.rb:7: syntax error, unexpected ')', expecting keyword_end
+app/controllers/admin/break_categories_controller.rb:8: syntax error, unexpected ')', expecting keyword_end
+app/controllers/admin/break_categories_controller.rb:9: syntax error, unexpected ',', expecting keyword_end
+app/controllers/admin/break_categories_controller.rb:9: syntax error, unexpected ')', expecting keyword_end
+app/controllers/admin/break_categories_controller.rb:10: syntax error, unexpected ',', expecting keyword_end
+app/controllers/admin/break_categories_controller.rb:10: syntax error, unexpected ')', expecting keyword_end
+app/controllers/admin/break_categories_controller.rb:11: syntax error, unexpected ->, expecting keyword_end
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:22:58 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.3ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" INNER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"[0m
+Completed 401 Unauthorized in 99ms (ActiveRecord: 16.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ..._categories" INNER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" INNER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"):
+  
+app/controllers/admin/break_categories_controller.rb:9:in `puts'
+app/controllers/admin/break_categories_controller.rb:9:in `puts'
+app/controllers/admin/break_categories_controller.rb:9:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:23:20 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 407ms (ActiveRecord: 5.9ms)
+
+
+  
+NameError (undefined local variable or method `name' for #<Admin::BreakCategoriesController:0x007f97982eeeb0>):
+  
+app/controllers/admin/break_categories_controller.rb:9:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:23:38 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 502ms (ActiveRecord: 9.5ms)
+
+
+  
+NameError (undefined local variable or method `break_categories' for #<Admin::BreakCategoriesController:0x000000060150d0>):
+  
+app/controllers/admin/break_categories_controller.rb:9:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:23:46 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 283ms (ActiveRecord: 6.3ms)
+
+
+  
+NameError (undefined local variable or method `name' for #<Admin::BreakCategoriesController:0x007f97906a3568>):
+  
+app/controllers/admin/break_categories_controller.rb:9:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:23:54 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.1ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" INNER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"[0m
+Completed 401 Unauthorized in 74ms (ActiveRecord: 13.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ..._categories" INNER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" INNER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"):
+  
+app/controllers/admin/break_categories_controller.rb:9:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:24:01 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.2ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" INNER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"[0m
+Completed 401 Unauthorized in 88ms (ActiveRecord: 12.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ..._categories" INNER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" INNER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"):
+  
+app/controllers/admin/break_categories_controller.rb:9:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:28:41 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 273ms (ActiveRecord: 7.7ms)
+
+
+  
+NameError (undefined local variable or method `categories' for #<Admin::BreakCategoriesController:0x007f9790d549e8>):
+  
+app/controllers/admin/break_categories_controller.rb:7:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:28:57 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 256ms (ActiveRecord: 5.3ms)
+
+
+  
+NameError (undefined local variable or method `categories' for #<Admin::BreakCategoriesController:0x00000004ed5928>):
+  
+app/controllers/admin/break_categories_controller.rb:7:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:29:30 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 314ms (ActiveRecord: 8.2ms)
+
+
+  
+NameError (undefined local variable or method `categories' for #<Admin::BreakCategoriesController:0x007f9798d5d518>):
+  
+app/controllers/admin/break_categories_controller.rb:7:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:29:54 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 380ms (ActiveRecord: 7.9ms)
+
+
+  
+NameError (undefined local variable or method `categories' for #<Admin::BreakCategoriesController:0x000000052325a8>):
+  
+app/controllers/admin/break_categories_controller.rb:7:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:30:21 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 281ms (ActiveRecord: 8.2ms)
+
+
+  
+NameError (undefined local variable or method `categories' for #<Admin::BreakCategoriesController:0x007f979871a908>):
+  
+app/controllers/admin/break_categories_controller.rb:7:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:31:13 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.9ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 307ms (Views: 249.5ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:31:17 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.8ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 69ms (Views: 62.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:32:03 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.0ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 118ms (Views: 53.6ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:32:20 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.8ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+Completed 401 Unauthorized in 365ms (ActiveRecord: 13.0ms)
+
+
+  
+NameError (undefined local variable or method `name' for #<Admin::BreakCategoriesController:0x007f9798a98148>):
+  
+app/controllers/admin/break_categories_controller.rb:15:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:32:32 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.5ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+Completed 401 Unauthorized in 415ms (ActiveRecord: 15.4ms)
+
+
+  
+NameError (undefined local variable or method `garage_name' for #<Admin::BreakCategoriesController:0x007f978dfefbb0>):
+  
+app/controllers/admin/break_categories_controller.rb:15:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:32:46 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.9ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+Completed 401 Unauthorized in 80ms (ActiveRecord: 10.1ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/admin/break_categories_controller.rb:15:in `[]'
+app/controllers/admin/break_categories_controller.rb:15:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:32:59 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.0ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 146ms (Views: 59.6ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:33:34 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.1ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+Completed 401 Unauthorized in 407ms (ActiveRecord: 15.5ms)
+
+
+  
+NameError (undefined local variable or method `name' for #<Admin::BreakCategoriesController:0x007f97907a6f28>):
+  
+app/controllers/admin/break_categories_controller.rb:15:in `block in index'
+app/controllers/admin/break_categories_controller.rb:13:in `each'
+app/controllers/admin/break_categories_controller.rb:13:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:33:43 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.2ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 113ms (Views: 49.1ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:34:09 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.9ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 125ms (Views: 56.1ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:34:51 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.1ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 201ms (Views: 44.4ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:35:10 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.8ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 127ms (Views: 43.1ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:39:06 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.9ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+Completed 401 Unauthorized in 166ms (ActiveRecord: 73.0ms)
+
+
+  
+NoMethodError (undefined method `column_name' for #<Array:0x007f9798a77240>):
+  
+app/controllers/admin/break_categories_controller.rb:15:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:39:17 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.3ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+Completed 401 Unauthorized in 12ms (ActiveRecord: 1.8ms)
+
+
+  
+NoMethodError (undefined method `column_name' for #<Array:0x007f978daa9430>):
+  
+app/controllers/admin/break_categories_controller.rb:15:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:39:35 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.9ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+
+[0m
+Completed 401 Unauthorized in 104ms (ActiveRecord: 13.0ms)
+
+
+  
+NoMethodError (undefined method `column_name' for #<Class:0x007f978df48298>
+Did you mean?  column_names):
+  
+app/controllers/admin/break_categories_controller.rb:15:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:44:45 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 88ms (ActiveRecord: 6.6ms)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'BreakCategory' to association named 'garages'; perhaps you misspelled it?):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:45:06 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (99.7ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" INNER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)[0m
+Completed 401 Unauthorized in 195ms (ActiveRecord: 112.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ..._categories" INNER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" INNER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:45:20 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.8ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)[0m
+Completed 401 Unauthorized in 60ms (ActiveRecord: 13.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ...gories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:46:27 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.8ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)[0m
+Completed 401 Unauthorized in 72ms (ActiveRecord: 13.0ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ...gories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:46:29 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.0ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)[0m
+Completed 401 Unauthorized in 8ms (ActiveRecord: 2.0ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ...gories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:46:38 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 729ms (Views: 677.7ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:47:07 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 135ms (Views: 67.3ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:47:24 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.9ms)[0m  [1m[34mSELECT  break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id) LIMIT $1[0m  [["LIMIT", 11]]
+Completed 401 Unauthorized in 105ms (ActiveRecord: 14.0ms)
+
+
+  
+  [1m[36mBreakCategory Load (0.9ms)[0m  [1m[34mSELECT  break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id) LIMIT $1[0m  [["LIMIT", 11]]
+NoMethodError (undefined method `garage_id' for #<BreakCategory::ActiveRecord_Relation:0x007f9790d0c210>):
+  
+app/controllers/admin/break_categories_controller.rb:16:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:47:48 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.8ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)[0m
+Completed 401 Unauthorized in 61ms (ActiveRecord: 10.1ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ...gories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:48:08 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.1ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_category.id)[0m
+Completed 401 Unauthorized in 107ms (ActiveRecord: 15.2ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ...gories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_category.id)):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:48:43 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.3ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)[0m
+Completed 401 Unauthorized in 58ms (ActiveRecord: 12.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ...gories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:48:54 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.0ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" INNER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)[0m
+Completed 401 Unauthorized in 78ms (ActiveRecord: 10.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ..._categories" INNER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" INNER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:49:21 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.3ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" INNER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)[0m
+Completed 401 Unauthorized in 79ms (ActiveRecord: 15.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ..._categories" INNER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" INNER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:49:29 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 48ms (ActiveRecord: 5.5ms)
+
+
+  
+NameError (uninitialized constant Admin::BreakCategoriesController::Company):
+  
+app/controllers/admin/break_categories_controller.rb:7:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:49:37 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.1ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories Left JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 155ms (Views: 81.1ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:50:17 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.8ms)[0m  [1m[34mSELECT
+  break_sub_categories.name, break_categories.name, garages.garage_name
+FROM
+   break_categories JOIN break_sub_categories ON break_sub_categories.category_id = break_categories.id Join garages On garages.id=break_categories.garage_id
+[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 112ms (Views: 46.4ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:52:48 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 77ms (ActiveRecord: 7.0ms)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'BreakCategory' to association named 'break_sub_categories'; perhaps you misspelled it?):
+  
+app/controllers/admin/break_categories_controller.rb:13:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:53:15 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (24.2ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)[0m
+Completed 401 Unauthorized in 136ms (ActiveRecord: 42.2ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ...gories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)):
+  
+app/controllers/admin/break_categories_controller.rb:13:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:54:44 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.9ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)[0m
+Completed 401 Unauthorized in 89ms (ActiveRecord: 14.0ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ...gories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)):
+  
+app/controllers/admin/break_categories_controller.rb:13:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:54:56 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (2.0ms)[0m  [1m[34mSELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)[0m
+Completed 401 Unauthorized in 105ms (ActiveRecord: 18.2ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ...gories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+        break_categories.garage_id, break_sub_categories.name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)):
+  
+app/controllers/admin/break_categories_controller.rb:13:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:55:21 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.8ms)[0m  [1m[34mSELECT break_categories.name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)[0m
+Completed 401 Unauthorized in 63ms (ActiveRecord: 14.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 1: ...gories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" WHERE (break_sub_categories.category_id = break_categories.id)):
+  
+app/controllers/admin/break_categories_controller.rb:12:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:55:38 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.9ms)[0m  [1m[34mSELECT break_categories.name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"[0m
+Completed 401 Unauthorized in 77ms (ActiveRecord: 16.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 1: ...gories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"):
+  
+app/controllers/admin/break_categories_controller.rb:12:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:56:19 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+  brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 156ms (Views: 46.4ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 08:57:32 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.7ms)[0m  [1m[34mSELECT break_categories.name,
+         break_categories.garage_id, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"[0m
+Completed 401 Unauthorized in 79ms (ActiveRecord: 17.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column break_sub_categories.break_category_id does not exist
+LINE 2: ...gories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub...
+                                                             ^
+: SELECT break_categories.name,
+         break_categories.garage_id, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4523761724947694355)[0m
+  [1m[35m (11.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RenameBreakSubCaregory (20180314065908)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (35.8ms)[0m  [1m[35mALTER TABLE "break_sub_categories" RENAME COLUMN "category_id" TO "break_category_id"[0m
+  [1m[35m (33.0ms)[0m  [1m[35mALTER INDEX "index_break_sub_categories_on_category_id" RENAME TO "index_break_sub_categories_on_break_category_id"[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180314065908"]]
+  [1m[35m (20.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (42.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(4523761724947694355)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:00:39 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (14.6ms)[0m  [1m[34mSELECT break_categories.name,
+         break_categories.garage_id, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 179ms (Views: 83.6ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:01:26 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.8ms)[0m  [1m[34mSELECT break_categories.name,
+         break_categories.garage_id, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 117ms (Views: 44.6ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:01:50 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakSubCategory Load (0.6ms)[0m  [1m[34mSELECT break_categories.name,
+         break_categories.garage_id, break_sub_categories.price FROM "break_sub_categories" LEFT OUTER JOIN "break_categories" ON "break_categories"."id" = "break_sub_categories"."break_category_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 152ms (Views: 54.9ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:01:58 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakSubCategory Load (0.8ms)[0m  [1m[34mSELECT break_categories.name,
+         break_categories.garage_id, break_sub_categories.price FROM "break_sub_categories" LEFT OUTER JOIN "break_categories" ON "break_categories"."id" = "break_sub_categories"."break_category_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63ms (Views: 55.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:02:49 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 308ms (ActiveRecord: 7.5ms)
+
+
+  
+NameError (undefined local variable or method `break_category' for #<Admin::BreakCategoriesController:0x007f9791001fd8>):
+  
+app/controllers/admin/break_categories_controller.rb:4:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:03:00 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 44ms (ActiveRecord: 6.8ms)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'BreakCategory' to association named 'break_sub_category'; perhaps you misspelled it?):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:03:10 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 56ms (ActiveRecord: 7.1ms)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'BreakCategory' to association named 'garages'; perhaps you misspelled it?):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:03:13 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'BreakCategory' to association named 'garages'; perhaps you misspelled it?):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:04:37 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 92ms (ActiveRecord: 7.6ms)
+
+
+  
+NameError (uninitialized constant BreakCategory::Garages):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:04:39 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 9ms (ActiveRecord: 1.0ms)
+
+
+  
+NameError (uninitialized constant BreakCategory::Garages):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:04:52 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 52ms (ActiveRecord: 6.7ms)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'BreakCategory' to association named 'garages'; perhaps you misspelled it?):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:05:03 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.0ms)[0m  [1m[34mSELECT break_categories.name,
+         break_categories.garage_id, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 247ms (Views: 77.2ms | ActiveRecord: 17.6ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4523761724947694355)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RenameSubCategotyNameColumn (20180314070619)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "break_sub_categories" RENAME COLUMN "name" TO "break_sub_category_name"[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180314070619"]]
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4523761724947694355)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:07:39 +0200
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.9ms)[0m  [1m[34mSELECT break_categories.name,
+         break_categories.garage_id, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+Completed 401 Unauthorized in 95ms (ActiveRecord: 14.5ms)
+
+
+  
+NoMethodError (undefined method `break_sub_category_name' for #<BreakCategory id: nil, garage_id: 1, name: "Engine">
+Did you mean?  break_sub_category_ids
+               break_sub_categories
+               break_sub_category_ids=
+               break_sub_categories=):
+  
+app/controllers/admin/break_categories_controller.rb:9:in `block in index'
+app/controllers/admin/break_categories_controller.rb:7:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:08:26 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.9ms)[0m  [1m[34mSELECT break_categories.name,
+         break_categories.garage_id, break_sub_categories.price, break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 131ms (Views: 51.3ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:12:42 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.6ms)[0m  [1m[34mSELECT break_categories.name,
+      break_categories.garage_id, break_sub_categories.price, break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+Completed 401 Unauthorized in 353ms (ActiveRecord: 15.2ms)
+
+
+  
+NameError (undefined local variable or method `categories' for #<Admin::BreakCategoriesController:0x007f978dd78df0>
+Did you mean?  @categories):
+  
+app/controllers/admin/break_categories_controller.rb:13:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:13:19 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 101ms (Views: 42.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:14:07 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.0ms)[0m  [1m[34mSELECT break_categories.name,
+      break_categories.garage_id, break_sub_categories.price, break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+Completed 401 Unauthorized in 79ms (ActiveRecord: 16.9ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `block in index'
+app/controllers/admin/break_categories_controller.rb:13:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:14:23 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.7ms)[0m  [1m[34mSELECT break_categories.name,
+      break_categories.garage_id, break_sub_categories.price, break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+Completed 401 Unauthorized in 136ms (ActiveRecord: 19.1ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `block in index'
+app/controllers/admin/break_categories_controller.rb:13:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:14:32 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 167ms (Views: 77.2ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:33:11 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (81.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (61.7ms)
+Completed 200 OK in 4788ms (Views: 4063.8ms | ActiveRecord: 81.9ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:34:37 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.1ms)[0m  [1m[34mSELECT break_categories.name,
+      break_categories.garage_id, break_sub_categories.price, break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+Completed 401 Unauthorized in 172ms (ActiveRecord: 67.4ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `block in index'
+app/controllers/admin/break_categories_controller.rb:13:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:35:17 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.8ms)[0m  [1m[34mSELECT break_categories.name,
+       break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+Completed 401 Unauthorized in 82ms (ActiveRecord: 15.4ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/admin/break_categories_controller.rb:14:in `block in index'
+app/controllers/admin/break_categories_controller.rb:13:in `index'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:35:28 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.9ms)[0m  [1m[34mSELECT break_categories.name,
+       break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 374ms (Views: 267.1ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:35:57 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.5ms)[0m  [1m[34mSELECT break_categories.name,
+       break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 206ms (Views: 84.6ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:37:19 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.6ms)[0m  [1m[34mSELECT break_categories.name,
+       break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 132ms (Views: 48.9ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:37:44 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.7ms)[0m  [1m[34mSELECT break_categories.name,
+       break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 101ms (Views: 89.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:38:14 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.0ms)[0m  [1m[34mSELECT break_categories.name,
+       break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (2.0ms)
+Completed 401 Unauthorized in 18ms (ActiveRecord: 1.9ms)
+
+
+  
+SyntaxError (/home/olko/rails/car_service/app/views/admin/break_categories/index.html.erb:16: syntax error, unexpected ')', expecting '='
+...category_name"], key["price"] );@output_buffer.safe_append='
+...                               ^
+/home/olko/rails/car_service/app/views/admin/break_categories/index.html.erb:33: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;       end 
+                   ^
+/home/olko/rails/car_service/app/views/admin/break_categories/index.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/home/olko/rails/car_service/app/views/admin/break_categories/index.html.erb:40: syntax error, unexpected keyword_ensure, expecting ')'
+/home/olko/rails/car_service/app/views/admin/break_categories/index.html.erb:42: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/admin/break_categories/index.html.erb:16: syntax error, unexpected ')', expecting '='
+app/views/admin/break_categories/index.html.erb:33: syntax error, unexpected keyword_end, expecting ')'
+app/views/admin/break_categories/index.html.erb:35: syntax error, unexpected keyword_end, expecting ')'
+app/views/admin/break_categories/index.html.erb:40: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/admin/break_categories/index.html.erb:42: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:38:23 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (2.8ms)[0m  [1m[34mSELECT break_categories.name,
+       break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 130ms (Views: 115.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:38:51 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.0ms)[0m  [1m[34mSELECT break_categories.name,
+       break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 97ms (Views: 85.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:40:04 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.9ms)[0m  [1m[34mSELECT break_categories.name,
+       break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 99ms (Views: 86.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:40:32 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.0ms)[0m  [1m[34mSELECT break_categories.name,
+       break_sub_categories.break_sub_category_name FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 99ms (Views: 88.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:41:11 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (1.0ms)[0m  [1m[34mSELECT break_categories.name,
+       break_sub_categories.break_sub_category_name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 306ms (Views: 54.4ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:41:32 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.8ms)[0m  [1m[34mSELECT break_categories.name,
+       break_sub_categories.break_sub_category_name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 59ms (Views: 51.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-14 09:41:50 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (0.9ms)[0m  [1m[34mSELECT break_categories.name,
+       break_sub_categories.break_sub_category_name, break_sub_categories.price FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id" LEFT OUTER JOIN "garages" ON "garages"."id" = "break_categories"."garage_id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 62ms (Views: 52.2ms | ActiveRecord: 1.7ms)
+
+
