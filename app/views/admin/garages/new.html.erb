@@ -1,41 +1,39 @@
 <div class="admin_form">
-  <%= form_for :garage, url: admin_garages_path, html: { multipart: true } do |form| %>
+  <%= simple_form_for :garage, url: admin_garages_path, html: { multipart: true } do |f| %>
     <p>Інформація про СТО</p>
       <p>Назва СТО
-      <%= form.text_field :garage_name %></p>
+      <%= f.input :garage_name %></p>
       <p>Власник
-        <%= form.select("user_id", User.all.collect{|p| [ p.surname,  p.id] }) %>
+        <%= f.select("user_id", User.all.collect{|p| [ p.surname,  p.id] }) %>
       </p>
       <p>Місто
-        <%= form.text_field :city %></p>
+        <%= f.input :city %></p>
       <p>Адреса
-    <%= form.text_field :address %></p>
+    <%= f.input :address %></p>
     <p>Номер телефону
-      <%= form.text_field :phone %></p>
+      <%= f.input :phone %></p>
     <p>Тип сервісу:</br>
       <div class="serviceTypes">
-        <%= form.label "Майстерня" %>
-        <%= form.check_box :garage_types %>
-        <%= form.label "Вулканізація" %>
-        <%= form.check_box :vulcanization %>
-        <%= form.label "Автомийка" %>
-        <%= form.check_box :car_wash %>
+        <%= f.label "Майстерня" %>
+        <%= f.check_box :service %>
+        <%= f.input :garage_types, collection: [:service, :vulcanization, :car_wash], input_html: { multiple: true } %>
+
       </div>
   </p>
   <p>Графік роботи</br>
     Пн-Пт
-    <%= form.text_field :workday %></br>
+    <%= f.input :workday %></br>
     Сб
-    <%= form.text_field :saturday %></br>
+    <%= f.input :saturday %></br>
     Нд
-    <%= form.text_field :sunday %>
+    <%= f.input :sunday %>
   </p>
     <p>Диллерська компанія:
-      <%= form.check_box :diler %></p>
+        <%= f.input :diler, as: :boolean, checked_value: true, unchecked_value: false %>
     <p>Додати логотип<br>
-    <%= form.file_field :image_url %></p>
-    <%= form.text_field :remote_image_url %>
+    <%= f.file_field :image_url %></p>
+    <%= f.input :remote_image_url %>
     <small>Enter URL to an image</small>
-    <p><%= form.submit 'Додати СТО' %></p>
+    <p><%= f.submit 'Додати СТО' %></p>
   <% end %>
 </div>

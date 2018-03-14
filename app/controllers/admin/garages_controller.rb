@@ -23,6 +23,7 @@ module Admin
         :user_id, :garage_name, :city, :address, :description,
         :phone, :diler, :image_url, :workday, :saturday, :sunday,
         garage_types: []
+        # :service, :vulcanization, :car_wash
       )
     end
   end
