@@ -6,20 +6,20 @@
 
 </div>
 
-<input type="text" id="searsh_input" onkeyup="myFunction()" placeholder="Search for names..">
-<table id="autoservice_table">
+<input type="text" id="searsh_input" onkeyup="SearchFunction()" placeholder="Search for names..">
+<table id="garages_table">
   <tr>
-    <th onclick="sort_services_table(0)">Image</th>
-    <th onclick="sort_services_table(1)">Name</th>
-    <th onclick="sort_services_table(2)">Director</th>
-    <th onclick="sort_services_table(3)">City</th>
-    <th onclick="sort_services_table(4)">Address</th>
-    <th onclick="sort_services_table(5)">Description</th>
-    <th onclick="sort_services_table(6)">Phone</th>
-    <th onclick="sort_services_table(7)">Diller</th>
-    <th onclick="sort_services_table(8)">Garage rating</th>
-    <th onclick="sort_services_table(9)">Garage types</th>
-    <th onclick="sort_services_table(10)">Work shedule</th>
+    <th>Image</th>
+    <th onclick="sort_garages_table(1)">Name</th>
+    <th onclick="sort_garages_table(2)">Director</th>
+    <th onclick="sort_garages_table(3)">City</th>
+    <th onclick="sort_garages_table(4)">Address</th>
+    <th onclick="sort_garages_table(5)">Description</th>
+    <th onclick="sort_garages_table(6)">Phone</th>
+    <th onclick="sort_garages_table(7)">Diller</th>
+    <th onclick="sort_garages_table(8)">Garage rating</th>
+    <th onclick="sort_garages_table(9)">Garage types</th>
+    <th onclick="sort_garages_table(10)">Work shedule</th>
     <th>Edit  / Delete</th>
   </tr>
   <% @garages.each do |garage| %>
@@ -39,8 +39,23 @@
       end %>
     </td>
     <td><%= garage.garage_rating %></td>
-    <td><%= garage.garage_types %></td>
-    <td><%= garage.work_shedule %></td>
+    <td>
+      <% garage.garage_types.each do |garage_type| %>
+        <% if garage_type == "car_wash" %>
+        <%= "Автомийка" %>
+        <% elsif garage_type == "vulcanization" %>
+        <%= "Вулканізація" %>
+        <% elsif garage_type == "service" %>
+        <%= "Автомайстерня" %>
+        <% end %>
+      <% end %>
+    </td>
+    <td>
+      Робочі дні: <%= garage.work_shedule[0] %>
+      Субота: <%= garage.work_shedule[1] %>
+      Неділя: <%= garage.work_shedule[2] %>
+    </td>
+
           <td><%= link_to "Edit", edit_admin_garage_path(garage) %>
           |<%= link_to "Delete", admin_garage_path(garage) ,method: :delete, data: {confirm: 'Are you sure?' } %>
   </tr>
