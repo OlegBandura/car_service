@@ -13,7 +13,8 @@ module Admin
     def new; end
 
     def create
-      render plain: garage_params
+      Garage.create(garage_params)
+      redirect_to admin_garages_path
     end
 
     private
@@ -21,8 +22,7 @@ module Admin
     def garage_params
       params.require(:garage).permit(
         :user_id, :garage_name, :city, :address, :description,
-        :phone, :diler, :image_url, garage_types: [], work_shedule: []
-        # :service, :vulcanization, :car_wash
+        :phone, :diler, :image_url, work_shedule: [], garage_types: []
       )
     end
   end

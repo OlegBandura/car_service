@@ -19525,3 +19525,1498 @@ Processing by Admin::GaragesController#index as HTML
 Completed 200 OK in 108ms (Views: 101.8ms | ActiveRecord: 1.6ms)
 
 
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:38:22 +0200
+  [1m[35m (42.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (38.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (38.4ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (182.0ms)
+Completed 200 OK in 1290ms (Views: 970.6ms | ActiveRecord: 140.8ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:38:27 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (775.2ms)
+Completed 200 OK in 899ms (Views: 892.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:40:58 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (46.1ms)
+Completed 200 OK in 618ms (Views: 512.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:41:17 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 151ms (Views: 144.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:41:52 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 213ms (Views: 93.2ms | ActiveRecord: 59.6ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 12:41:58 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YJBG0t+tFFcudC3ClhVeC1IQGGPLTW41pN1wbDxspZxq2pmi90RPqIMPAnDYnXf+/HAdETWDDO8Za06JCAGGeA==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "workday"=>"try", "saturday"=>"erty", "sunday"=>"ert", "remote_image_url"=>""}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :workday, :saturday, :sunday, :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 169ms (Views: 163.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:42:06 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.8ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 165ms (Views: 101.1ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:42:31 +0200
+  
+SyntaxError (/home/olko/rails/car_service/app/controllers/admin/garages_controller.rb:25: syntax error, unexpected '\n', expecting =>):
+  
+app/controllers/admin/garages_controller.rb:25: syntax error, unexpected '\n', expecting =>
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:42:46 +0200
+  
+SyntaxError (/home/olko/rails/car_service/app/controllers/admin/garages_controller.rb:25: syntax error, unexpected ':', expecting ']'
+        {:work_shedule => [:workday :saturday :sunday]}
+                                     ^
+/home/olko/rails/car_service/app/controllers/admin/garages_controller.rb:25: syntax error, unexpected ']', expecting keyword_end
+        {:work_shedule => [:workday :saturday :sunday]}
+                                                      ^):
+  
+app/controllers/admin/garages_controller.rb:25: syntax error, unexpected ':', expecting ']'
+app/controllers/admin/garages_controller.rb:25: syntax error, unexpected ']', expecting keyword_end
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:43:05 +0200
+  
+SyntaxError (/home/olko/rails/car_service/app/controllers/admin/garages_controller.rb:25: syntax error, unexpected '\n', expecting =>):
+  
+app/controllers/admin/garages_controller.rb:25: syntax error, unexpected '\n', expecting =>
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:43:47 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (47.8ms)
+Completed 200 OK in 179ms (Views: 126.8ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:43:49 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 102ms (Views: 96.0ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 12:43:55 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MM/o2JmfJEYmSCo/uWUcDugrXrbY0jv9xa4V1mBYq0bIj21iM1PsiO0m1IXJ5KckmR/gWgmOOZ2GvhOuPOqCRg==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "workday"=>"yt", "saturday"=>"tg", "sunday"=>"g", "remote_image_url"=>""}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :workday, :saturday, :sunday, :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:43:57 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.1ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 89ms (Views: 83.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:45:10 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.8ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 87ms (Views: 81.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:45:12 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 88ms (Views: 82.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:45:35 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (15.9ms)
+Completed 401 Unauthorized in 26ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error ({:name=>"saturday"} is not a symbol nor a string):
+    22:     Пн-Пт
+    23:     <input type="textbox" name="course[track_codes][]">
+    24:     Сб
+    25:     <%= f.input name: "saturday" %></br>
+    26:     Нд
+    27:     <%= f.input :sunday %>
+    28:   </p>
+  
+app/views/admin/garages/new.html.erb:25:in `block in _app_views_admin_garages_new_html_erb__1002778872216040924_70273720948600'
+app/views/admin/garages/new.html.erb:2:in `_app_views_admin_garages_new_html_erb__1002778872216040924_70273720948600'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:46:13 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 102ms (Views: 94.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 12:46:21 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aSriBDPSc+t/j30ulBRw99cru3rGSPXuRrKJuh8laNBjYD10GzsoFNL0UpzanFkCeUu+CDiGlzT7BLdfK0hLNA==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "name"=>["re"], "saturday"=>"re", "sunday"=>"f", "remote_image_url"=>""}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :name, :saturday, :sunday, :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:47:44 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 164ms (Views: 100.6ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:47:45 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (16.7ms)
+Completed 401 Unauthorized in 27ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    20:   </p>
+    21:   <p>Графік роботи</br>
+    22:     Пн-Пт
+    23:     <%= f.input_field :work_shedule[:workday], multiple: true %>
+    24:     Сб
+    25:     <%= f.input :work_shedule[:saturday] %></br>
+    26:     Нд
+  
+app/views/admin/garages/new.html.erb:23:in `[]'
+app/views/admin/garages/new.html.erb:23:in `block in _app_views_admin_garages_new_html_erb__1002778872216040924_60090260'
+app/views/admin/garages/new.html.erb:2:in `_app_views_admin_garages_new_html_erb__1002778872216040924_60090260'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:47:59 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (14.3ms)
+Completed 401 Unauthorized in 21ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (nil is not a symbol nor a string):
+    20:   </p>
+    21:   <p>Графік роботи</br>
+    22:     Пн-Пт
+    23:     <%= f.input_field :work_shedule["workday"], multiple: true %>
+    24:     Сб
+    25:     <%= f.input :work_shedule[:saturday] %></br>
+    26:     Нд
+  
+app/views/admin/garages/new.html.erb:23:in `block in _app_views_admin_garages_new_html_erb__1002778872216040924_70273551127420'
+app/views/admin/garages/new.html.erb:2:in `_app_views_admin_garages_new_html_erb__1002778872216040924_70273551127420'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:48:18 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (18.8ms)
+Completed 401 Unauthorized in 26ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    20:   </p>
+    21:   <p>Графік роботи</br>
+    22:     Пн-Пт
+    23:     <%= f.input :work_shedule[:workday], multiple: true %>
+    24:     Сб
+    25:     <%= f.input :work_shedule[:saturday] %></br>
+    26:     Нд
+  
+app/views/admin/garages/new.html.erb:23:in `[]'
+app/views/admin/garages/new.html.erb:23:in `block in _app_views_admin_garages_new_html_erb__1002778872216040924_70273553631980'
+app/views/admin/garages/new.html.erb:2:in `_app_views_admin_garages_new_html_erb__1002778872216040924_70273553631980'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:48:29 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (14.5ms)
+Completed 401 Unauthorized in 21ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    20:   </p>
+    21:   <p>Графік роботи</br>
+    22:     Пн-Пт
+    23:     <%= f.input :work_shedule[:workday] %>
+    24:     Сб
+    25:     <%= f.input :work_shedule[:saturday] %></br>
+    26:     Нд
+  
+app/views/admin/garages/new.html.erb:23:in `[]'
+app/views/admin/garages/new.html.erb:23:in `block in _app_views_admin_garages_new_html_erb__1002778872216040924_70273619043200'
+app/views/admin/garages/new.html.erb:2:in `_app_views_admin_garages_new_html_erb__1002778872216040924_70273619043200'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:48:39 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (20.4ms)
+Completed 401 Unauthorized in 31ms (ActiveRecord: 2.5ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    22:     Пн-Пт
+    23:     <%= f.input :workday %>
+    24:     Сб
+    25:     <%= f.input :work_shedule[:saturday] %></br>
+    26:     Нд
+    27:     <%= f.input :work_shedule[:sunday] %>
+    28:   </p>
+  
+app/views/admin/garages/new.html.erb:25:in `[]'
+app/views/admin/garages/new.html.erb:25:in `block in _app_views_admin_garages_new_html_erb__1002778872216040924_51216160'
+app/views/admin/garages/new.html.erb:2:in `_app_views_admin_garages_new_html_erb__1002778872216040924_51216160'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:48:55 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 96ms (Views: 91.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 12:49:02 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MIe0QzjlDvrUQZzM5CEHbEiXU1JICvpywE3sDDZKup46zWszEAxVBXk6s36qqS6Z5vdWILbEmKh9+9LpAieZeg==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "workday"=>"re", "saturday"=>"r", "sunday"=>"r", "remote_image_url"=>""}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :workday, :saturday, :sunday, :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:52:25 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 76ms (Views: 70.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:52:26 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 87ms (Views: 81.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:52:30 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (33.3ms)
+Completed 200 OK in 102ms (Views: 96.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-15 12:52:31 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 111ms (Views: 74.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-15 12:52:36 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 85ms (Views: 81.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-15 12:52:37 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 81ms (Views: 78.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-15 12:52:38 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 89ms (Views: 87.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-15 12:56:34 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 153ms (Views: 137.1ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:56:38 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.7ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (36.6ms)
+Completed 200 OK in 127ms (Views: 104.6ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:56:39 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 98ms (Views: 92.1ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 12:56:45 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HxzjsrACeuL7U+bf2mNlFy7spxm0sfxFtfYPubU1paLnXGYIGs6yLDA9GGWq4t49X9gZ9WXt/iX25gnB6YeMog==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "workday"=>"", "saturday"=>"", "sunday"=>"", "remote_image_url"=>""}, "course"=>{"track_codes"=>["auu", "buu", "cuu"]}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :workday, :saturday, :sunday, :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:57:03 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.1ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 95ms (Views: 90.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:57:59 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.1ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (36.8ms)
+Completed 200 OK in 166ms (Views: 108.1ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:58:00 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 100ms (Views: 92.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 12:58:25 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 151ms (Views: 90.8ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 12:58:31 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UGewEdo4giLCwdJJVlNKF0YR8fi6Qi/1uAn1AUjrFk9aLW9h8tHZ3W+6/fsY22Pi6HH0ikSMTS8Fv8vkfIY1qw==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "workday"=>"", "saturday"=>"", "sunday"=>"", "remote_image_url"=>""}, "course"=>{"track_codes"=>["aff", "bff", "cff"]}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :workday, :saturday, :sunday, :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 12:59:59 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.2ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 161ms (Views: 105.6ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:00:00 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 103ms (Views: 97.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:00:04 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"18BVHKU6Q9NzCH2YS+AWgqY4LeEkhVFshY3q+6F7lGwvgNCmD/aLHbhmgyI7Ya2o1wyTDfXZUwzGneyD/cm9bA==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "workday"=>"", "saturday"=>"", "sunday"=>"", "remote_image_url"=>""}, "work_shedule"=>{"track_codes"=>["ff", "dd", "ss"]}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :workday, :saturday, :sunday, :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:00:34 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 94ms (Views: 88.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:00:35 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 95ms (Views: 89.3ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:00:40 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x2ex0QZfkXZtUSZURQI0X3dhRwGxo1CMQRK6dHRzv4M/JzRrrJNZuKY/2O41g491BlX57WD/UuwCArwMKMGWgw==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "workday"=>"", "saturday"=>"", "sunday"=>"", "remote_image_url"=>""}, "work_shedule"=>["ds", "aa", "ss"], "commit"=>"Додати СТО"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :workday, :saturday, :sunday, :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:00:56 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.1ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 75ms (Views: 69.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:00:58 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 103ms (Views: 98.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:01:21 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 165ms (Views: 108.1ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:01:26 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x6zoCvokHH9I99dL4WoaKP4ejcziHPyFRrZ4D9svhGvN5jd60s1HgOWM+Pmv4jPdUH6IvhzSnl/7AEbq70Knjw==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "workday"=>"", "saturday"=>"", "sunday"=>"", "remote_image_url"=>""}, "work_shedule"=>["dds", "ss", "aa"], "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :workday, :saturday, :sunday, :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:02:01 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (41.9ms)
+Completed 200 OK in 141ms (Views: 121.7ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:02:02 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (19.1ms)
+Completed 401 Unauthorized in 30ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    20:   </p>
+    21:   <p>Графік роботи</br>
+    22:     Пн-Пт
+    23:     <%= f.input :work_shedule[] %>
+    24:     Сб
+    25:     <%= f.input :work_shedule[] %></br>
+    26:     Нд
+  
+app/views/admin/garages/new.html.erb:23:in `[]'
+app/views/admin/garages/new.html.erb:23:in `block in _app_views_admin_garages_new_html_erb__1002778872216040924_70273619820020'
+app/views/admin/garages/new.html.erb:2:in `_app_views_admin_garages_new_html_erb__1002778872216040924_70273619820020'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:02:19 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 101ms (Views: 95.5ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:02:24 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p126PobZ2v2Cb64sC9dwexpH5VBQqnyKVZhOfFZGgJWtF2VOrjCBAi8UgZ5FX1mOtCfgIq5kHlDoLnCZYiujcQ==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "work_shedule"=>[], "remote_image_url"=>""}, "work_shedule"=>["", "", ""], "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 10ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:03:10 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 91ms (Views: 82.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:03:11 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 113ms (Views: 106.9ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:03:17 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N4oijrSs8WjeQkerXZsrLaliq6RvEpzjRnRP7UtLgLvPyqc0HmA5phUsuREtGpAH2FYVSL5OnoMFZEmVF/mpuw==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "work_shedule"=>[], "remote_image_url"=>""}, "work_shedule"=>["", "", ""], "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:03:39 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (60.4ms)
+Completed 200 OK in 205ms (Views: 126.7ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:03:40 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 106ms (Views: 100.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:03:46 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WnAIgInXhWhxOxGWBQdhgHxKx+HNXn5I3FJx9JoC4pqiMI06IxtNprpV7yx1htqqDX55DRwCfCifQneMxrDLmg==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>["", "service"], "work_shedule"=>[], "remote_image_url"=>""}, "work_shedule"=>["", "", ""], "commit"=>"Додати СТО"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:03:52 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WnAIgInXhWhxOxGWBQdhgHxKx+HNXn5I3FJx9JoC4pqiMI06IxtNprpV7yx1htqqDX55DRwCfCifQneMxrDLmg==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>["", "service"], "work_shedule"=>[], "remote_image_url"=>""}, "work_shedule"=>["", "", ""], "commit"=>"Додати СТО"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:03:53 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.8ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 84ms (Views: 78.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:04:01 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.7ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (37.4ms)
+Completed 200 OK in 160ms (Views: 99.8ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:04:02 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 115ms (Views: 106.9ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:04:07 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e65IMs1J9/S9KcxD9Dfxu7ml06ncl8CpZjgyUxw5I3eD7s2IZ4U/OnZHMvmEtkqRyJFtRQ3LwsklKDQrQIsKdw==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "work_shedule"=>[], "remote_image_url"=>""}, "work_shedule"=>["", "", ""], "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:04:49 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 100ms (Views: 94.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:04:50 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 79ms (Views: 72.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:04:51 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 123ms (Views: 115.7ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:04:55 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OKDJXkowF2zxGXZrz6f0yOHEvCdiczo4egudRMonTrLA4Ezk4Pzfojp3iNG/Jk/ikPACy7MvOFg5G5s8lpVnsg==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "work_shedule"=>{":workday"=>"r", ":saturday"=>"w", ":subday"=>"q"}, "remote_image_url"=>""}, "work_shedule"=>["", "", ""], "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :work_shedule, :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:05:10 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.3ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 89ms (Views: 81.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:05:11 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 105ms (Views: 99.9ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:05:17 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6bKrT4kbdPEcm84s6zOafGW25093jmmwODyvoPsApHQR8i71I9e8P9f1MJabsiFWFIJZo6bSa9B7LKnYp7KNdA==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "work_shedule"=>{":workday"=>[], ":saturday"=>[], ":subday"=>[]}, "remote_image_url"=>""}, "work_shedule"=>["", "", ""], "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :work_shedule, :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 8ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:05:20 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 81ms (Views: 75.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:06:27 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.5ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 88ms (Views: 82.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:06:28 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (41.2ms)
+Completed 200 OK in 128ms (Views: 121.8ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:06:35 +0200
+  
+Rack::QueryParser::ParameterTypeError (expected Array (got Rack::QueryParser::Params) for param `work_shedule'):
+  
+rack (2.0.4) lib/rack/query_parser.rb:99:in `normalize_params'
+rack (2.0.4) lib/rack/query_parser.rb:113:in `normalize_params'
+rack (2.0.4) lib/rack/multipart/parser.rb:194:in `block (2 levels) in result'
+rack (2.0.4) lib/rack/multipart/parser.rb:105:in `get_data'
+rack (2.0.4) lib/rack/multipart/parser.rb:192:in `block in result'
+rack (2.0.4) lib/rack/multipart/parser.rb:128:in `block in each'
+rack (2.0.4) lib/rack/multipart/parser.rb:128:in `each'
+rack (2.0.4) lib/rack/multipart/parser.rb:128:in `each'
+rack (2.0.4) lib/rack/multipart/parser.rb:191:in `result'
+rack (2.0.4) lib/rack/multipart/parser.rb:76:in `parse'
+rack (2.0.4) lib/rack/multipart.rb:52:in `extract_multipart'
+rack (2.0.4) lib/rack/request.rb:472:in `parse_multipart'
+rack (2.0.4) lib/rack/request.rb:335:in `POST'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:362:in `block (2 levels) in POST'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:107:in `block in parse_formatted_parameters'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:107:in `fetch'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:107:in `parse_formatted_parameters'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:361:in `block in POST'
+rack (2.0.4) lib/rack/request.rb:57:in `fetch'
+rack (2.0.4) lib/rack/request.rb:57:in `fetch_header'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:360:in `POST'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:53:in `parameters'
+actionpack (5.1.5) lib/action_dispatch/http/filter_parameters.rb:41:in `filtered_parameters'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:21:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:06:37 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.5ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 84ms (Views: 77.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:06:49 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.1ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 83ms (Views: 77.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:06:54 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 102ms (Views: 96.3ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:06:58 +0200
+  
+Rack::QueryParser::ParameterTypeError (expected Array (got Rack::QueryParser::Params) for param `work_shedule'):
+  
+rack (2.0.4) lib/rack/query_parser.rb:99:in `normalize_params'
+rack (2.0.4) lib/rack/query_parser.rb:113:in `normalize_params'
+rack (2.0.4) lib/rack/multipart/parser.rb:194:in `block (2 levels) in result'
+rack (2.0.4) lib/rack/multipart/parser.rb:105:in `get_data'
+rack (2.0.4) lib/rack/multipart/parser.rb:192:in `block in result'
+rack (2.0.4) lib/rack/multipart/parser.rb:128:in `block in each'
+rack (2.0.4) lib/rack/multipart/parser.rb:128:in `each'
+rack (2.0.4) lib/rack/multipart/parser.rb:128:in `each'
+rack (2.0.4) lib/rack/multipart/parser.rb:191:in `result'
+rack (2.0.4) lib/rack/multipart/parser.rb:76:in `parse'
+rack (2.0.4) lib/rack/multipart.rb:52:in `extract_multipart'
+rack (2.0.4) lib/rack/request.rb:472:in `parse_multipart'
+rack (2.0.4) lib/rack/request.rb:335:in `POST'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:362:in `block (2 levels) in POST'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:107:in `block in parse_formatted_parameters'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:107:in `fetch'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:107:in `parse_formatted_parameters'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:361:in `block in POST'
+rack (2.0.4) lib/rack/request.rb:57:in `fetch'
+rack (2.0.4) lib/rack/request.rb:57:in `fetch_header'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:360:in `POST'
+actionpack (5.1.5) lib/action_dispatch/http/parameters.rb:53:in `parameters'
+actionpack (5.1.5) lib/action_dispatch/http/filter_parameters.rb:41:in `filtered_parameters'
+actionpack (5.1.5) lib/action_controller/metal/instrumentation.rb:21:in `process_action'
+actionpack (5.1.5) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.5) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.5) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:07:00 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 123ms (Views: 116.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:07:51 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 82ms (Views: 76.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:07:52 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  Rendered admin/garages/new.html.erb within layouts/application (2.2ms)
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/home/olko/rails/car_service/app/views/admin/garages/new.html.erb:25: syntax error, unexpected ']', expecting ')'
+...pend=( f.input :work_shedule[]]);@output_buffer.safe_append=...
+...                               ^
+/home/olko/rails/car_service/app/views/admin/garages/new.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/home/olko/rails/car_service/app/views/admin/garages/new.html.erb:45: syntax error, unexpected keyword_ensure, expecting ')'
+/home/olko/rails/car_service/app/views/admin/garages/new.html.erb:47: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/admin/garages/new.html.erb:25: syntax error, unexpected ']', expecting ')'
+app/views/admin/garages/new.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+app/views/admin/garages/new.html.erb:45: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/admin/garages/new.html.erb:47: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:07:59 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (15.9ms)
+Completed 401 Unauthorized in 24ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    20:   </p>
+    21:   <p>Графік роботи</br>
+    22:     Пн-Пт
+    23:     <%= f.input :work_shedule[] %>
+    24:     Сб
+    25:     <%= f.input :work_shedule[] %></br>
+    26:     Нд
+  
+app/views/admin/garages/new.html.erb:23:in `[]'
+app/views/admin/garages/new.html.erb:23:in `block in _app_views_admin_garages_new_html_erb__1002778872216040924_70273617790820'
+app/views/admin/garages/new.html.erb:2:in `_app_views_admin_garages_new_html_erb__1002778872216040924_70273617790820'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:08:06 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (21.9ms)
+Completed 401 Unauthorized in 33ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    21:   <p>Графік роботи</br>
+    22:     Пн-Пт
+    23:     Сб
+    24:     <%= f.input :work_shedule[] %></br>
+    25:     Нд
+    26:     <%= f.input :work_shedule[] %>
+    27: ddddd
+  
+app/views/admin/garages/new.html.erb:24:in `[]'
+app/views/admin/garages/new.html.erb:24:in `block in _app_views_admin_garages_new_html_erb__1002778872216040924_52143100'
+app/views/admin/garages/new.html.erb:2:in `_app_views_admin_garages_new_html_erb__1002778872216040924_52143100'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:08:33 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 99ms (Views: 93.8ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:08:38 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uZJ8oRNxr2hySklX2/1dhSyd6DuNNoEf8y5oUDjX80az2KPRO5j0l98xZuWVdXRwgv3tSXP448VOmFa1DLrQog==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "workday"=>"f", "saurday"=>"d", "sunday"=>"d", "work_shedule"=>["", ""], "remote_image_url"=>""}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :workday, :saurday, :sunday, :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:08:43 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.1ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 86ms (Views: 79.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:08:45 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 107ms (Views: 101.1ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:08:49 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W82R87391VUySQL2ojL8yjpnjN3ZraIhkzyPFWZ2dYqjjRRJFzEdm/kn/EzSs0fgS1MyMQjxoEHQLIltOsRcig==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "workday"=>"", "saurday"=>"", "sunday"=>"", "work_shedule"=>["f", "d"], "remote_image_url"=>""}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :workday, :saurday, :sunday, :remote_image_url
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:08:52 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.2ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 87ms (Views: 81.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:09:12 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.8ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 110ms (Views: 104.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:09:13 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 98ms (Views: 92.6ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:09:18 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZC3e7WbH1CAfX2YhvWSemCWyT/k7ZWfigLjfUUtZ2mqcbVtXzAsc7tQxmJvN5SWyVIbxFeo5ZYLDqNkpF+vzag==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "work_shedule"=>["fs", "ss", "aa"], "remote_image_url"=>""}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:09:22 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 83ms (Views: 77.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:09:23 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 107ms (Views: 101.0ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:09:35 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ub9yrEdxY0Xgk6ARb+KyGxgi6YhKaMSLW3azwO+dpvyp//cW7b2riyv9XqsfYwkxaRZXZJs0xusYZrW4sy+P/A==", "garage"=>{"garage_name"=>"re", "user_id"=>"2", "city"=>"re", "address"=>"er", "phone"=>"e", "garage_types"=>["", "service", "vulcanization"], "work_shedule"=>["t", "r", "w"], "diler"=>"true", "remote_image_url"=>""}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:09:41 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 85ms (Views: 78.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:10:35 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.8ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 88ms (Views: 82.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:10:36 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 103ms (Views: 98.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:10:51 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 99ms (Views: 94.3ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:10:56 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KR6Xp2GY1xscDjkQTarsnzha/sNa7Urw0Cxixm+YtIIjVEjXSXGM5LF1FqIDIsVqljr7saQjKCptmlwjW/WXZg==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "work_shedule"=>"s", "remote_image_url"=>""}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameters: :work_shedule, :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:11:00 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.8ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 81ms (Views: 75.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:11:01 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 107ms (Views: 101.8ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:11:06 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a/ftxvItllpB8Gem+2oNeei5egMX5VdkDgWy+YSQNiyTt2h8WOFelIqemRyL67ZTmY3E78a5VQRNFbSB2CIfLA==", "garage"=>{"garage_name"=>"", "user_id"=>"3", "city"=>"", "address"=>"", "phone"=>"", "garage_types"=>[""], "work_shedule"=>["f", "a", "s"], "remote_image_url"=>""}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :remote_image_url
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:11:09 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 86ms (Views: 79.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:12:01 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.4ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 175ms (Views: 111.7ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:12:02 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 112ms (Views: 105.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:12:38 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lkQXpyY5L2e4UQ1v0MNm0hPVRNlFU7J4eEjk0Q+wDh5uBJIdjPXnqXM/89WgQt34YuH6NZQPsBg7WOKpUwInHg==", "garage"=>{"garage_name"=>"name", "user_id"=>"2", "city"=>"Lviv", "address"=>"Street", "phone"=>"1111", "garage_types"=>["", "service", "car_wash"], "work_shedule"=>["9-20", "10-18", "closed"], "remote_image_url"=>""}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :remote_image_url
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (39.8ms)[0m  [1m[32mINSERT INTO "garages" ("user_id", "garage_name", "city", "address", "phone", "garage_types", "work_shedule", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["user_id", 2], ["garage_name", "name"], ["city", "Lviv"], ["address", "Street"], ["phone", "1111"], ["garage_types", "{\"\",service,car_wash}"], ["work_shedule", "{9-20,10-18,closed}"], ["created_at", "2018-03-15 11:12:38.285996"], ["updated_at", "2018-03-15 11:12:38.285996"]]
+  [1m[35m (79.0ms)[0m  [1m[35mCOMMIT[0m
+Completed 401 Unauthorized in 370ms (ActiveRecord: 121.1ms)
+
+
+  
+ActionView::MissingTemplate (Missing template admin/garages with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/olko/rails/car_service/app/views"
+  * "/var/lib/gems/2.3.0/gems/devise-4.4.1/app/views"
+):
+  
+app/controllers/admin/garages_controller.rb:17:in `create'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:12:45 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 89ms (Views: 83.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:13:00 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 80ms (Views: 74.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:13:41 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (39.2ms)
+Completed 200 OK in 199ms (Views: 126.8ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-15 13:13:43 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 96ms (Views: 90.4ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-15 13:14:17 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dcRbxvAa0oxW+5Fc1p3/dDWVrc6n/3VpN9dfyp54KFKNhN58WtYaQp2Vb+amHEReRKETInajdwl0x1mywsoBUg==", "garage"=>{"garage_name"=>"Garage", "user_id"=>"3", "city"=>"Lviv", "address"=>"Subotivska", "phone"=>"4411", "garage_types"=>["", "service", "vulcanization", "car_wash"], "work_shedule"=>["9-18", "12-13", "10-13"], "diler"=>"true", "remote_image_url"=>""}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :remote_image_url
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "garages" ("user_id", "garage_name", "city", "address", "phone", "diler", "garage_types", "work_shedule", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["user_id", 3], ["garage_name", "Garage"], ["city", "Lviv"], ["address", "Subotivska"], ["phone", "4411"], ["diler", "t"], ["garage_types", "{\"\",service,vulcanization,car_wash}"], ["work_shedule", "{9-18,12-13,10-13}"], ["created_at", "2018-03-15 11:14:17.699709"], ["updated_at", "2018-03-15 11:14:17.699709"]]
+  [1m[35m (31.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/garages
+Completed 302 Found in 51ms (ActiveRecord: 34.5ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:14:17 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.8ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 102ms (Views: 96.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 13:14:45 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 89ms (Views: 84.2ms | ActiveRecord: 1.6ms)
+
+

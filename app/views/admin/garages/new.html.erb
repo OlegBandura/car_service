@@ -20,16 +20,16 @@
   </p>
   <p>Графік роботи</br>
     Пн-Пт
-    <%= f.input :work_shedule ,:collection => @locations,:label_method => :location_name,:value_method => :id %>
+    <%= f.input_field :work_shedule, multiple: true %>
     Сб
-    <%= f.input :saturday %></br>
+    <%= f.input_field :work_shedule, multiple: true %>
     Нд
-    <%= f.input :sunday %>
+    <%= f.input_field :work_shedule, multiple: true %>
   </p>
     <p>Диллерська компанія:
-        <%= f.input :diler, as: :boolean, checked_value: true, unchecked_value: false %>
+      <%= f.input :diler, as: :boolean, checked_value: true, unchecked_value: false %>
     <p>Додати логотип<br>
-    <%= f.file_field :image_url %></p>
+      <%= f.file_field :image_url %></p>
     <%= f.input :remote_image_url %>
     <small>Enter URL to an image</small>
     <p><%= f.submit 'Додати СТО' %></p>
