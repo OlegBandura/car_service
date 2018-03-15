@@ -29813,3 +29813,126 @@ Processing by Admin::GaragesController#new as HTML
 Completed 200 OK in 100ms (Views: 92.1ms | ActiveRecord: 1.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-15 21:46:41 +0200
+  [1m[35m (28.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (39.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 13785ms (Views: 13576.6ms | ActiveRecord: 124.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-15 22:16:47 +0200
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-15 22:16:47 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 124ms (Views: 112.3ms | ActiveRecord: 7.8ms)
+
+
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (36.5ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 577ms (Views: 91.8ms | ActiveRecord: 101.2ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-15 22:16:52 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 87ms (Views: 75.8ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-15 22:16:55 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (72.4ms)[0m  [1m[34mSELECT break_categories.name, break_sub_categories.break_sub_category_name,
+      break_sub_categories.price, break_sub_categories.id,
+      break_sub_categories.break_category_id FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 239ms (Views: 106.4ms | ActiveRecord: 80.5ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-15 22:16:58 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (28.6ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (92.7ms)
+Completed 200 OK in 253ms (Views: 173.4ms | ActiveRecord: 35.8ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-15 22:47:40 +0200
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-15 22:47:40 +0200
+Processing by Admin::UsersController#index as HTML
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (6.6ms)
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 369ms (Views: 294.9ms | ActiveRecord: 2.3ms)
+
+
+Completed 200 OK in 433ms (Views: 271.4ms | ActiveRecord: 129.9ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-15 22:52:20 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 80ms (Views: 75.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-15 22:59:49 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 173ms (Views: 165.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/admin/users?data%5Bconfirm%5D=Are+you+sure%3F&method=delete" for 127.0.0.1 at 2018-03-15 22:59:50 +0200
+Processing by Admin::UsersController#index as HTML
+  Parameters: {"data"=>{"confirm"=>"Are you sure?"}, "method"=>"delete"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 89ms (Views: 83.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-15 22:59:51 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 116ms (Views: 110.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-15 22:59:52 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 95ms (Views: 80.9ms | ActiveRecord: 0.7ms)
+
+
