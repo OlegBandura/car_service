@@ -13,8 +13,9 @@ module Admin
     def new; end
 
     def create
-      Garage.create(garage_params)
-      redirect_to admin_garages_path
+      # Garage.create(garage_params)
+      # redirect_to admin_garages_path
+      render plain: garage_params
     end
 
     def edit
@@ -26,7 +27,7 @@ module Admin
       if garage.update(garage_params)
         redirect_to admin_garages_path
       else
-        render action 'edit'
+        render action: 'edit'
       end
     end
 
@@ -41,7 +42,7 @@ module Admin
     def garage_params
       params.require(:garage).permit(
         :user_id, :garage_name, :city, :address, :description, :phone, :diler,
-        :image_url, work_shedule: [], garage_types: []
+        :image_url, :remote_image_url, :remove_image, work_shedule: [], garage_types: []
       )
     end
   end

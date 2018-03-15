@@ -1,38 +1,38 @@
-<div class="admin_form">
+<div class="admin_form center-block col-md-5">
   <%= simple_form_for :garage, url: admin_garages_path, html: { multipart: true } do |f| %>
     <p>Інформація про СТО</p>
-      <p>Назва СТО
-      <%= f.input :garage_name %></p>
+      <p>
+      <%= f.input :garage_name, label: 'Назва СТО' %></p>
       <p>Власник
         <%= f.select("user_id", User.all.collect{|p| [ p.surname,  p.id] }) %>
       </p>
-      <p>Місто
-        <%= f.input :city %></p>
-      <p>Адреса
-    <%= f.input :address %></p>
-    <p>Номер телефону
-      <%= f.input :phone %></p>
+      <p>
+        <%= f.input :city, label: "Місто" %></p>
+      <p>
+    <%= f.input :address, label: "Адреса" %></p>
+    <p>
+      <%= f.input :phone, label: "Номер телефону" %></p>
     <p>Тип сервісу:</br>
       <div class="serviceTypes">
-        <%= f.label "Майстерня" %>
-        <%= f.input :garage_types, collection: [:service, :vulcanization, :car_wash], as: :check_boxes %>
+
+        <%= f.input :garage_types, collection: Garage::GARAGE_TYPE, as: :check_boxes, label: "Послуги сервісу:" %>
       </div>
   </p>
   <p>Графік роботи</br>
     Пн-Пт
-    <%= f.input_field :work_shedule, multiple: true %>
+    <%= f.input_field :work_shedule, multiple: true %></br>
     Сб
-    <%= f.input_field :work_shedule, multiple: true %>
+    <%= f.input_field :work_shedule, multiple: true %></br>
     Нд
-    <%= f.input_field :work_shedule, multiple: true %>
+    <%= f.input_field :work_shedule, multiple: true %></br>
   </p>
-    <p>Диллерська компанія:
-      <%= f.input :diler, as: :boolean, checked_value: true, unchecked_value: false %>
-    <p>Інформація про автосервіс:</p>
-      <%= f.input :description, as: :text %></p>
+    <p>
+      <%= f.input :diler, as: :boolean, label: "Диллерська компанія:"%>
+    <p></p>
+      <%= f.input :description, label: "Інформація про автосервіс:", as: :text %></p>
     <p>Додати логотип<br>
       <%= f.file_field :image_url %></p>
-    <%= f.input :remote_image_url %>
+    <%= f.input :remote_image_url, label: "Вставте сюди посилання на картинку" %>
     <small>Enter URL to an image</small>
     <p><%= f.submit 'Додати СТО' %></p>
   <% end %>
