@@ -22,8 +22,7 @@
     <th onclick="sort_services_table(10)">Work shedule</th>
     <th>Edit  / Delete</th>
   </tr>
-
-<%  @garages.each do |garage| %>
+  <% @garages.each do |garage| %>
   <tr>
     <td><%= image_tag(garage.image, :alt => "logo", size: "80x50")  if garage.image? %></td>
     <td><%= garage.garage_name %></td>
@@ -32,7 +31,6 @@
     <td><%= garage.address %></td>
     <td><%= garage.description %></td>
     <td><%= garage.phone %></td>
-
     <td>
       <%= if garage.diler == true
         "Диллер сервіс"
@@ -43,15 +41,8 @@
     <td><%= garage.garage_rating %></td>
     <td><%= garage.garage_types %></td>
     <td><%= garage.work_shedule %></td>
-
-
-
-
-          <td><%= link_to "Edit"  %>
-
-
-          |<%= link_to "Delete", method: :delete, data: {confirm: 'Are you sure?' } %>
-
+          <td><%= link_to "Edit", edit_admin_garage_path(garage) %>
+          |<%= link_to "Delete", admin_garage_path(garage) ,method: :delete, data: {confirm: 'Are you sure?' } %>
   </tr>
-<% end %>
+  <% end %>
 </table>

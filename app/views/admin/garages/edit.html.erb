@@ -1,5 +1,5 @@
 <div class="admin_form">
-  <%= simple_form_for :garage, url: admin_garages_path, html: { multipart: true } do |f| %>
+  <%= simple_form_for :garage, url: admin_garage_path(@garage), method: :put do |f| %>
     <p>Інформація про СТО</p>
       <p>Назва СТО
       <%= f.input :garage_name %></p>
@@ -29,7 +29,7 @@
     <p>Диллерська компанія:
       <%= f.input :diler, as: :boolean, checked_value: true, unchecked_value: false %>
     <p>Інформація про автосервіс:</p>
-      <%= f.input :description, as: :text %></p>
+    <%= f.input :description, as: :text %></p>
     <p>Додати логотип<br>
       <%= f.file_field :image_url %></p>
     <%= f.input :remote_image_url %>
