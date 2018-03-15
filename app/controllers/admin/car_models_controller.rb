@@ -7,7 +7,6 @@ class Admin::CarModelsController < Admin::BaseController
   def create
     @brand = Brand.find(brand_p[:brand_id])
     @brand.car_models.create(car_params)
-    render plain: car_params.inspect
     redirect_to admin_brands_path
   end
 

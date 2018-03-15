@@ -3,14 +3,14 @@
         <th onclick="sort_car_table(0)">Category</th>
         <th onclick="sort_car_table(1)">Sub Category</th>
       </tr>
-  <% @categories.each do |brand, cars| %>
+  <% @categories.each do |category, sub_category| %>
     <tr>
       <td>
-        <%= brand %>
+        <%= category %>
       </td>
       <% models = Array.new %>
     <td>
-      <% cars.each do |key| %>
+      <% sub_category.each do |key| %>
       <div class="car_model">
         <div class="model_title">
           <%= key["break_sub_category_name"] %></br>
@@ -21,12 +21,13 @@
             <button type="button" class="btn btn-default btn-xs dropdown-toggle btn-xs-caret" data-toggle="dropdown"> <span class="caret"></span></button>
             <ul class="dropdown-menu">
                 <li><%= link_to "Додати нову категорію поломки", new_admin_break_category_path %></li>
-                <li><a href="/admin/break_categories/<%= key["id"] %>/edit">Редагувати категорію поломки</a></li>
-                <li><a href="/admin/break_categories/<%= key["id"] %>" data-confirm="Are you sure?" data-method="delete" >Видалити категорію поломки</a></li>
+                <li><a href="/admin/break_categories/<%= key["break_category_id"] %>/edit">Редагувати категорію поломки</a></li>
+                <li><a href="/admin/break_categories/<%= key["break_category_id"] %>" data-confirm="Are you sure?" data-method="delete" >Видалити категорію поломки</a></li>
               <hr>
                 <li><%= link_to "Додати поломку", new_admin_break_sub_category_path %></li>
-                <li><a href="/admin/break_sub_categories/<%= key["break_category_id"] %>/edit">Редагувати поломку</a></li>
-                <li><a href="/admin/break_sub_categories/<%= key["break_category_id"] %>" data-confirm="Are you sure?" data-method="delete" >Видалити поломку</a></li>
+                <li><a href="/admin/break_sub_categories/<%= key["id"] %>/edit">Редагувати категорію поломки</a></li>
+                <li><a href="/admin/break_sub_categories/<%= key["id"] %>" data-confirm="Are you sure?" data-method="delete" >Видалити категорію поломки</a></li>
+
             </ul>
           </div>
         </div>

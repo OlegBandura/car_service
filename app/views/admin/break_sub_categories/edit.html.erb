@@ -1,10 +1,10 @@
 <div class="admin_form">
-  <%= form_for :break_sub_category, url: admin_car_model_path(@car), method: :put  do |form| %>
-    <p>Інформація поломку авто</p>
-    <p>Назва поломки
+  <%= form_for :sub_category, url: admin_break_sub_category_path(@sub_category), method: :put do |form| %>
+    <p>Оновити назву поломки авто</p>
+    <p>Назва поломки авто
       <%= form.text_field :break_sub_category_name %></p>
-      <p>Ціна поломки
+      <p>Ціна
         <%= form.text_field :price %></p>
-    <p><%= form.submit 'Редагувати інформацію про поломку авто' %></p>
+    <p><%= form.submit 'Оновити назву поломки авто'%></p>
   <% end %>
 </div>
