@@ -32584,3 +32584,1654 @@ Processing by Admin::UsersController#index as HTML
 Completed 200 OK in 96ms (Views: 91.1ms | ActiveRecord: 1.6ms)
 
 
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:24:17 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 96ms (Views: 88.5ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-16 13:24:56 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ywManmBLreBNMC8Tox2NJ76FhZanCI3Ia7BB1sh7CG/3MBw9YH9dlI5a58BVxMgG4KEenhaTXDygerCnSoXoHA=="}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 13:24:57 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 87ms (Views: 84.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-16 13:24:59 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 114ms (Views: 111.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-16 13:25:03 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"68Ta/ro5lqjJw7iTT8FvyhqIf6yRXgLM79mtmRy3uny1I4YVwH5da+oQegLsZ7OabRI6MvbEMpXU6XuL/ic48Q==", "user"=>{"email"=>"josh@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "josh@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2018-03-16 11:25:03.413445"], ["sign_in_count", 2], ["updated_at", "2018-03-16 11:25:03.416012"], ["id", 4]]
+  [1m[35m (38.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 314ms (ActiveRecord: 40.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 13:25:03 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 72ms (Views: 69.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-16 13:25:06 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 100ms (Views: 94.2ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2018-03-16 13:25:09 +0200
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ilgoVXk84ITySSUv+8QvyN2PQLG5tnaZYedpuyGU7mjFPjkTsvlDjL4B0ifjtk8dTN2jv/3qzkp5coUpvwaqHA==", "user"=>{"name"=>"Josh", "surname"=>"Hungry", "email"=>"josh@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "roles"=>["client", ""]}, "commit"=>"Update"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 522ms (Views: 74.8ms | ActiveRecord: 1.5ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2018-03-16 13:25:20 +0200
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5yU/qUb0t7rFIS8fEQdbwh5J8KFzaU/ubmpxGiXYJN2KCCQLlgcK/TA7SHCd2aNIphKSmDYG2ZrXDhaJ488Yog==", "user"=>{"name"=>"Josh", "surname"=>"Hungry", "email"=>"josh@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "roles"=>["client", ""]}, "commit"=>"Update"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "encrypted_password" = $1, "roles_mask" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["encrypted_password", "$2a$11$1UC86S7rGZ8IRp3xD/dbJ.oQhDq6rhjyZh2SKthrCgxxffv0iTClu"], ["roles_mask", 1], ["updated_at", "2018-03-16 11:25:21.292313"], ["id", 4]]
+  [1m[35m (10.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 469ms (ActiveRecord: 12.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 13:25:21 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 75ms (Views: 72.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:25:24 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 74ms (Views: 68.0ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-16 13:25:28 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iG4xEZQzfGkR/GykmJ5cGfoQJSrKP+Ely1cxP6NzHf7lQyqzRMDBLuTmC8sUQKSTQktHE49Qd1FyM1asZWQhgQ=="}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 13:25:28 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-16 13:25:41 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 87ms (Views: 85.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-16 13:25:48 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oqdZKy6W55CILneoqpf7+yUWrGz9jTCX7gP7pVNz9Ah24ZQRAmOcR+1CmekbNhLFQd5D59Em3b/SWCaHl1P/rg==", "user"=>{"email"=>"aaaaaa@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "aaaaaa@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2018-03-16 11:25:48.372114"], ["sign_in_count", 2], ["updated_at", "2018-03-16 11:25:48.374318"], ["id", 3]]
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 240ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 13:25:48 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 88ms (Views: 86.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-16 13:25:50 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 116ms (Views: 109.3ms | ActiveRecord: 0.8ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2018-03-16 13:25:57 +0200
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r4ElqHnQedTheoV2kCDtm3BDMQuglplqOFMCfXpK1S4S98oZ00Ke4ezixgKKkYrRIq7tyViqUmMlINK7YqMCUg==", "user"=>{"name"=>"Mike", "surname"=>"Hossy", "email"=>"aaaaaa@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "roles"=>["director", ""]}, "commit"=>"Update"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 536ms (Views: 90.9ms | ActiveRecord: 1.7ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2018-03-16 13:26:05 +0200
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e6D/m+1KXHDx1qi53ZMowIMr1+sL8Hc91gtEpHH+yQrZ9vvwFjo/vjNM+4RaecLw446E4xO2LH2VXuUOGG9XzQ==", "user"=>{"name"=>"Mike", "surname"=>"Hossy", "email"=>"aaaaaa@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "roles"=>["director", ""]}, "commit"=>"Update"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 520ms (Views: 77.0ms | ActiveRecord: 1.8ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2018-03-16 13:26:19 +0200
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/WDlTIoEmZ4VFuJGNbJIcDdoZzvN74PT0scAKdXVg6RfNuEncXT6UNeMsXuyWKJAV800M9Wp2JORkqGDvEQdYw==", "user"=>{"name"=>"Mike", "surname"=>"Hossy", "email"=>"aaaaaa@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "roles"=>["director", ""]}, "commit"=>"Update"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 516ms (Views: 74.6ms | ActiveRecord: 1.9ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2018-03-16 13:26:30 +0200
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LwkVUNLGJC/d3MB+VjhE9HAIiKMrLMA28/0XPCoifniNXxE7KbZH4R9Gk0PR0q7EEK3bqzNqm3awqLaWQ7Pgvw==", "user"=>{"name"=>"Mike", "surname"=>"Hossy", "email"=>"aaaaaa@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "roles"=>["director", ""]}, "commit"=>"Update"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "encrypted_password" = $1, "roles_mask" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["encrypted_password", "$2a$11$YPwP1tLx6DEDKNK.USLgA.Wc7X3NKv489M.7I/Iv/Fw07534qV9LK"], ["roles_mask", 2], ["updated_at", "2018-03-16 11:26:30.817261"], ["id", 3]]
+  [1m[35m (16.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 457ms (ActiveRecord: 18.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 13:26:30 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 68ms (Views: 66.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:26:34 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 82ms (Views: 75.3ms | ActiveRecord: 2.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-16 13:26:41 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pMM/4FS6RAP9N8p2dfq8MZsqIL7Oy8JnUB1f3B0i+g4GlTuLr8onzT+tmUvyEFYB+49zttaNmScTSP52dLNkyQ=="}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 13:26:41 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 83ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-16 13:26:42 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 74ms (Views: 71.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-16 13:26:48 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EFBmK6oON5qBB4qLn7NM9HbEjG0rJyNFgdQYsZaAxYsVOdxDD8O0qSwDT8qvZe3Wl4o+A2Q22523RlK8mT1X+g==", "user"=>{"email"=>"andrew@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrew@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2018-03-16 11:26:49.116879"], ["sign_in_count", 2], ["updated_at", "2018-03-16 11:26:49.119188"], ["id", 6]]
+  [1m[35m (14.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 257ms (ActiveRecord: 16.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 13:26:49 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 74ms (Views: 71.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-16 13:26:51 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 96ms (Views: 91.0ms | ActiveRecord: 0.9ms)
+
+
+Started PUT "/users" for 127.0.0.1 at 2018-03-16 13:27:01 +0200
+Processing by Devise::RegistrationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pNhKueu8xDWggfCIvpnRc2+7StxWmlZTERpVAot6sOmoHIa9w7TYUhGimSvTNusIrkIGDQaBxq4stlwlmCSL5w==", "user"=>{"name"=>"Andrew", "surname"=>"Fork", "email"=>"andrew@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "current_password"=>"[FILTERED]", "roles"=>["director", ""]}, "commit"=>"Update"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "encrypted_password" = $1, "roles_mask" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["encrypted_password", "$2a$11$pwyir/2q7qWPq.6JEMJz4.ubQbKqfrNpIY6EkCUTUx3Ffd/bI/cTa"], ["roles_mask", 2], ["updated_at", "2018-03-16 11:27:01.566910"], ["id", 6]]
+  [1m[35m (13.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 462ms (ActiveRecord: 15.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 13:27:01 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 76ms (Views: 73.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-16 13:27:03 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 97ms (Views: 92.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:27:05 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 86ms (Views: 79.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/users/7/edit" for 127.0.0.1 at 2018-03-16 13:27:15 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 113ms (Views: 105.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 13:27:22 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 88ms (Views: 80.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/users/4/edit" for 127.0.0.1 at 2018-03-16 13:27:27 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 100ms (Views: 94.5ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/admin/users/4" for 127.0.0.1 at 2018-03-16 13:27:28 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RlFasic5HlL+0QqFoEIuXSV4BjNdQABlSwBxygRxox+iChGSJ4QolxiME78ZD7hx7eoiZViHDLWXPSGQtJoRgg==", "user"=>{"name"=>"Josh", "surname"=>"Hungry", "email"=>"josh@gmail.com", "sign_in_count"=>"2", "roles"=>["client", "director", ""]}, "commit"=>"Редагувати користувача", "id"=>"4"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Unpermitted parameters: :name, :surname, :email, :sign_in_count, :roles
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:27:35 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 81ms (Views: 71.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/users/3/edit" for 127.0.0.1 at 2018-03-16 13:27:37 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 81ms (Views: 73.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/users/4/edit" for 127.0.0.1 at 2018-03-16 13:27:45 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 98ms (Views: 91.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:35:25 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 217ms (Views: 100.3ms | ActiveRecord: 68.6ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-16 13:35:26 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 96ms (Views: 90.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-16 13:39:12 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 123ms (Views: 117.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:39:14 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 87ms (Views: 81.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users/3/edit" for 127.0.0.1 at 2018-03-16 13:39:16 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (487.3ms)
+Completed 401 Unauthorized in 503ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007fe1234e42b8>:0x007fe10817a188>
+Did you mean?  resolve_asset):
+    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+  
+app/views/admin/users/edit.html.erb:1:in `_app_views_admin_users_edit_html_erb__3625845012111079978_70302240069040'
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:39:25 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 103ms (Views: 95.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:39:29 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (440.0ms)
+Completed 401 Unauthorized in 451ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x007fe1234e42b8>:0x007fe123458a38>
+Did you mean?  resolve_asset):
+    1: <h2>Edit <%= resource_name.to_s.humanize %></h2>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+  
+app/views/admin/users/edit.html.erb:1:in `_app_views_admin_users_edit_html_erb__3625845012111079978_70302468065800'
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:39:57 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (372.0ms)
+Completed 401 Unauthorized in 381ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x007fe1234e42b8>:0x007fe1230cba00>):
+    1: 
+    2: <%= form_for(resource, as: resource_name, url: registration_path(@user), html: { method: :put }) do |f| %>
+    3:   <%= devise_error_messages! %>
+    4: 
+    5:   <div class="field">
+  
+app/views/admin/users/edit.html.erb:2:in `_app_views_admin_users_edit_html_erb__3625845012111079978_70302466359820'
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:40:42 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (759.7ms)
+Completed 401 Unauthorized in 770ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x007fe1234e42b8>:0x007fe108304198>):
+    1: 
+    2: <%= form_for(resource, as: resource_name, url: registration_path(@user), html: { method: :put }) do |f| %>
+    3:   <%= devise_error_messages! %>
+    4: 
+    5:   <div class="field">
+  
+app/views/admin/users/edit.html.erb:2:in `_app_views_admin_users_edit_html_erb__3625845012111079978_70302240875960'
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:41:31 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (407.6ms)
+Completed 401 Unauthorized in 419ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x007fe1234e42b8>:0x007fe1222032e8>):
+    1: <h2>Edit <%= @user %></h2>
+    2: 
+    3: <%= form_for(resource, as: @user, url: registration_path(@user), html: { method: :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+    5: 
+    6:   <div class="field">
+  
+app/views/admin/users/edit.html.erb:3:in `_app_views_admin_users_edit_html_erb__3625845012111079978_70302458453600'
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:41:43 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (1045.2ms)
+Completed 401 Unauthorized in 1057ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<#<Class:0x007fe1234e42b8>:0x007fe131f33710>):
+    1: <h2>Edit <%= @user %></h2>
+    2: 
+    3: <%= form_for(@user, as: @user, url: registration_path(@user), html: { method: :put }) do |f| %>
+    4:   <%= devise_error_messages! %>
+    5: 
+    6:   <div class="field">
+    7:     <%= f.label :name %><br />
+  
+app/views/admin/users/edit.html.erb:4:in `block in _app_views_admin_users_edit_html_erb__3625845012111079978_70302717714500'
+app/views/admin/users/edit.html.erb:3:in `_app_views_admin_users_edit_html_erb__3625845012111079978_70302717714500'
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:42:09 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 90ms (Views: 80.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:42:10 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 81ms (Views: 75.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:42:11 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 92ms (Views: 86.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:42:40 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 89ms (Views: 83.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:43:26 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 80ms (Views: 73.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:44:12 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 81ms (Views: 75.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:44:37 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (476.8ms)
+Completed 401 Unauthorized in 487ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x007fe1234e42b8>:0x007fe122e73ac8>
+Did you mean?  @user):
+     6:       <p><%= f.input :email %></p>
+     7:       <p><%= f.input :sign_in_count %></p>
+     8:       <p>Роль користувача:
+     9:         <% if user.roles_mask == 1 %>
+    10:           <%= "Клієнт" %>
+    11:         <% elsif user.roles_mask == 2 %>
+    12:           <%= "Директор СТО" %>
+  
+app/views/admin/users/edit.html.erb:9:in `block in _app_views_admin_users_edit_html_erb__3625845012111079978_70302465335920'
+app/views/admin/users/edit.html.erb:2:in `_app_views_admin_users_edit_html_erb__3625845012111079978_70302465335920'
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:44:52 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 106ms (Views: 98.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:45:20 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 111ms (Views: 106.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:45:34 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 91ms (Views: 84.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:45:54 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 99ms (Views: 91.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:46:05 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 78ms (Views: 72.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:46:21 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 76ms (Views: 69.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:46:38 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 81ms (Views: 73.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:47:02 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 81ms (Views: 74.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:47:39 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 100ms (Views: 93.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:48:36 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 82ms (Views: 76.7ms | ActiveRecord: 1.0ms)
+
+
+Started PUT "/admin/users/6" for 127.0.0.1 at 2018-03-16 13:48:39 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fGYXvOITL/6Q++8fummoxd8wAVSL9GvuoglfejrtrzGGH1Z22MEV3LkEdTMTJPSOgVlsV27ywuh+Wj/6NpXd6w==", "user"=>{"roles"=>["admin", ""]}, "commit"=>"Редагувати користувача", "id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Unpermitted parameter: :roles
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users/6" for 127.0.0.1 at 2018-03-16 13:48:41 +0200
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Admin::UsersController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/users/6.%D1%83%D0%B2%D1%88%D0%B5" for 127.0.0.1 at 2018-03-16 13:48:45 +0200
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Admin::UsersController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:48:51 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 75ms (Views: 69.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:49:04 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 76ms (Views: 70.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:50:39 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 75ms (Views: 69.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:51:05 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 77ms (Views: 71.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 13:51:10 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 87ms (Views: 83.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 13:51:40 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 120ms (Views: 82.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-16 13:51:41 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 99ms (Views: 85.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-16 13:51:41 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 82ms (Views: 79.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-16 13:51:42 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.4ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 177ms (Views: 101.1ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-16 13:51:45 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (14.4ms)[0m  [1m[34mSELECT break_categories.name, break_sub_categories.break_sub_category_name,
+      break_sub_categories.price, break_sub_categories.id,
+      break_sub_categories.break_category_id FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 159ms (Views: 93.0ms | ActiveRecord: 21.3ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-16 13:51:48 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 304ms (Views: 97.9ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:51:52 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 98ms (Views: 91.4ms | ActiveRecord: 1.3ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4523761724947694355)[0m
+  [1m[35m (9.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAdminToUsers (20180316115239)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (61.4ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean[0m
+  [1m[35mSQL (23.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180316115239"]]
+  [1m[35m (33.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (42.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(4523761724947694355)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:53:42 +0200
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 1143ms (Views: 1016.9ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:55:03 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (63.4ms)
+Completed 200 OK in 187ms (Views: 181.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:55:11 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 105ms (Views: 100.3ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/admin/users/3" for 127.0.0.1 at 2018-03-16 13:55:18 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mU8KeuNh4DxQubdcwu21aQ9fivCitcezwYPOYmB4f59jNkuw2bPaHnlGLXBroOkiUTbn80ezbrUd0K7ibAANRQ==", "user"=>{"admin"=>"1"}, "commit"=>"Set admin", "id"=>"3"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Unpermitted parameter: :admin
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 39ms (Views: 18.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/admin/users/3" for 127.0.0.1 at 2018-03-16 13:55:19 +0200
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Admin::UsersController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:55:24 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 93ms (Views: 84.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:55:30 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 86ms (Views: 79.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:56:12 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 90ms (Views: 85.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:56:14 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 77ms (Views: 71.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:56:19 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 89ms (Views: 83.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 13:56:20 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (405.8ms)
+Completed 401 Unauthorized in 417ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00000006efeee8>:0x007fccec509450>
+Did you mean?  @user):
+    16:       </p>
+    17:       <p>set role:</p>
+    18: 
+    19:         <% if user.admin == true %>
+    20:         <%= form_for :user, url: admin_user_path(user), :method => :PUT do |f| %>
+    21:           <%= f.check_box :admin, checked: false, class: "check_box_hidden" %>
+    22:           <%= f.submit 'Destroy admin', data: {confirm: 'Ви хочете цьому користувачеві видалити права адміністратора?' }%>
+  
+app/views/admin/users/edit.html.erb:19:in `block in _app_views_admin_users_edit_html_erb__2879071653467098257_70259057381140'
+app/views/admin/users/edit.html.erb:2:in `_app_views_admin_users_edit_html_erb__2879071653467098257_70259057381140'
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 13:56:38 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 102ms (Views: 94.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 13:56:50 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 101ms (Views: 93.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 13:57:04 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 113ms (Views: 106.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 13:58:06 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 6332ms (Views: 6326.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 13:58:17 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 123ms (Views: 116.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 13:58:18 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 92ms (Views: 84.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 13:58:31 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 144ms (Views: 136.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 13:59:37 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 146ms (Views: 136.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 13:59:58 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (217.0ms)
+Completed 401 Unauthorized in 227ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x007fcce806d260>):
+    24:         <% else %>
+    25:           <%= form_for :user, url: admin_user_path(@user), :method => :PUT do |f| %>
+    26:           <%= f.check_box :admin, checked: true, class: "check_box_hidden" %>
+    27:           <%= f.input 'Set admin', data: {confirm: 'Ви хочете цьому користувачеві надати права адміністратора?' }, as: :submit %>
+    28:         <% end %>
+    29:       <% end %>
+    30: 
+  
+app/views/admin/users/edit.html.erb:27:in `block (2 levels) in _app_views_admin_users_edit_html_erb__2879071653467098257_70259062763180'
+app/views/admin/users/edit.html.erb:25:in `block in _app_views_admin_users_edit_html_erb__2879071653467098257_70259062763180'
+app/views/admin/users/edit.html.erb:2:in `_app_views_admin_users_edit_html_erb__2879071653467098257_70259062763180'
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 14:00:14 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 77ms (Views: 71.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 14:00:22 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 68ms (Views: 60.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 14:01:45 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 127ms (Views: 75.8ms | ActiveRecord: 6.2ms)
+
+
+Started PUT "/admin/users/5" for 127.0.0.1 at 2018-03-16 14:01:48 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Vz1doBdMMPiafPL46gTRgqkYlaJ6+ykV9xN6x2ogkAbJbS8uo8K4cuWaedK5U8NVM0PVWztRaKLjy1rEdDwmg==", "user"=>{"admin"=>"1"}, "commit"=>"Set admin", "id"=>"5"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 10ms (Views: 0.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/users/5" for 127.0.0.1 at 2018-03-16 14:01:52 +0200
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Admin::UsersController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 14:01:56 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 92ms (Views: 83.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 14:02:11 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 154ms (Views: 90.0ms | ActiveRecord: 6.5ms)
+
+
+Started PUT "/admin/users/5" for 127.0.0.1 at 2018-03-16 14:02:15 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"viDACy8jMJo24Ic3vd5yiZTNqh1aTgfUdMqNsPSnHKJEWYHBFfEKuB8fHRsUky7CyqTHHr9IrtKome0w+N9ueA==", "user"=>{"admin"=>"1"}, "commit"=>"Set admin", "id"=>"5"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "admin" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["admin", "t"], ["updated_at", "2018-03-16 12:02:15.430655"], ["id", 5]]
+  [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 25ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:02:15 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 87ms (Views: 80.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 14:02:33 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 92ms (Views: 84.6ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/admin/users/5" for 127.0.0.1 at 2018-03-16 14:02:43 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BetVOlHeRv4pAHq7tvLXUcKlqOIotHX9oIs6fEiRfRy5+J6eE1Sz1El+xNfGoswHaKitsLxUWnqvz9hHGgFvuA==", "user"=>{"admin"=>"0"}, "commit"=>"Destroy admin", "id"=>"5"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "admin" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["admin", "f"], ["updated_at", "2018-03-16 12:02:43.795961"], ["id", 5]]
+  [1m[35m (13.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 27ms (ActiveRecord: 15.7ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:02:43 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 75ms (Views: 70.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:04:47 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 83ms (Views: 77.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:05:16 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 81ms (Views: 75.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 14:05:19 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 87ms (Views: 80.7ms | ActiveRecord: 1.2ms)
+
+
+Started PUT "/admin/users/6" for 127.0.0.1 at 2018-03-16 14:05:21 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zdg1z8h7oPFhS0Jk0DqtjA/WRQEQhVJqa7gsOmT3iLzQ/nidfVU3OaepNUM2CbkO0AXFKEZFnOaBPYUQ4zZKUQ==", "user"=>{"admin"=>"1"}, "commit"=>"Set admin", "id"=>"6"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "admin" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["admin", "t"], ["updated_at", "2018-03-16 12:05:21.855201"], ["id", 6]]
+  [1m[35m (18.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 31ms (ActiveRecord: 20.8ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:05:21 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 91ms (Views: 84.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:05:25 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 88ms (Views: 82.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:05:45 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (6.3ms)
+Completed 401 Unauthorized in 14ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1..2)):
+    28:     <% end %>
+    29:     </td>
+    30:     <td>
+    31:     <% if user.admin == t %>
+    32:       </p>Адміністратор</p>
+    33:     <% end %>
+    34:     </td>
+  
+app/views/admin/users/index.html.erb:31:in `block in _app_views_admin_users_index_html_erb__4181613993115038997_70259097615460'
+app/views/admin/users/index.html.erb:13:in `_app_views_admin_users_index_html_erb__4181613993115038997_70259097615460'
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:05:59 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (4.2ms)
+Completed 401 Unauthorized in 13ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 1)):
+    28:     <% end %>
+    29:     </td>
+    30:     <td>
+    31:     <% if user.admin? true %>
+    32:       </p>Адміністратор</p>
+    33:     <% end %>
+    34:     </td>
+  
+app/views/admin/users/index.html.erb:31:in `block in _app_views_admin_users_index_html_erb__4181613993115038997_61126640'
+app/views/admin/users/index.html.erb:13:in `_app_views_admin_users_index_html_erb__4181613993115038997_61126640'
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:06:15 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 78ms (Views: 72.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-16 14:06:31 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 87ms (Views: 81.1ms | ActiveRecord: 1.2ms)
+
+
+Started PUT "/admin/users/6" for 127.0.0.1 at 2018-03-16 14:06:33 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8E9YU+gV8/MnO1tBfXlr4FY4h/swnLtp++JxbdHZuZRFaRUBXTtkO+HZLGabSn9iiesH0mZcdeURZ9hHVhh7eQ==", "user"=>{"admin"=>"0"}, "commit"=>"Destroy admin", "id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "admin" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["admin", "f"], ["updated_at", "2018-03-16 12:06:33.832638"], ["id", 6]]
+  [1m[35m (14.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 29ms (ActiveRecord: 16.4ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:06:33 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 80ms (Views: 75.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:06:47 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 76ms (Views: 71.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:06:55 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 82ms (Views: 73.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 14:06:57 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 80ms (Views: 72.8ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/admin/users/5" for 127.0.0.1 at 2018-03-16 14:06:59 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j9plpyaiW8W805TotsoOBdMIjAwbC/nMm/36oJMs5cEzya4DZCiu79ytKoTGmhVTeQWJXo/r1kuUuRibwbz3ZQ==", "user"=>{"admin"=>"1"}, "commit"=>"Set admin", "id"=>"5"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "admin" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["admin", "t"], ["updated_at", "2018-03-16 12:07:00.007411"], ["id", 5]]
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 23ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:07:00 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 76ms (Views: 70.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/users/4/edit" for 127.0.0.1 at 2018-03-16 14:07:27 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 99ms (Views: 92.3ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/admin/users/4" for 127.0.0.1 at 2018-03-16 14:07:29 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gt6OO0Ngoha8USyEAiuDFQDvI4yzRTie6sSloZFPWYdmhcUbQ92U01oMNb67ZhU5yH0H2raCNE42+fX7IaTrGg==", "user"=>{"admin"=>"1"}, "commit"=>"Set admin", "id"=>"4"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "admin" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["admin", "t"], ["updated_at", "2018-03-16 12:07:29.679072"], ["id", 4]]
+  [1m[35m (17.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 33ms (ActiveRecord: 19.5ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:07:29 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 82ms (Views: 76.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-16 14:07:44 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 98ms (Views: 89.0ms | ActiveRecord: 1.4ms)
+
+
+Started PUT "/admin/users/5" for 127.0.0.1 at 2018-03-16 14:07:45 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nBLmIyhtTbnaPB6sln3c1MlUqHFGm/dL9Tv3gysObGQgAS2Haue4k7pCoMDmLceCY1mtI9J72Mz6fxW4eZ5+wA==", "user"=>{"admin"=>"0"}, "commit"=>"Destroy admin", "id"=>"5"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "admin" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["admin", "f"], ["updated_at", "2018-03-16 12:07:45.963993"], ["id", 5]]
+  [1m[35m (14.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 28ms (ActiveRecord: 17.3ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 14:07:45 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 94ms (Views: 87.3ms | ActiveRecord: 2.1ms)
+
+

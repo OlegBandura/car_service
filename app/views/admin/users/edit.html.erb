@@ -1,17 +1,32 @@
 <div class="admin_form center-block col-md-5">
   <%= simple_form_for :user, url: admin_user_path(@user), method: :put do |f| %>
-  <p>Інформація про користувача</p>
-      <p><%= f.input :name %></p>
-      <p><%= f.input :surname %></p>
-      <p><%= f.input :email %></p>
-      <p><%= f.input :sign_in_count %></p>
-      <p>Роль користувача:</p>
-      <!-- select user role cancancan  -->
-      <% for role in User::ROLES %>
-       <%= check_box_tag  "user[roles][#{role}]", role, @user.roles.include?(role), {:name => "user[roles][]"}%>
-       <%= label_tag "user_roles_#{role}", role.to_s.humanize %><br />
+  <p>Інформація про користувача:</p>
+      <p>Ім`я: <%=  @user.name %></p>
+      <p>Прізвище: <%= @user.surname %></p>
+      <p>Email: <%= @user.email %></p>
+      <p>Кількість входів на сторінку: <%= @user.sign_in_count %></p>
+      <p>Роль користувача:
+          <% if @user.roles_mask == 1 %>
+            <%= "Клієнт" %>
+          <% elsif @user.roles_mask == 2 %>
+            <%= "Директор СТО" %>
+          <% elsif @user.roles_mask == 3 %>
+            <%= "Директор СТО та клієнт" %>
+          <% end %>
+      </p>
+      <p class="user_paragraph">set admin:</p>
+
+        <% if @user.admin == true %>
+        <%= simple_form_for :user, url: admin_user_path(@user), :method => :PUT do |f| %>
+          <%= f.check_box :admin, checked: false, class: "check_box_hidden" %>
+          <%= f.submit 'Destroy admin', data: {confirm: 'Ви хочете цьому користувачеві видалити права адміністратора?' }%>
+          <% end %>
+        <% else %>
+          <%= form_for :user, url: admin_user_path(@user), :method => :PUT do |f| %>
+          <%= f.check_box :admin, checked: true, class: "check_box_hidden" %>
+          <%= f.submit 'Set admin', data: {confirm: 'Ви хочете цьому користувачеві надати права адміністратора?' } %>
+        <% end %>
       <% end %>
-      <%= hidden_field_tag "user[roles][]", "" %>
 
     <p><%= f.submit 'Редагувати користувача' %></p>
   <% end %>

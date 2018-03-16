@@ -7,6 +7,7 @@
     <th>Last sign in</th>
     <th>Created account</th>
     <th onclick="sort_services_table(6)">role mask</th>
+    <th onclick="sort_services_table(7)">Admin</th>
     <th>Options</th>
   </tr>
 <%  @users.each do |user| %>
@@ -24,6 +25,11 @@
       <%= "Директор СТО" %>
     <% elsif user.roles_mask == 3 %>
       <%= "Директор СТО та клієнт" %>
+    <% end %>
+    </td>
+    <td>
+    <% if user.admin? %>
+      </p>Адміністратор</p>
     <% end %>
     </td>
     <td>
