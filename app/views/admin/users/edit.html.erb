@@ -1,0 +1,18 @@
+<div class="admin_form center-block col-md-5">
+  <%= simple_form_for :user, url: admin_user_path(@user), method: :put do |f| %>
+  <p>Інформація про користувача</p>
+      <p><%= f.input :name %></p>
+      <p><%= f.input :surname %></p>
+      <p><%= f.input :email %></p>
+      <p><%= f.input :sign_in_count %></p>
+      <p>Роль користувача:</p>
+      <!-- select user role cancancan  -->
+      <% for role in User::ROLES %>
+       <%= check_box_tag  "user[roles][#{role}]", role, @user.roles.include?(role), {:name => "user[roles][]"}%>
+       <%= label_tag "user_roles_#{role}", role.to_s.humanize %><br />
+      <% end %>
+      <%= hidden_field_tag "user[roles][]", "" %>
+
+    <p><%= f.submit 'Редагувати користувача' %></p>
+  <% end %>
+</div>

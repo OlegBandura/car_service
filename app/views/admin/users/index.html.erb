@@ -17,9 +17,21 @@
     <td><%= user.sign_in_count%></td>
     <td><%= user.last_sign_in_at%></td>
     <td><%= user.created_at%></td>
-    <td><%= user.roles_mask %></td>
-    <td><%= link_to "Edit Role"  %>
+    <td>
+    <% if user.roles_mask == 1 %>
+      <%= "Клієнт" %>
+    <% elsif user.roles_mask == 2 %>
+      <%= "Директор СТО" %>
+    <% elsif user.roles_mask == 3 %>
+      <%= "Директор СТО та клієнт" %>
+    <% end %>
+    </td>
+    <td>
+
+      <%= link_to "Edit Role", edit_admin_user_path(user)  %></br>
       |<%= link_to "Block",  method: :delete, data: {confirm: 'Are you sure?' } %></td>
   </tr>
+
 <% end %>
 </table>
+</div>
