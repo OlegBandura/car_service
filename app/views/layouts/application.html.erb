@@ -56,6 +56,7 @@
               <span class="name_user"><%= "Hello, " + current_user.name + " " + current_user.surname %></span>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <%= link_to 'Profile ', profile_index_path, class:"dropdown-item", type: "button"%>
               <%= link_to 'Configuration ', edit_user_registration_path, class:"dropdown-item", type: "button"%>
               <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class:"dropdown-item", type: "button" %>
             </div>

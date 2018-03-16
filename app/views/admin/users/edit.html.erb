@@ -15,7 +15,6 @@
           <% end %>
       </p>
       <p class="user_paragraph">set admin:</p>
-
         <% if @user.admin == true %>
         <%= simple_form_for :user, url: admin_user_path(@user), :method => :PUT do |f| %>
           <%= f.check_box :admin, checked: false, class: "check_box_hidden" %>
@@ -27,7 +26,6 @@
           <%= f.submit 'Set admin', data: {confirm: 'Ви хочете цьому користувачеві надати права адміністратора?' } %>
         <% end %>
       <% end %>
-
     <p><%= f.submit 'Редагувати користувача' %></p>
   <% end %>
 </div>
