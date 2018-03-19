@@ -43,10 +43,8 @@
                   <%= link_to "Робота з категоріями поломок авто",  admin_break_categories_path, class: "dropdown-item" %>
                   <%= link_to "Робота з автосервісами", admin_garages_path, class: "dropdown-item" %>
                   <%= link_to "Робота з користувачами", admin_users_path, class: "dropdown-item" %>
-
                 </div>
               </li>
-
           </ul>
         </div>
         <div class="sign_on/Sign_out_links">
@@ -61,7 +59,6 @@
               <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class:"dropdown-item", type: "button" %>
             </div>
           </div>
-
           <% else %>
           <%= link_to 'Sign in ', new_user_session_path%>|<%= link_to ' Sign up', new_user_registration_path%>
           <% end %>

@@ -1,1 +1,24 @@
-profile
+<h4>Profile</h4>
+<p>Name: <%= current_user.name %></p>
+<p>Surname: <%= current_user.surname %></p>
+<p>Email: <%= current_user.email %></p>
+
+<div class="form">
+<%= form_for :profile, url: profile_index_path do |form|%>
+  <p>Інформація про авто:</p>
+  <div class = "field">
+    <%= form.label "Марка"%>
+    <%= form.collection_select :brand_id, Brand.order(:brand), :id, :brand, include_blank: true%>
+  </div>
+  <div class = "field">
+    <%= form.label "Модель"%>
+    <%= form.grouped_collection_select :model_id, Brand.order(:brand), :car_models, :brand, :id, :model %>
+  </div>
+    <div class = "field">
+      <%= form.label "Рік випуску"%>
+      <%= form.select(:car_year, @year)  %>
+    </div>
+    <div class = "field">
+      <%= form.submit "Вибрати авто" %>
+  <% end %>
+</div>

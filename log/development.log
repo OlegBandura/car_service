@@ -34441,3 +34441,2271 @@ Processing by ProfileController#index as HTML
 Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:22:01 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  Rendered profile/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 83ms (Views: 81.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 14:22:04 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 100ms (Views: 97.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 14:22:05 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 87ms (Views: 83.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 14:22:05 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 91ms (Views: 88.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-16 14:22:06 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 92ms (Views: 89.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-16 14:22:06 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 91ms (Views: 86.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-16 14:22:07 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 93ms (Views: 91.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 14:22:08 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 98ms (Views: 96.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 14:22:58 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 81ms (Views: 78.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:23:02 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered profile/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 84ms (Views: 81.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:23:13 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered profile/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 75ms (Views: 72.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:23:29 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered profile/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 75ms (Views: 73.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:24:21 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered profile/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 86ms (Views: 84.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:24:37 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered profile/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 82ms (Views: 79.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:24:45 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered profile/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 71ms (Views: 68.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:25:05 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered profile/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 80ms (Views: 77.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 14:25:07 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 93ms (Views: 88.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:25:10 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered profile/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 121ms (Views: 118.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 14:25:11 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 93ms (Views: 90.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 14:27:04 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 88ms (Views: 86.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:27:05 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered profile/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 97ms (Views: 93.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:29:55 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered profile/index.html.erb within layouts/application (7.2ms)
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"profile"}, missing required keys: [:id]):
+    4: <p>Email: <%= current_user.surname %></p>
+    5: 
+    6: <div class="form">
+    7:   <%= form_for :profile, url:profile_path do |form|%>
+    8:     <p>Інформація про авто:</p>
+    9:     <div class = "field">
+   10:       <%= form.label "Марка"%>
+  
+app/views/profile/index.html.erb:7:in `_app_views_profile_index_html_erb___3718293191369698827_70259192233320'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:31:11 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered profile/index.html.erb within layouts/application (6.9ms)
+Completed 401 Unauthorized in 12ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"profile"}, missing required keys: [:id]):
+    4: <p>Email: <%= current_user.surname %></p>
+    5: 
+    6: <div class="form">
+    7:   <%= form_for :profile, url: profile_path do |form|%>
+    8:     <p>Інформація про авто:</p>
+    9:     <div class = "field">
+   10:       <%= form.label "Марка"%>
+  
+app/views/profile/index.html.erb:7:in `_app_views_profile_index_html_erb___3718293191369698827_70259101595320'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:31:39 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (1.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  Rendered profile/index.html.erb within layouts/application (61.7ms)
+Completed 401 Unauthorized in 67ms (ActiveRecord: 9.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `cars' for #<Brand:0x0000000742c870>):
+    12:     </div>
+    13:     <div class = "field">
+    14:       <%= form.label "Модель"%>
+    15:       <%= form.grouped_collection_select :model_id, Brand.order(:brand), :cars, :brand, :id, :model %>
+    16:     </div>
+    17:     <div class = "field">
+    18:       <%= form.label "Рік випуску"%>
+  
+app/views/profile/index.html.erb:15:in `block in _app_views_profile_index_html_erb___3718293191369698827_62469620'
+app/views/profile/index.html.erb:7:in `_app_views_profile_index_html_erb___3718293191369698827_62469620'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:31:46 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendered profile/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 149ms (Views: 146.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:34:22 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  Rendered profile/index.html.erb within layouts/application (15.9ms)
+Completed 401 Unauthorized in 19ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `cars' for #<Brand:0x007fccf3a380f0>):
+    12:     </div>
+    13:     <div class = "field">
+    14:       <%= form.label "Модель"%>
+    15:       <%= form.grouped_collection_select :model_id, Brand.order(:brand), :cars, :brand, :id, :model %>
+    16:     </div>
+    17:     <div class = "field">
+    18:       <%= form.label "Рік випуску"%>
+  
+app/views/profile/index.html.erb:15:in `block in _app_views_profile_index_html_erb___3718293191369698827_70259194609680'
+app/views/profile/index.html.erb:7:in `_app_views_profile_index_html_erb___3718293191369698827_70259194609680'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:34:39 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  Rendered profile/index.html.erb within layouts/application (31.1ms)
+Completed 401 Unauthorized in 35ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `cars' for #<Brand:0x007fcd0190a968>):
+    12:     </div>
+    13:     <div class = "field">
+    14:       <%= form.label "Модель"%>
+    15:       <%= form.grouped_collection_select :model_id, Brand.order(:brand), :cars, :brand, :id, :car_model %>
+    16:     </div>
+    17:     <div class = "field">
+    18:       <%= form.label "Рік випуску"%>
+  
+app/views/profile/index.html.erb:15:in `block in _app_views_profile_index_html_erb___3718293191369698827_70259235479280'
+app/views/profile/index.html.erb:7:in `_app_views_profile_index_html_erb___3718293191369698827_70259235479280'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:35:05 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  Rendered profile/index.html.erb within layouts/application (2.7ms)
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/olko/rails/car_service/app/views/profile/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+..._id, Brand.order(:brand), :car:models, :brand, :id, :car_mod...
+...                               ^
+/home/olko/rails/car_service/app/views/profile/index.html.erb:15: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...r(:brand), :car:models, :brand, :id, :car_model );@output_bu...
+...                               ^):
+  
+app/views/profile/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+app/views/profile/index.html.erb:15: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:35:59 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  Rendered profile/index.html.erb within layouts/application (1.4ms)
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/olko/rails/car_service/app/views/profile/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+..._id, Brand.order(:brand), :car:models, :brand, :id, :model )...
+...                               ^
+/home/olko/rails/car_service/app/views/profile/index.html.erb:15: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...r(:brand), :car:models, :brand, :id, :model );@output_buffer...
+...                               ^):
+  
+app/views/profile/index.html.erb:15: syntax error, unexpected ':', expecting ')'
+app/views/profile/index.html.erb:15: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:37:24 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (8.1ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (174.1ms)
+Completed 401 Unauthorized in 178ms (ActiveRecord: 17.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    16:     </div>
+    17:     <div class = "field">
+    18:       <%= form.label "Рік випуску"%>
+    19:       <%= form.select(:car_year, @year)  %>
+    20:     </div>
+    21:     <div class = "field">
+    22:       </br><%= form.label "Що потрібно ремонтувати:"%></br>
+  
+app/views/profile/index.html.erb:19:in `block in _app_views_profile_index_html_erb___3718293191369698827_70259190023280'
+app/views/profile/index.html.erb:7:in `_app_views_profile_index_html_erb___3718293191369698827_70259190023280'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:38:14 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (14.8ms)
+Completed 401 Unauthorized in 20ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for nil:NilClass):
+    16:     </div>
+    17:     <div class = "field">
+    18:       <%= form.label "Рік випуску"%>
+    19:       <%= form.select(:car_year, @year)  %>
+    20:     </div>
+    21:     <div class = "field">
+    22:       <%= form.submit "Вибрати авто" %>
+  
+app/views/profile/index.html.erb:19:in `block in _app_views_profile_index_html_erb___3718293191369698827_70259055914960'
+app/views/profile/index.html.erb:7:in `_app_views_profile_index_html_erb___3718293191369698827_70259055914960'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:39:23 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (94.4ms)
+Completed 200 OK in 178ms (Views: 159.0ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:39:49 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.1ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 96ms (Views: 91.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:39:54 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 120ms (Views: 116.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:40:25 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 161ms (Views: 156.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:41:07 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 116ms (Views: 112.2ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-16 14:41:15 +0200
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ProfileController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:42:37 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 97ms (Views: 92.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:42:42 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (25.9ms)
+Completed 200 OK in 124ms (Views: 119.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:44:08 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 93ms (Views: 89.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:45:44 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 106ms (Views: 102.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:46:48 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 163ms (Views: 158.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:46:59 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 104ms (Views: 100.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:47:11 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 111ms (Views: 105.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:48:07 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 99ms (Views: 95.4ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-16 14:48:12 +0200
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ProfileController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:48:14 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 81ms (Views: 77.2ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-16 14:48:17 +0200
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ProfileController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:48:19 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 96ms (Views: 93.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:49:13 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 142ms (Views: 138.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:49:21 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 94ms (Views: 90.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:53:40 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 106ms (Views: 102.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:54:24 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 176ms (Views: 171.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:54:30 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 93ms (Views: 89.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:55:40 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 175ms (Views: 171.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:55:46 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 108ms (Views: 103.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 14:55:49 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 89ms (Views: 86.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:55:50 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.1ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.8ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 108ms (Views: 101.6ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 14:58:48 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 114ms (Views: 110.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/services" for 127.0.0.1 at 2018-03-16 15:01:37 +0200
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/admin/services"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-16 15:01:40 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 943ms (Views: 936.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-16 15:01:42 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 270ms (Views: 97.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-16 15:01:44 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (164.5ms)
+Completed 200 OK in 306ms (Views: 258.5ms | ActiveRecord: 7.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-16 15:01:46 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jh1IMh4bmJD4NXs/+TaY6HYDv9oy5f12d6y67Cv8DEQ1CYerZN9rA03ujO6q6GWUiUephs5/r2l0jbB53W3JuA==", "user"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2018-03-16 13:01:46.988533"], ["last_sign_in_at", "2018-03-16 11:14:37.915824"], ["sign_in_count", 8], ["updated_at", "2018-03-16 13:01:46.990558"], ["id", 2]]
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 410ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 15:01:47 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 95ms (Views: 92.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:01:48 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (1.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.9ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (145.9ms)
+Completed 200 OK in 233ms (Views: 213.4ms | ActiveRecord: 17.2ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-16 15:02:02 +0200
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ProfileController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:04:24 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 154ms (Views: 149.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:06:11 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  Rendered profile/index.html.erb within layouts/application (19.2ms)
+Completed 401 Unauthorized in 24ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `cars' for #<Brand:0x000000037f8cf0>):
+    12:   </div>
+    13:   <div class = "field">
+    14:     <%= form.label "Модель"%>
+    15:     <%= form.grouped_collection_select :model_id, Brand.order(:brand), :cars, :brand, :id, :model %>
+    16:   </div>
+    17:     <div class = "field">
+    18:       <%= form.label "Рік випуску"%>
+  
+app/views/profile/index.html.erb:15:in `block in _app_views_profile_index_html_erb__159624220458069123_28022300'
+app/views/profile/index.html.erb:7:in `_app_views_profile_index_html_erb__159624220458069123_28022300'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:06:30 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 118ms (Views: 113.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:07:19 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 102ms (Views: 98.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:07:25 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 103ms (Views: 99.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:07:26 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 98ms (Views: 93.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:07:27 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 103ms (Views: 99.3ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:08:41 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 116ms (Views: 111.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:10:12 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 144ms (Views: 140.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:13:46 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 145ms (Views: 142.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:14:56 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (2.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 153ms (Views: 144.8ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:15:27 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 108ms (Views: 104.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:19:06 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (1.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (134.8ms)
+Completed 200 OK in 257ms (Views: 227.3ms | ActiveRecord: 21.5ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-16 15:19:11 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A2epWFAwWZRXEcGtIsrmHojBqz8vEijjPdA2zAdTcietNvFJeaQshKGucl0CFUApge8tIICtbmz6ybNsx5S6NA==", "profile"=>{"brand_id"=>"3", "model_id"=>"6", "car_year"=>"2018"}, "commit"=>"Вибрати авто"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:20:06 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (1.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (110.1ms)
+Completed 200 OK in 222ms (Views: 189.4ms | ActiveRecord: 24.9ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-16 15:20:08 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EeI/xF04IRhiSHZiLXdGlqyu0udU+lqO9G7WqMLcev+/s2fVdKxUCJT3xZINqOChpYBU+PtFHAEzd1MIAhuy7A==", "profile"=>{"brand_id"=>"", "model_id"=>"4", "car_year"=>"2018"}, "commit"=>"Вибрати авто"}
+Completed 401 Unauthorized in 296ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `id' for #<ProfileController:0x00000005d06a10>):
+  
+app/controllers/profile_controller.rb:15:in `profile_params'
+app/controllers/profile_controller.rb:9:in `create'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:20:15 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (1.0ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (117.8ms)
+Completed 200 OK in 221ms (Views: 191.6ms | ActiveRecord: 21.2ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-16 15:20:17 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pj01aIoX73nYVWzR1yqqkbk0seiTEKIXGdYdfgo1WRuQbG15o4OaaS7q3yH39QymsBo39zyv5Jjez5jeyvKRCA==", "profile"=>{"brand_id"=>"", "model_id"=>"4", "car_year"=>"2018"}, "commit"=>"Вибрати авто"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/profile_controller.rb:15:in `[]'
+app/controllers/profile_controller.rb:15:in `profile_params'
+app/controllers/profile_controller.rb:9:in `create'
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:20:25 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (1.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (147.1ms)
+Completed 200 OK in 277ms (Views: 243.9ms | ActiveRecord: 25.5ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-16 15:20:27 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"y63vA9tbpfKtbKz7Ogrk0rNA/KBrwlRsuuBlkbaV/qZl/LcS8s/Q4lvTHwsa1ULlum56v8R9EuN9+eAxdlI2tQ==", "profile"=>{"brand_id"=>"", "model_id"=>"4", "car_year"=>"2018"}, "commit"=>"Вибрати авто"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:20:33 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (1.0ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (138.3ms)
+Completed 200 OK in 315ms (Views: 282.9ms | ActiveRecord: 23.6ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-16 15:20:36 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wklVFzNOIXfUeo9EpJTeUjS6SUpBCFW0s+O7HdLILwFsGA0GGtpUZyLFPLSES3hlPZTPVe63Ezt0+j69Eg/nEg==", "profile"=>{"brand_id"=>"", "model_id"=>"4", "car_year"=>"2018"}, "commit"=>"Вибрати авто"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `id' for :current_user:Symbol):
+  
+app/controllers/profile_controller.rb:15:in `profile_params'
+app/controllers/profile_controller.rb:9:in `create'
+Started POST "/profile" for 127.0.0.1 at 2018-03-16 15:20:43 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wklVFzNOIXfUeo9EpJTeUjS6SUpBCFW0s+O7HdLILwFsGA0GGtpUZyLFPLSES3hlPZTPVe63Ezt0+j69Eg/nEg==", "profile"=>{"brand_id"=>"", "model_id"=>"4", "car_year"=>"2018"}, "commit"=>"Вибрати авто"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:20:45 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (98.4ms)
+Completed 200 OK in 196ms (Views: 175.3ms | ActiveRecord: 19.8ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-16 15:20:49 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ntt/wmqDNS8ySmfKDbl2RH7TtcB8GchlvHQ897S35GEwiifTQxdAP8T11DotZtBzd/0z39Omjup7bblXdHAscg==", "profile"=>{"brand_id"=>"3", "model_id"=>"4", "car_year"=>"2018"}, "commit"=>"Вибрати авто"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:20:52 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 128ms (Views: 123.2ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-16 15:21:10 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6dVb3ntNR9nFf465YH0k8jRzsZxP5HaX0C+teIgGtbFHhAPPUtkyyTPAPUlAooLFPV03g+BbMBgXNijYSMF9og==", "profile"=>{"brand_id"=>"3", "model_id"=>"3", "car_year"=>"1972"}, "commit"=>"Вибрати авто"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-16 15:21:13 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 118ms (Views: 114.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 15:30:14 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 905ms (Views: 536.6ms | ActiveRecord: 147.7ms)
+
+
+Started GET "/admin/users/4/edit" for 127.0.0.1 at 2018-03-16 15:30:41 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 116ms (Views: 83.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-16 15:30:51 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 134ms (Views: 129.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-16 15:31:15 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 124ms (Views: 116.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/users/4/edit" for 127.0.0.1 at 2018-03-16 15:31:21 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 113ms (Views: 104.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-18 14:17:27 +0200
+  [1m[35m (45.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (17.1ms)
+  [1m[36mUser Load (41.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 2679ms (Views: 2488.8ms | ActiveRecord: 143.7ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-18 14:18:46 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (25.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (26.1ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.9ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (604.2ms)
+Completed 200 OK in 766ms (Views: 634.3ms | ActiveRecord: 71.6ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-18 14:20:06 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (31.7ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (110.9ms)
+Completed 200 OK in 266ms (Views: 144.6ms | ActiveRecord: 39.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-18 14:25:05 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kK1+N66gcp4r99IIw0s0oV8GTMCLiz7vMx7GienGDgc+/CYmhzQHjt1IYfjjlJKWVijK3yQ0eGD0B0MpKQHGFA=="}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 45ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-18 14:25:05 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 93ms (Views: 91.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-18 14:26:22 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (140.4ms)
+Completed 200 OK in 257ms (Views: 254.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-03-18 14:27:59 +0200
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 98ms (Views: 81.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-18 14:28:05 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 95ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-03-18 14:28:06 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 79ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2018-03-18 14:28:08 +0200
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 87ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/confirmation" for 127.0.0.1 at 2018-03-18 14:28:12 +0200
+Processing by Devise::ConfirmationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Smx1aaB2rG1Xm6nyqGg6d7eG0TDRCtUsi3C+YQHTqnpIOd97bECpuY5YuPFOKghFYKusvNu27fh1QJMHiu9edQ==", "user"=>{"email"=>"admin@gmail.com"}, "commit"=>"Resend confirmation instructions"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."unconfirmed_email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["unconfirmed_email", "admin@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "admin@gmail.com"], ["LIMIT", 1]]
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 255ms (Views: 85.9ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/users/confirmation" for 127.0.0.1 at 2018-03-18 14:28:22 +0200
+Processing by Devise::ConfirmationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ybi/nF8Vsr+PD814ArJHTcGV1X01clYd9ILwY2rYoZs+Hxr/rs3z+/86DHZYXgLh6zU1wJe4aTmRVpLcO7nEHQ==", "user"=>{"email"=>"olegBandura@gmail.com"}, "commit"=>"Resend confirmation instructions"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."unconfirmed_email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["unconfirmed_email", "olegBandura@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "olegbandura@gmail.com"], ["LIMIT", 1]]
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 103ms (Views: 90.8ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/users/confirmation" for 127.0.0.1 at 2018-03-18 14:28:35 +0200
+Processing by Devise::ConfirmationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ybi/nF8Vsr+PD814ArJHTcGV1X01clYd9ILwY2rYoZs+Hxr/rs3z+/86DHZYXgLh6zU1wJe4aTmRVpLcO7nEHQ==", "user"=>{"email"=>"1@gmail.com"}, "commit"=>"Resend confirmation instructions"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."unconfirmed_email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["unconfirmed_email", "1@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 100ms (Views: 89.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users/confirmation" for 127.0.0.1 at 2018-03-18 14:28:37 +0200
+Processing by Devise::ConfirmationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IVwW3VQ/d5ivpYvkVESE3VDJkPECtdlNSlcRnzzpZwzW+7O+pec23N+QSuoOqMFxemlwTKB/5mkvg3MgbYgCig==", "user"=>{"email"=>"1@gmail.com"}, "commit"=>"Resend confirmation instructions"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."unconfirmed_email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["unconfirmed_email", "1@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 97ms (Views: 85.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-18 14:29:09 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 94ms (Views: 91.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-18 14:31:58 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 110ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-18 14:35:05 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Nk+LiHQf8gW0KHvXoh6kGwSlAKJNHpcgdLhg/hI5PILgD7gq4301lsc84/PvhB+nW8CDj3lv+iXb3D5FaAv9PQ==", "user"=>{"name"=>"Roman", "surname"=>"Mokruy", "email"=>"roma@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "roles"=>["client", ""]}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "roma@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (20.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "surname", "email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "roles_mask") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Roman"], ["surname", "Mokruy"], ["email", "roma@gmail.com"], ["encrypted_password", "$2a$11$mjBd1peP1pB9sSHNfejz5eO80xPJYo3JqhVK9QIyvl9OD5mqkGvIy"], ["confirmation_token", "48FUWpGvfyjjhvYzJt6S"], ["confirmation_sent_at", "2018-03-18 12:35:06.052056"], ["created_at", "2018-03-18 12:35:06.051811"], ["updated_at", "2018-03-18 12:35:06.051811"], ["roles_mask", 1]]
+  [1m[35m (77.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.4ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 432.3ms
+Sent mail to roma@gmail.com (137.5ms)
+Date: Sun, 18 Mar 2018 14:35:07 +0200
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: roma@gmail.com
+Message-ID: <5aae5cfb677fa_1a453f9258107d0c52088@olko-Lenovo-V570c.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome roma@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=48FUWpGvfyjjhvYzJt6S">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1902ms (ActiveRecord: 99.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-18 14:35:07 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 86ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-18 14:37:55 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 81ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-18 14:37:58 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+FfqGvYoN1QC8X/lDWfD6K41nv5MJvfIRl0xyQrlB5MMmIVqYP1FT3SGwpG5dg0jesi4koGWJGZL6vzHLWYKrQ==", "user"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2018-03-18 12:37:58.378764"], ["last_sign_in_at", "2018-03-16 13:01:46.988533"], ["sign_in_count", 9], ["updated_at", "2018-03-18 12:37:58.380822"], ["id", 2]]
+  [1m[35m (17.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 268ms (ActiveRecord: 19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-18 14:37:58 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 81ms (Views: 78.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/confirmation?confirmation_token=48FUWpGvfyjjhvYzJt6S" for 127.0.0.1 at 2018-03-18 14:38:19 +0200
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"48FUWpGvfyjjhvYzJt6S"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "48FUWpGvfyjjhvYzJt6S"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-03-18 12:38:19.933522"], ["updated_at", "2018-03-18 12:38:19.934645"], ["id", 8]]
+  [1m[35m (13.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 30ms (ActiveRecord: 17.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-18 14:38:19 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 79ms (Views: 77.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:55:15 +0200
+  [1m[35m (27.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (16.9ms)
+  [1m[36mUser Load (42.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 2746ms (Views: 2574.0ms | ActiveRecord: 126.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:55:53 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 95ms (Views: 92.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-19 12:55:54 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 94ms (Views: 77.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-19 12:55:56 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 83ms (Views: 79.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-19 12:55:57 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 89ms (Views: 87.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-19 12:55:57 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 91ms (Views: 89.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-19 12:56:00 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (20.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (27.8ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (519.2ms)
+Completed 200 OK in 613ms (Views: 529.4ms | ActiveRecord: 64.9ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-19 12:56:10 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 230ms (Views: 147.4ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-19 12:56:17 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"e/XfB7d1tsFFHMN4Lz422RPZEluwjv8Z58ZyVdNab9v3YCnPJUOp8dOyUSkM/e4ZTw0I4y+muyhqo0ZZbALtNg=="}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 32ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:56:17 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 88ms (Views: 86.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-19 12:56:19 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 149ms (Views: 147.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-19 12:56:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 319ms (Views: 316.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-19 12:56:23 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 111ms (Views: 108.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 12:56:42 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zmAnA7cZkMWv9+3JkqvYreF9RJiOzD4FjEEdF7je7qffL8l1zN1Amf2dZ1WJqtaQeA1c934XhzoebEqEEOmNJw==", "user"=>{"name"=>"Andrew", "surname"=>"gggg", "email"=>"aa@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "roles"=>["director", ""]}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "aa@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (28.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "surname", "email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at", "roles_mask") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Andrew"], ["surname", "gggg"], ["email", "aa@gmail.com"], ["encrypted_password", "$2a$11$VO.s00MxnKs55vJYfx2yh.C214o00t8kFARvf/McVgY60T4F0XHRm"], ["confirmation_token", "nyGjKfTDVRNz6stXhAvZ"], ["confirmation_sent_at", "2018-03-19 10:56:43.252625"], ["created_at", "2018-03-19 10:56:43.252090"], ["updated_at", "2018-03-19 10:56:43.252090"], ["roles_mask", 2]]
+  [1m[35m (71.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (1.8ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 445.9ms
+Sent mail to aa@gmail.com (102.7ms)
+Date: Mon, 19 Mar 2018 12:56:44 +0200
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: aa@gmail.com
+Message-ID: <5aaf976c93402_113631339c4338c4@olko-Lenovo-V570c.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome aa@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=nyGjKfTDVRNz6stXhAvZ">Confirm my account</a></p>
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1964ms (ActiveRecord: 102.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:56:44 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 79ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=nyGjKfTDVRNz6stXhAvZ" for 127.0.0.1 at 2018-03-19 12:57:01 +0200
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"nyGjKfTDVRNz6stXhAvZ"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "nyGjKfTDVRNz6stXhAvZ"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (11.6ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2018-03-19 10:57:01.592233"], ["updated_at", "2018-03-19 10:57:01.594155"], ["id", 9]]
+  [1m[35m (17.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 66ms (ActiveRecord: 30.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-19 12:57:01 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 83ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-19 12:57:04 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 79ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-19 12:57:05 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 109ms (Views: 106.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-19 12:57:07 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VaHIkPWCAVEVJRyROJTl9CCN0g5IDQr/mfuKZRJnzRyTr2Nszj6reWwhkPrIRfwAuZIuvbyMspWiXlYLnkqiUA==", "user"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2018-03-19 10:57:07.794989"], ["last_sign_in_at", "2018-03-18 12:37:58.378764"], ["sign_in_count", 10], ["updated_at", "2018-03-19 10:57:07.796549"], ["id", 2]]
+  [1m[35m (9.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 251ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:57:07 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 89ms (Views: 86.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-19 12:57:13 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (1.7ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 229ms (Views: 72.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-19 12:57:15 +0200
+Processing by Admin::CarModelsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 155ms (Views: 102.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/car_models/4/edit" for 127.0.0.1 at 2018-03-19 12:57:19 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCarModel Load (1.0ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 133ms (Views: 86.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-19 12:57:23 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (60.4ms)[0m  [1m[34mSELECT break_categories.name, break_sub_categories.break_sub_category_name,
+      break_sub_categories.price, break_sub_categories.id,
+      break_sub_categories.break_category_id FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 229ms (Views: 86.9ms | ActiveRecord: 68.2ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-19 12:57:30 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (27.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (69.8ms)
+Completed 200 OK in 203ms (Views: 118.1ms | ActiveRecord: 35.0ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 12:57:35 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (468.1ms)
+Completed 200 OK in 564ms (Views: 556.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-19 12:57:56 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 150ms (Views: 89.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-19 12:58:11 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 110ms (Views: 73.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:58:22 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 94ms (Views: 91.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:58:22 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 81ms (Views: 78.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2018-03-19 12:59:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/brands"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:59:41 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 104ms (Views: 101.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:59:44 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 99ms (Views: 95.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:59:45 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 91ms (Views: 88.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-19 12:59:45 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 89ms (Views: 87.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-19 12:59:46 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 105ms (Views: 103.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-19 12:59:47 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 103ms (Views: 99.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:59:47 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 99ms (Views: 95.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-19 13:04:20 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (22.9ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.1ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (11.1ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (59.0ms)
+Completed 200 OK in 447ms (Views: 366.3ms | ActiveRecord: 35.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 22:03:57 +0200
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 1551ms (Views: 1148.9ms | ActiveRecord: 39.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 22:11:14 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 153ms (Views: 138.1ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-19 22:11:17 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (104.0ms)
+Completed 200 OK in 325ms (Views: 173.8ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:11:19 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (646.9ms)
+Completed 401 Unauthorized in 658ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Student):
+    40: 
+    41: 
+    42: <%= label_tag t("order_by") %>
+    43: <%= select_tag :order_by, Student.order_by.options, class: 'form-control' %>
+  
+app/views/admin/garages/new.html.erb:43:in `_app_views_admin_garages_new_html_erb__3384556472061446734_69981123485520'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:11:34 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 102ms (Views: 95.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:11:59 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 129ms (Views: 122.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:12:21 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 106ms (Views: 99.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:12:56 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (72.3ms)
+Completed 200 OK in 192ms (Views: 139.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:13:04 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 103ms (Views: 97.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:14:37 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (24.4ms)
+Completed 401 Unauthorized in 35ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    39: </div>
+    40: 
+    41: 
+    42: <%= form_for @user do |f| %>
+    43:   <%= f.select :sex, Garage.garage_types.options %>
+    44: <% end %>
+  
+app/views/admin/garages/new.html.erb:42:in `_app_views_admin_garages_new_html_erb__3384556472061446734_59646280'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:14:51 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (22.7ms)
+Completed 401 Unauthorized in 32ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    39: </div>
+    40: 
+    41: 
+    42: <%= form_for @garage do |f| %>
+    43:   <%= f.select :sex, Garage.garage_types.options %>
+    44: <% end %>
+  
+app/views/admin/garages/new.html.erb:42:in `_app_views_admin_garages_new_html_erb__3384556472061446734_69981103296420'
+Started GET "/" for 127.0.0.1 at 2018-03-19 22:15:10 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 94ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:15:35 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (21.3ms)
+Completed 401 Unauthorized in 32ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    40: 
+    41: 
+    42: <%= simple_form_for :garage, url: admin_garages_path, html: { multipart: true } do |f| %>
+    43:   <%= f.input :garage_types, Garage.garage_types.options, as: :check_boxes, label: "Послуги сервісу:" %>
+    44: 
+    45: <% end %>
+  
+app/views/admin/garages/new.html.erb:43:in `block in _app_views_admin_garages_new_html_erb__3384556472061446734_69981131993560'
+app/views/admin/garages/new.html.erb:42:in `_app_views_admin_garages_new_html_erb__3384556472061446734_69981131993560'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:15:42 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (22.2ms)
+Completed 401 Unauthorized in 29ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    41: 
+    42: <%= simple_form_for :garage, url: admin_garages_path, html: { multipart: true } do |f| %>
+    43:   <%= f.select :sex, Garage.garage_types.options %>
+    44:   <%= f.input :garage_types, Garage.garage_types.options, as: :check_boxes, label: "Послуги сервісу:" %>
+    45: 
+    46: <% end %>
+  
+app/views/admin/garages/new.html.erb:44:in `block in _app_views_admin_garages_new_html_erb__3384556472061446734_69980891397020'
+app/views/admin/garages/new.html.erb:42:in `_app_views_admin_garages_new_html_erb__3384556472061446734_69980891397020'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:15:47 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (22.4ms)
+Completed 401 Unauthorized in 33ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    41: 
+    42: <%= simple_form_for :garage, url: admin_garages_path, html: { multipart: true } do |f| %>
+    43:   <%= f.select :sex, Garage.garage_types.options %>
+    44:   <!-- <%= f.input :garage_types, Garage.garage_types.options, as: :check_boxes, label: "Послуги сервісу:" %> -->
+    45: 
+    46: <% end %>
+  
+app/views/admin/garages/new.html.erb:44:in `block in _app_views_admin_garages_new_html_erb__3384556472061446734_69980958364080'
+app/views/admin/garages/new.html.erb:42:in `_app_views_admin_garages_new_html_erb__3384556472061446734_69980958364080'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:15:51 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 108ms (Views: 102.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:16:19 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (35.6ms)
+Completed 200 OK in 169ms (Views: 110.7ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:17:32 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (36.3ms)
+Completed 200 OK in 174ms (Views: 117.9ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:19:16 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (43.2ms)
+Completed 200 OK in 202ms (Views: 131.0ms | ActiveRecord: 8.4ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:21:21 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (21.5ms)
+Completed 401 Unauthorized in 72ms (ActiveRecord: 7.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for 2:Fixnum):
+    15:     <p>Тип сервісу:</br>
+    16:       <div class="serviceTypes">
+    17: 
+    18:         <%= f.input :garage_types, collection: Garage.garage_types.options(2), as: :check_boxes, label: "Послуги сервісу:" %>
+    19:       </div>
+    20:   </p>
+    21:   <p>Графік роботи</br>
+  
+app/views/admin/garages/new.html.erb:18:in `block in _app_views_admin_garages_new_html_erb__3384556472061446734_69981124669600'
+app/views/admin/garages/new.html.erb:2:in `_app_views_admin_garages_new_html_erb__3384556472061446734_69981124669600'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:21:29 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 126ms (Views: 119.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:21:36 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 102ms (Views: 94.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:21:50 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (14.4ms)
+Completed 401 Unauthorized in 23ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty?' for 1:Fixnum):
+    15:     <p>Тип сервісу:</br>
+    16:       <div class="serviceTypes">
+    17: 
+    18:         <%= f.input :garage_types, collection: Garage.garage_types.options(1), as: :check_boxes, label: "Послуги сервісу:" %>
+    19:       </div>
+    20:   </p>
+    21:   <p>Графік роботи</br>
+  
+app/views/admin/garages/new.html.erb:18:in `block in _app_views_admin_garages_new_html_erb__3384556472061446734_69981131925820'
+app/views/admin/garages/new.html.erb:2:in `_app_views_admin_garages_new_html_erb__3384556472061446734_69981131925820'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-19 22:21:56 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 100ms (Views: 94.9ms | ActiveRecord: 1.4ms)
+
+
