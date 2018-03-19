@@ -6,13 +6,14 @@
       <p>Email: <%= @user.email %></p>
       <p>Кількість входів на сторінку: <%= @user.sign_in_count %></p>
       <p>Роль користувача:
-          <% if @user.roles_mask == 1 %>
+          <% if @user.roles == "client" %>
             <%= "Клієнт" %>
-          <% elsif @user.roles_mask == 2 %>
+          <% elsif @user.roles == "director" %>
             <%= "Директор СТО" %>
-          <% elsif @user.roles_mask == 3 %>
+          <% elsif @user.roles == "director" &  @user.roles == "client" %>
             <%= "Директор СТО та клієнт" %>
           <% end %>
+
       </p>
       <p class="user_paragraph">set admin:</p>
         <% if @user.admin == true %>
