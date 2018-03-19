@@ -15,7 +15,7 @@
   <p>Тип сервісу:</br>
     <div class="serviceTypes">
       <%= f.label "Майстерня" %>
-      <%= f.input :garage_types, collection: Garage::GARAGE_TYPE, as: :check_boxes %>
+      <%= f.input :garage_types, collection: Garage.garage_types.options, as: :check_boxes %>
     </div>
 </p>
 <p>Графік роботи</br>
