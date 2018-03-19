@@ -36855,3 +36855,39 @@ Migrating to AddRolesToUsers (20180319215207)
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4523761724947694355)[0m
   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-19 23:57:07 +0200
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 1070ms (Views: 978.4ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/admin/users/4/edit" for 127.0.0.1 at 2018-03-19 23:57:11 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (2.0ms)
+Completed 401 Unauthorized in 41ms (ActiveRecord: 1.8ms)
+
+
+  
+SyntaxError (/home/olko/rails/car_service/app/views/admin/users/edit.html.erb:13: syntax error, unexpected ==
+...== "director" &  @user.roles == "client" 
+...                               ^):
+  
+app/views/admin/users/edit.html.erb:13: syntax error, unexpected ==
+Started GET "/admin/users/4/edit" for 127.0.0.1 at 2018-03-19 23:57:30 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 116ms (Views: 109.0ms | ActiveRecord: 1.2ms)
+
+

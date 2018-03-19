@@ -29,5 +29,9 @@ class User < ApplicationRecord
   {
     'Клієнт' => ':client', 'Власник СТО' => ':director'
   }, multiple: true
-
+  serialize :admin_role, Array
+  enumerize :admin_role, in:
+  {
+    'Адміністратор' => ':admin'
+  }, multiple: true
 end

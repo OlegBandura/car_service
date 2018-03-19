@@ -10,7 +10,7 @@
             <%= "Клієнт" %>
           <% elsif @user.roles == "director" %>
             <%= "Директор СТО" %>
-          <% elsif @user.roles == "director" &  @user.roles == "client" %>
+          <% elsif @user.roles == "director" &&  @user.roles == "client" %>
             <%= "Директор СТО та клієнт" %>
           <% end %>
 
