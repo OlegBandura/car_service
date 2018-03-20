@@ -4,7 +4,7 @@
     <p>
     <%= f.input :garage_name, label: 'Назва СТО' %></p>
     <p>Власник
-      <%= f.select("user_id", User.all.collect{|p| [ p.surname,  p.id] }) %>
+      <%= f.select("user_id", @user.collect{|p| [ p.surname,  p.id] }) %>
     </p>
     <p>
       <%= f.input :city, label: "Місто" %></p>
@@ -15,16 +15,14 @@
   <p>Тип сервісу:</br>
     <div class="serviceTypes">
       <%= f.label "Майстерня" %>
-      <%= f.input :garage_types, collection: Garage.garage_types.options, as: :check_boxes %>
+      <%= f.input :garage_types, collection: Garage.garage_type.options, as: :check_boxes %>
     </div>
 </p>
 <p>Графік роботи</br>
-  Пн-Пт
-  <%= f.input_field :work_shedule, multiple: true %>
-  Сб
-  <%= f.input_field :work_shedule, multiple: true %>
-  Нд
-  <%= f.input_field :work_shedule, multiple: true %>
+  <% @garage.work_shedule.each do |shedule| %>
+    <%= f.text_field :work_shedule, :value => shedule %>
+  <% end %>
+
 </p>
   <p>
     <%= f.input :diler, as: :boolean, label: "Диллерська компанія:"%>
