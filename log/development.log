@@ -45691,3 +45691,638 @@ Processing by Admin::GaragesController#index as HTML
 Completed 200 OK in 96ms (Views: 88.9ms | ActiveRecord: 2.3ms)
 
 
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:50:23 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 95ms (Views: 87.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:50:36 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.2ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 98ms (Views: 92.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:50:46 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 94ms (Views: 88.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:50:52 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.1ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 91ms (Views: 84.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:51:08 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.1ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 83ms (Views: 76.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:51:39 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 90ms (Views: 84.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:52:01 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.1ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 86ms (Views: 78.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:52:51 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 6498ms (Views: 6492.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:53:17 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 4457ms (Views: 4451.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:53:37 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.2ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 4292ms (Views: 4286.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/break_categories" for 127.0.0.1 at 2018-03-20 22:54:05 +0200
+Processing by Admin::BreakCategoriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBreakCategory Load (13.8ms)[0m  [1m[34mSELECT break_categories.name, break_sub_categories.break_sub_category_name,
+      break_sub_categories.price, break_sub_categories.id,
+      break_sub_categories.break_category_id FROM "break_categories" LEFT OUTER JOIN "break_sub_categories" ON "break_sub_categories"."break_category_id" = "break_categories"."id"[0m
+  Rendering admin/break_categories/index.html.erb within layouts/application
+  Rendered admin/break_categories/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 150ms (Views: 71.9ms | ActiveRecord: 29.4ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:54:07 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (1.0ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 132ms (Views: 76.7ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-20 22:54:09 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 106ms (Views: 99.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:54:10 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (2.5ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 105ms (Views: 97.6ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-20 22:54:13 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (12.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  Rendered profile/index.html.erb within layouts/application (157.0ms)
+Completed 200 OK in 298ms (Views: 200.5ms | ActiveRecord: 22.5ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:54:17 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 206ms (Views: 196.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/brands/new" for 127.0.0.1 at 2018-03-20 22:54:21 +0200
+Processing by Admin::BrandsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/brands/new.html.erb within layouts/application
+  Rendered admin/brands/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 85ms (Views: 79.9ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/admin/brands" for 127.0.0.1 at 2018-03-20 22:54:32 +0200
+Processing by Admin::BrandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aiX7KfvVlXlXWDsmMoZHA6m/Fsh5hee/E9+obKoWHxMhiwITohQK2vC/4Kbwe5mRQRvCA8VtgrvWhmBCFXK5Rg==", "brand"=>{"brand"=>"Mersedes Benz"}, "commit"=>"Додати марку авто"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (76.5ms)[0m  [1m[32mINSERT INTO "brands" ("brand", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["brand", "Mersedes Benz"], ["created_at", "2018-03-20 20:54:32.814793"], ["updated_at", "2018-03-20 20:54:32.814793"]]
+  [1m[35m (55.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 142ms (ActiveRecord: 133.8ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:54:32 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 90ms (Views: 84.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-20 22:54:35 +0200
+Processing by Admin::CarModelsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (1.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 107ms (Views: 85.9ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-20 22:54:39 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/zA2OHUjrtwB3mwNz4Yroyh7e15veeyRMwtXBrNjkNozc9spHNmswqnh/2cVBlNwIRePURUOfipTxnmvublXAw==", "car"=>{"brand_id"=>"1", "model"=>"W140"}, "commit"=>"Додати модель авто"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :model
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :brand_id
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (180.8ms)[0m  [1m[32mINSERT INTO "car_models" ("model", "brand_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["model", "W140"], ["brand_id", 1], ["created_at", "2018-03-20 20:54:39.582348"], ["updated_at", "2018-03-20 20:54:39.582348"]]
+  [1m[35m (17.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 214ms (ActiveRecord: 200.3ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:54:39 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 97ms (Views: 89.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/car_models/8/edit" for 127.0.0.1 at 2018-03-20 22:54:47 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 121ms (Views: 79.2ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/admin/car_models/8" for 127.0.0.1 at 2018-03-20 22:54:51 +0200
+Processing by Admin::CarModelsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zWhMRanuHSNIOUsRYgbCdtWwQ1ZQMTJTP3rVxEkKwjx9ZyfjgfgLigd6Sr1JWugKi5Id01bduEop+UDSCZiPig==", "car"=>{"model"=>"W140"}, "commit"=>"Редагувати модель авто", "id"=>"8"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 14ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:54:51 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 97ms (Views: 88.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-20 22:54:58 +0200
+Processing by Admin::CarModelsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 116ms (Views: 105.5ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-20 22:55:07 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Z2CKggca1V4RzyiAog2pYfhDXeYY5LgLHN/1vkFOAIt3m87YeZpS9B4r8jYCE52jo35eOIUAFtMvlF/89//2w==", "car"=>{"brand_id"=>"5", "model"=>"W124"}, "commit"=>"Додати модель авто"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :model
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Unpermitted parameter: :brand_id
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "car_models" ("model", "brand_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["model", "W124"], ["brand_id", 5], ["created_at", "2018-03-20 20:55:07.739381"], ["updated_at", "2018-03-20 20:55:07.739381"]]
+  [1m[35m (44.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 57ms (ActiveRecord: 46.5ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:55:07 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 90ms (Views: 84.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/brands/1/edit" for 127.0.0.1 at 2018-03-20 22:55:11 +0200
+Processing by Admin::BrandsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (2.2ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering admin/brands/edit.html.erb within layouts/application
+  Rendered admin/brands/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 137ms (Views: 84.5ms | ActiveRecord: 2.9ms)
+
+
+Started PUT "/admin/brands/1" for 127.0.0.1 at 2018-03-20 22:55:12 +0200
+Processing by Admin::BrandsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3lNfiDUu4aI+m8nwk+Gydkl8VM9m//mEZtoMuUMf9jgCtBUkyvQEjJ3hY1lL1DmA6Y58AL/gRW+OF1MxA9HJ3Q==", "brand"=>{"brand"=>"BMW"}, "commit"=>"Оновити марку авто", "id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 10ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:55:12 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 78ms (Views: 71.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/admin/car_models/8/edit" for 127.0.0.1 at 2018-03-20 22:55:14 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 85ms (Views: 77.1ms | ActiveRecord: 1.5ms)
+
+
+Started PUT "/admin/car_models/8" for 127.0.0.1 at 2018-03-20 22:55:30 +0200
+Processing by Admin::CarModelsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kV2HljvYs7eok7jBYIyjeTInQQqM279ra8BLABi955shUuwwE86lHufQuW1L0IkFbAUfj4o3NXJ9Q94WWC+qLQ==", "car"=>{"model"=>"E34"}, "commit"=>"Редагувати модель авто", "id"=>"8"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "car_models" SET "model" = $1, "updated_at" = $2 WHERE "car_models"."id" = $3[0m  [["model", "E34"], ["updated_at", "2018-03-20 20:55:30.774935"], ["id", 8]]
+  [1m[35m (32.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 46ms (ActiveRecord: 34.9ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:55:30 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (1.2ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 75ms (Views: 67.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/car_models/9/edit" for 127.0.0.1 at 2018-03-20 22:55:34 +0200
+Processing by Admin::CarModelsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering admin/car_models/edit.html.erb within layouts/application
+  Rendered admin/car_models/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 96ms (Views: 88.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-20 22:55:40 +0200
+Processing by Admin::CarModelsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 107ms (Views: 100.7ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-20 22:55:45 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vuYkbA83IlNf5C2CsoATj+Fxhn6dobZ7MaKInIEWtedypcl9Zs0gTffbvuhoAGtc6B1ycefWJMBRb6Y1i8xyPg==", "car"=>{"brand_id"=>"5", "model"=>"W140"}, "commit"=>"Додати модель авто"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :model
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Unpermitted parameter: :brand_id
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "car_models" ("model", "brand_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["model", "W140"], ["brand_id", 5], ["created_at", "2018-03-20 20:55:45.763340"], ["updated_at", "2018-03-20 20:55:45.763340"]]
+  [1m[35m (58.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 72ms (ActiveRecord: 61.0ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:55:45 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (1.2ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 80ms (Views: 72.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/brands/new" for 127.0.0.1 at 2018-03-20 22:55:54 +0200
+Processing by Admin::BrandsController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/brands/new.html.erb within layouts/application
+  Rendered admin/brands/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 110ms (Views: 101.0ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/admin/brands" for 127.0.0.1 at 2018-03-20 22:55:58 +0200
+Processing by Admin::BrandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MbT9/LwrNa6wwvaS10iLuegze+NJH33DTjK3HUnLtAN6GgTG5eqqDRclLRIVtVUrAJevKPX3GMeLa38z9q8SVg==", "brand"=>{"brand"=>"Nissan"}, "commit"=>"Додати марку авто"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "brands" ("brand", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["brand", "Nissan"], ["created_at", "2018-03-20 20:55:58.777404"], ["updated_at", "2018-03-20 20:55:58.777404"]]
+  [1m[35m (33.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 43ms (ActiveRecord: 34.8ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:55:58 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 95ms (Views: 87.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/brands/new" for 127.0.0.1 at 2018-03-20 22:56:02 +0200
+Processing by Admin::BrandsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/brands/new.html.erb within layouts/application
+  Rendered admin/brands/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 104ms (Views: 96.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/admin/brands" for 127.0.0.1 at 2018-03-20 22:56:07 +0200
+Processing by Admin::BrandsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TU8SBkjB1ixT/MiDG2uLcdyuztkr613PTbRWIVjjMQEG4es8EQBJj/QbEwPZllXjNAoaEpcDOMuI7Z4P54eXVA==", "brand"=>{"brand"=>"Subaru"}, "commit"=>"Додати марку авто"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "brands" ("brand", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["brand", "Subaru"], ["created_at", "2018-03-20 20:56:07.631962"], ["updated_at", "2018-03-20 20:56:07.631962"]]
+  [1m[35m (36.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 44ms (ActiveRecord: 38.1ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:56:07 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 75ms (Views: 66.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-20 22:56:10 +0200
+Processing by Admin::CarModelsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (1.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 90ms (Views: 83.9ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-20 22:56:15 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7r/eZX+KvN9IcAbqxp4nuvEGXmId3I13t83M56mGfl4i/DN0FnC+weBPlYAcHl9p+GqqbWerH8zXAOJOo1y5hw==", "car"=>{"brand_id"=>"7", "model"=>"Lagasy"}, "commit"=>"Додати модель авто"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :model
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Unpermitted parameter: :brand_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "car_models" ("model", "brand_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["model", "Lagasy"], ["brand_id", 7], ["created_at", "2018-03-20 20:56:15.562103"], ["updated_at", "2018-03-20 20:56:15.562103"]]
+  [1m[35m (38.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 54ms (ActiveRecord: 41.4ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:56:15 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 83ms (Views: 73.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-20 22:56:18 +0200
+Processing by Admin::CarModelsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (1.2ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 98ms (Views: 90.9ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-20 22:56:36 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yNIQdYer0filZuFfzpcP1DwIvTpXJ1nsVQA6XxyA5OoEkf1k7lHT5g1ZcjUUF3cHNWRJNS1Qy1c1zRT2FlojMw==", "car"=>{"brand_id"=>"6", "model"=>"Qashqai"}, "commit"=>"Додати модель авто"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :model
+  [1m[36mBrand Load (1.2ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Unpermitted parameter: :brand_id
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "car_models" ("model", "brand_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["model", "Qashqai"], ["brand_id", 6], ["created_at", "2018-03-20 20:56:36.946356"], ["updated_at", "2018-03-20 20:56:36.946356"]]
+  [1m[35m (125.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 140ms (ActiveRecord: 128.4ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:56:37 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (2.4ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 164ms (Views: 151.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-20 22:56:41 +0200
+Processing by Admin::CarModelsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 98ms (Views: 92.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-20 22:56:47 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aHXHJ/RgMzhAhDOCVh+fByRLiT0U3l/28zOogkmt5mOkNio2nZoxJui7oOiMn+fULSd9Mm6pzU2T/oYrQ3chug==", "car"=>{"brand_id"=>"6", "model"=>"Teana"}, "commit"=>"Додати модель авто"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :model
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Unpermitted parameter: :brand_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "car_models" ("model", "brand_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["model", "Teana"], ["brand_id", 6], ["created_at", "2018-03-20 20:56:47.205824"], ["updated_at", "2018-03-20 20:56:47.205824"]]
+  [1m[35m (43.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 56ms (ActiveRecord: 45.2ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:56:47 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 89ms (Views: 82.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/car_models/new" for 127.0.0.1 at 2018-03-20 22:56:54 +0200
+Processing by Admin::CarModelsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/car_models/new.html.erb within layouts/application
+  [1m[36mBrand Load (2.4ms)[0m  [1m[34mSELECT "brands".* FROM "brands"[0m
+  Rendered admin/car_models/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 125ms (Views: 117.0ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/admin/car_models" for 127.0.0.1 at 2018-03-20 22:57:00 +0200
+Processing by Admin::CarModelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EwD2Rp1QJcHJXi3CSMYmCV5lrHjJxyyQIJA3lcD427PfQxtX9Kon32FhvqiSRl7aVwlYd7OwvitAXRk8yiIcag==", "car"=>{"brand_id"=>"1", "model"=>"E32"}, "commit"=>"Додати модель авто"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :model
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :brand_id
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "car_models" ("model", "brand_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["model", "E32"], ["brand_id", 1], ["created_at", "2018-03-20 20:57:00.980820"], ["updated_at", "2018-03-20 20:57:00.980820"]]
+  [1m[35m (37.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/brands
+Completed 302 Found in 51ms (ActiveRecord: 39.8ms)
+
+
+Started GET "/admin/brands" for 127.0.0.1 at 2018-03-20 22:57:01 +0200
+Processing by Admin::BrandsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT car_models.id, car_models.brand_id,
+      brands.brand, car_models.model FROM "brands" LEFT OUTER JOIN "car_models" ON "car_models"."brand_id" = "brands"."id"[0m
+  Rendering admin/brands/index.html.erb within layouts/application
+  Rendered admin/brands/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 113ms (Views: 105.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-20 22:57:06 +0200
+Processing by ProfileController#index as HTML
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand" ASC[0m
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.8ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (1.2ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 122ms (Views: 115.7ms | ActiveRecord: 5.1ms)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4523761724947694355)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Delete (20180320205841)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (128.6ms)[0m  [1m[35mALTER TABLE "users" DROP "admin"[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180320205841"]]
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (47.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(4523761724947694355)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
