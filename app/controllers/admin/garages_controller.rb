@@ -8,14 +8,17 @@ module Admin
         garages.image, garages.garage_rating, garages.garage_types,
         garages.work_shedule, garages.id'
       )
+      @user = User.where("'Власник СТО' = ANY (roles)")
     end
 
-    def new; end
+    def new
+      @user = User.where("'Власник СТО' = ANY (roles)")
+    end
 
     def create
-      # Garage.create(garage_params)
-      # redirect_to admin_garages_path
-      render plain: garage_params
+      Garage.create(garage_params)
+      redirect_to admin_garages_path
+      # render plain: garage_params
     end
 
     def edit

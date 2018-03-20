@@ -43445,3 +43445,1467 @@ Processing by Admin::UsersController#index as HTML
 Completed 200 OK in 87ms (Views: 83.1ms | ActiveRecord: 1.3ms)
 
 
+Started GET "/admin/users/5/edit" for 127.0.0.1 at 2018-03-20 21:27:36 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 105ms (Views: 94.2ms | ActiveRecord: 3.4ms)
+
+
+Started PUT "/admin/users/5" for 127.0.0.1 at 2018-03-20 21:27:38 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1uMiqTAZRfUx6cgsyLch5qaA1GDo0uoIIEyHuGjSHjb5rSnd5ZCwwwbf9P4PZQQyO4xGkLCegMKlPvBkAOfBNg==", "user"=>{"roles"=>["", "Клієнт", ""]}, "commit"=>"Редагувати інформацію", "id"=>"5"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "roles" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["roles", "{\"\",Клієнт,\"\"}"], ["updated_at", "2018-03-20 19:27:38.672180"], ["id", 5]]
+  [1m[35m (22.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 37ms (ActiveRecord: 25.4ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-20 21:27:38 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 98ms (Views: 91.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/users/6/edit" for 127.0.0.1 at 2018-03-20 21:27:40 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 120ms (Views: 111.4ms | ActiveRecord: 1.7ms)
+
+
+Started PUT "/admin/users/6" for 127.0.0.1 at 2018-03-20 21:27:42 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rg35WzsNAClbmqW/brKVcbrZ6G2XgEIT5IYoJ1Q35qm9ytvrhSkLtaV94plUJAmJxzZEWYqxXFQPAerdwqvY0g==", "user"=>{"roles"=>["", "Клієнт", ""]}, "commit"=>"Редагувати інформацію", "id"=>"6"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "roles" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["roles", "{\"\",Клієнт,\"\"}"], ["updated_at", "2018-03-20 19:27:42.751320"], ["id", 6]]
+  [1m[35m (32.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 45ms (ActiveRecord: 34.5ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-20 21:27:42 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 94ms (Views: 87.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/users/9/edit" for 127.0.0.1 at 2018-03-20 21:27:44 +0200
+Processing by Admin::UsersController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering admin/users/edit.html.erb within layouts/application
+  Rendered admin/users/edit.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 116ms (Views: 107.8ms | ActiveRecord: 1.6ms)
+
+
+Started PUT "/admin/users/9" for 127.0.0.1 at 2018-03-20 21:27:48 +0200
+Processing by Admin::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UM8K2o8/TbA1bDp/CCMUB3/YwGqdtrmd7Ul0p4NgfvlIadyiDH0nQ2GI6vnpTDEEABpb67+nOZrzLcpEYW63vg==", "user"=>{"roles"=>["", "Власник СТО", ""]}, "commit"=>"Редагувати інформацію", "id"=>"9"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "roles" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["roles", "{\"\",\"Власник СТО\",\"\"}"], ["updated_at", "2018-03-20 19:27:48.578217"], ["id", 9]]
+  [1m[35m (17.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/users
+Completed 302 Found in 29ms (ActiveRecord: 20.1ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-20 21:27:48 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 87ms (Views: 81.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-20 21:33:00 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 99ms (Views: 92.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-20 21:33:22 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 84ms (Views: 78.3ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-20 21:33:31 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NIvrHnR9QoSjqM/0ya1rT0g+5OPuGAmBBHB3HmOUX6c3w8VbsqPTa9Vlqqx45dwsWjAcLijOcI6Pv7aEkd7exg=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:33:31 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 401 Unauthorized in 126ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `roles' for nil:NilClass):
+    34:             </li>
+    35: 
+    36: 
+    37:             <% if current_user.roles.include?("Адміністратор") %>
+    38:               <li class="nav-item dropdown">
+    39:                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    40:                   Administrator
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___406198459867117417_69953877492340'
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:33:36 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 401 Unauthorized in 91ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `roles' for nil:NilClass):
+    34:             </li>
+    35: 
+    36: 
+    37:             <% if current_user.roles.include?("Адміністратор") %>
+    38:               <li class="nav-item dropdown">
+    39:                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    40:                   Administrator
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___406198459867117417_69953857707240'
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:33:37 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 401 Unauthorized in 81ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `roles' for nil:NilClass):
+    34:             </li>
+    35: 
+    36: 
+    37:             <% if current_user.roles.include?("Адміністратор") %>
+    38:               <li class="nav-item dropdown">
+    39:                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    40:                   Administrator
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___406198459867117417_69953818887520'
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:33:38 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 401 Unauthorized in 89ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `roles' for nil:NilClass):
+    34:             </li>
+    35: 
+    36: 
+    37:             <% if current_user.roles.include?("Адміністратор") %>
+    38:               <li class="nav-item dropdown">
+    39:                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    40:                   Administrator
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___406198459867117417_69953986380840'
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:33:39 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 401 Unauthorized in 80ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `roles' for nil:NilClass):
+    34:             </li>
+    35: 
+    36: 
+    37:             <% if current_user.roles.include?("Адміністратор") %>
+    38:               <li class="nav-item dropdown">
+    39:                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    40:                   Administrator
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___406198459867117417_69953858232400'
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:33:39 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 401 Unauthorized in 90ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `roles' for nil:NilClass):
+    34:             </li>
+    35: 
+    36: 
+    37:             <% if current_user.roles.include?("Адміністратор") %>
+    38:               <li class="nav-item dropdown">
+    39:                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    40:                   Administrator
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___406198459867117417_69953986447740'
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:33:40 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 401 Unauthorized in 84ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `roles' for nil:NilClass):
+    34:             </li>
+    35: 
+    36: 
+    37:             <% if current_user.roles.include?("Адміністратор") %>
+    38:               <li class="nav-item dropdown">
+    39:                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    40:                   Administrator
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___406198459867117417_69953987154660'
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:33:41 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 401 Unauthorized in 78ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `roles' for nil:NilClass):
+    34:             </li>
+    35: 
+    36: 
+    37:             <% if current_user.roles.include?("Адміністратор") %>
+    38:               <li class="nav-item dropdown">
+    39:                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    40:                   Administrator
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___406198459867117417_69953986430040'
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:33:42 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 401 Unauthorized in 101ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `roles' for nil:NilClass):
+    34:             </li>
+    35: 
+    36: 
+    37:             <% if current_user.roles.include?("Адміністратор") %>
+    38:               <li class="nav-item dropdown">
+    39:                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    40:                   Administrator
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___406198459867117417_69953857736780'
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:33:43 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 401 Unauthorized in 85ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `roles' for nil:NilClass):
+    34:             </li>
+    35: 
+    36: 
+    37:             <% if current_user.roles.include?("Адміністратор") %>
+    38:               <li class="nav-item dropdown">
+    39:                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    40:                   Administrator
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___406198459867117417_69953986312820'
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:34:42 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 401 Unauthorized in 96ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `roles' for nil:NilClass):
+    34:             </li>
+    35: 
+    36: 
+    37:             <% if current_user.roles.include?("Адміністратор") %>
+    38:               <li class="nav-item dropdown">
+    39:                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    40:                   Administrator
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___406198459867117417_69953776862060'
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:34:43 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 401 Unauthorized in 119ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `roles' for nil:NilClass):
+    34:             </li>
+    35: 
+    36: 
+    37:             <% if current_user.roles.include?("Адміністратор") %>
+    38:               <li class="nav-item dropdown">
+    39:                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    40:                   Administrator
+  
+app/views/layouts/application.html.erb:37:in `_app_views_layouts_application_html_erb___406198459867117417_69953858750660'
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:35:09 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 73ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-20 21:35:39 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 134ms (Views: 131.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-20 21:35:41 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ctYbZVKcWvpMMa9qTaW5i5ZZT+R0kRBqUaKaT3PtuIagiM0Yj75wvq7NGEXw/H1CMeW7wfGI/oJydL6zTmLfRQ==", "user"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (328.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2018-03-20 19:35:42.240017"], ["last_sign_in_at", "2018-03-20 18:30:36.785790"], ["sign_in_count", 16], ["updated_at", "2018-03-20 19:35:42.242096"], ["id", 2]]
+  [1m[35m (37.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 635ms (ActiveRecord: 367.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-20 21:35:42 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 97ms (Views: 94.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 21:35:44 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (10.2ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (376.0ms)
+Completed 401 Unauthorized in 524ms (ActiveRecord: 318.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    40:     </td>
+    41:     <td><%= garage.garage_rating %></td>
+    42:     <td>
+    43:       <% garage.garage_types.each do |garage_type| %>
+    44:         <% if garage_type == "car_wash" %>
+    45:         <%= "Автомийка" %>
+    46:         <% elsif garage_type == "vulcanization" %>
+  
+app/views/admin/garages/index.html.erb:43:in `block in _app_views_admin_garages_index_html_erb___4358283875503357452_69953814753200'
+app/views/admin/garages/index.html.erb:25:in `_app_views_admin_garages_index_html_erb___4358283875503357452_69953814753200'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 21:36:21 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.6ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (8.7ms)
+Completed 401 Unauthorized in 16ms (ActiveRecord: 2.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    40:     </td>
+    41:     <td><%= garage.garage_rating %></td>
+    42:     <td>
+    43:       <!-- <% garage.garage_types.each do |garage_type| %>
+    44:         <% if garage_type == "car_wash" %>
+    45:         <%= "Автомийка" %>
+    46:         <% elsif garage_type == "vulcanization" %>
+  
+app/views/admin/garages/index.html.erb:43:in `block in _app_views_admin_garages_index_html_erb___4358283875503357452_69953857499840'
+app/views/admin/garages/index.html.erb:25:in `_app_views_admin_garages_index_html_erb___4358283875503357452_69953857499840'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 21:36:27 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 182ms (Views: 174.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 21:37:25 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.2ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (6.6ms)
+Completed 401 Unauthorized in 18ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    40:     </td>
+    41:     <td><%= garage.garage_rating %></td>
+    42:     <td>
+    43:       <% garage.garage_types.each do |garage_type| %>
+    44:       bla
+    45:       <% end %>
+    46:     </td>
+  
+app/views/admin/garages/index.html.erb:43:in `block in _app_views_admin_garages_index_html_erb___4358283875503357452_69953819911600'
+app/views/admin/garages/index.html.erb:25:in `_app_views_admin_garages_index_html_erb___4358283875503357452_69953819911600'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 21:38:12 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.8ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 89ms (Views: 82.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/garages/2/edit" for 127.0.0.1 at 2018-03-20 21:41:46 +0200
+Processing by Admin::GaragesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGarage Load (10.8ms)[0m  [1m[34mSELECT  "garages".* FROM "garages" WHERE "garages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/edit.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/edit.html.erb within layouts/application (326.5ms)
+Completed 200 OK in 522ms (Views: 437.9ms | ActiveRecord: 13.0ms)
+
+
+Started PUT "/admin/garages/2" for 127.0.0.1 at 2018-03-20 21:41:59 +0200
+Processing by Admin::GaragesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"viIudx7Av/lBKYt+4626pqvvPcA80r/fhbnN22hiyeaSuvzf9msjJggxItoGmUHu6+WrwwjSW3o17fEvoEYGQg==", "garage"=>{"garage_name"=>"test1", "user_id"=>"2", "city"=>"Lviv", "address"=>"vul", "phone"=>"23345530", "garage_types"=>["", "Майстерня", "Автомийка"], "work_shedule"=>["10-15 10-15  10-12", "10-15 10-15  10-12", "10-15 10-15  10-12"], "diler"=>"1", "description"=>"ddd", "remote_image_url"=>""}, "commit"=>"Редагувати СТО", "id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGarage Load (0.6ms)[0m  [1m[34mSELECT  "garages".* FROM "garages" WHERE "garages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (50.1ms)[0m  [1m[31mROLLBACK[0m
+  Rendering admin/garages/edit.html.erb within layouts/application
+  Rendered admin/garages/edit.html.erb within layouts/application (2.5ms)
+Completed 401 Unauthorized in 91ms (ActiveRecord: 52.8ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/garages", :id=>nil}, missing required keys: [:id]):
+    1: <div class="admin_form center-block col-md-5">
+    2:   <%= simple_form_for :garage, url: admin_garage_path(@garage), method: :put do |f| %>
+    3:   <p>Інформація про СТО</p>
+    4:     <p>
+    5:     <%= f.input :garage_name, label: 'Назва СТО' %></p>
+  
+app/views/admin/garages/edit.html.erb:2:in `_app_views_admin_garages_edit_html_erb___1565193198783067572_69953816885580'
+app/controllers/admin/garages_controller.rb:30:in `update'
+Started GET "/admin/garages/2" for 127.0.0.1 at 2018-03-20 21:42:15 +0200
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Admin::GaragesController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:42:17 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 86ms (Views: 79.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/garages/4/edit" for 127.0.0.1 at 2018-03-20 21:42:20 +0200
+Processing by Admin::GaragesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGarage Load (0.7ms)[0m  [1m[34mSELECT  "garages".* FROM "garages" WHERE "garages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering admin/garages/edit.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/edit.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 133ms (Views: 126.3ms | ActiveRecord: 2.2ms)
+
+
+Started PUT "/admin/garages/4" for 127.0.0.1 at 2018-03-20 21:42:31 +0200
+Processing by Admin::GaragesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z7j/r2QUXijGeEUEbhVLq72h8JXvP0v2PE1xn1nqOYw0lPzbxJnqLiAX49B8lCfqLbQDc1kmC0gqOsm3jvQaUg==", "garage"=>{"garage_name"=>"Garage", "user_id"=>"3", "city"=>"Lviv", "address"=>"Subotivska", "phone"=>"4411", "garage_types"=>[""], "work_shedule"=>["9-18", " 12-13 ", "Вихідний"], "diler"=>"1", "description"=>"", "remote_image_url"=>""}, "commit"=>"Редагувати СТО", "id"=>"4"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGarage Load (0.7ms)[0m  [1m[34mSELECT  "garages".* FROM "garages" WHERE "garages"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering admin/garages/edit.html.erb within layouts/application
+  Rendered admin/garages/edit.html.erb within layouts/application (2.8ms)
+Completed 401 Unauthorized in 18ms (ActiveRecord: 2.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/garages", :id=>nil}, missing required keys: [:id]):
+    1: <div class="admin_form center-block col-md-5">
+    2:   <%= simple_form_for :garage, url: admin_garage_path(@garage), method: :put do |f| %>
+    3:   <p>Інформація про СТО</p>
+    4:     <p>
+    5:     <%= f.input :garage_name, label: 'Назва СТО' %></p>
+  
+app/views/admin/garages/edit.html.erb:2:in `_app_views_admin_garages_edit_html_erb___1565193198783067572_56432480'
+app/controllers/admin/garages_controller.rb:30:in `update'
+Started GET "/admin/garages/4" for 127.0.0.1 at 2018-03-20 21:44:33 +0200
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for Admin::GaragesController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:44:34 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (29.6ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (38.3ms)
+Completed 401 Unauthorized in 46ms (ActiveRecord: 30.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    40:     </td>
+    41:     <td><%= garage.garage_rating %></td>
+    42:     <td>
+    43:       <% garage.garage_types.each do |type| %>
+    44:         <% type %>
+    45:       <% end %>
+    46: 
+  
+app/views/admin/garages/index.html.erb:43:in `block in _app_views_admin_garages_index_html_erb___4358283875503357452_69953784106980'
+app/views/admin/garages/index.html.erb:25:in `_app_views_admin_garages_index_html_erb___4358283875503357452_69953784106980'
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:44:53 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.5ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (17.1ms)
+Completed 401 Unauthorized in 27ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `garage_rating' for #<Garage::ActiveRecord_Relation:0x007f3ec9326950>):
+    38:         ""
+    39:       end %>
+    40:     </td>
+    41:     <td><%= @garages.garage_rating %></td>
+    42:     <td>
+    43:       <% garage.garage_types.each do |type| %>
+    44:         <% type %>
+  
+app/views/admin/garages/index.html.erb:41:in `block in _app_views_admin_garages_index_html_erb___4358283875503357452_69953820109560'
+app/views/admin/garages/index.html.erb:25:in `_app_views_admin_garages_index_html_erb___4358283875503357452_69953820109560'
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:45:08 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.1ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (6.8ms)
+Completed 401 Unauthorized in 15ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Enumerize::Attribute:0x007f3ecdddd1d8>):
+    40:     </td>
+    41:     <td><%= garage.garage_rating %></td>
+    42:     <td>
+    43:       <% @garages.garage_types.each do |type| %>
+    44:         <% type %>
+    45:       <% end %>
+    46: 
+  
+app/views/admin/garages/index.html.erb:43:in `block in _app_views_admin_garages_index_html_erb___4358283875503357452_69953947577300'
+app/views/admin/garages/index.html.erb:25:in `_app_views_admin_garages_index_html_erb___4358283875503357452_69953947577300'
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:45:18 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (7.0ms)
+Completed 401 Unauthorized in 15ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    40:     </td>
+    41:     <td><%= garage.garage_rating %></td>
+    42:     <td>
+    43:       <% garage.garage_types.each do |type| %>
+    44:         <% type %>
+    45:       <% end %>
+    46: 
+  
+app/views/admin/garages/index.html.erb:43:in `block in _app_views_admin_garages_index_html_erb___4358283875503357452_69953862021400'
+app/views/admin/garages/index.html.erb:25:in `_app_views_admin_garages_index_html_erb___4358283875503357452_69953862021400'
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:45:30 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.1ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (7.4ms)
+Completed 401 Unauthorized in 15ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `collect' for nil:NilClass):
+    40:     </td>
+    41:     <td><%= garage.garage_rating %></td>
+    42:     <td>
+    43:       <% garage.garage_types.collect do |type| %>
+    44:         <% type %>
+    45:       <% end %>
+    46: 
+  
+app/views/admin/garages/index.html.erb:43:in `block in _app_views_admin_garages_index_html_erb___4358283875503357452_69953824903140'
+app/views/admin/garages/index.html.erb:25:in `_app_views_admin_garages_index_html_erb___4358283875503357452_69953824903140'
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:45:43 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (6.9ms)
+Completed 401 Unauthorized in 17ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `collect' for nil:NilClass):
+    40:     </td>
+    41:     <td><%= garage.garage_rating %></td>
+    42:     <td>
+    43:       <%= garage.garage_types.collect do |type| %>
+    44:         <%= type %>
+    45:       <% end %>
+    46: 
+  
+app/views/admin/garages/index.html.erb:43:in `block in _app_views_admin_garages_index_html_erb___4358283875503357452_69953986421500'
+app/views/admin/garages/index.html.erb:25:in `_app_views_admin_garages_index_html_erb___4358283875503357452_69953986421500'
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:45:52 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (10.0ms)
+Completed 401 Unauthorized in 20ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    40:     </td>
+    41:     <td><%= garage.garage_rating %></td>
+    42:     <td>
+    43:       <% garage.garage_types.each do |type| %>
+    44:         <%= type %>
+    45:       <% end %>
+    46: 
+  
+app/views/admin/garages/index.html.erb:43:in `block in _app_views_admin_garages_index_html_erb___4358283875503357452_69953864656600'
+app/views/admin/garages/index.html.erb:25:in `_app_views_admin_garages_index_html_erb___4358283875503357452_69953864656600'
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:46:11 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.4ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (7.4ms)
+Completed 401 Unauthorized in 16ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    40:     </td>
+    41:     <td><%= garage.garage_rating %></td>
+    42:     <td>
+    43:       <%= garage.garage_types[0] %>
+    44: 
+    45:     </td>
+    46:     <td>
+  
+app/views/admin/garages/index.html.erb:43:in `block in _app_views_admin_garages_index_html_erb___4358283875503357452_69953786006860'
+app/views/admin/garages/index.html.erb:25:in `_app_views_admin_garages_index_html_erb___4358283875503357452_69953786006860'
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:46:40 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.1ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 93ms (Views: 86.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:46:58 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.3ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 105ms (Views: 98.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:47:13 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.2ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 91ms (Views: 84.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:48:14 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (9.4ms)
+Completed 401 Unauthorized in 19ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    40:     </td>
+    41:     <td><%= garage.garage_rating %></td>
+    42:     <td>
+    43:       <%= garage.garage_types[0] %>
+    44: 
+    45:     </td>
+    46:     <td>
+  
+app/views/admin/garages/index.html.erb:43:in `block in _app_views_admin_garages_index_html_erb___4358283875503357452_54973860'
+app/views/admin/garages/index.html.erb:25:in `_app_views_admin_garages_index_html_erb___4358283875503357452_54973860'
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:48:38 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 410ms (Views: 90.5ms | ActiveRecord: 192.0ms)
+
+
+Started GET "/admin/garages/" for 127.0.0.1 at 2018-03-20 21:49:02 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 73ms (Views: 66.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-20 21:53:25 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (57.6ms)
+Completed 401 Unauthorized in 93ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `garage_types' for #<Class:0x007f3ec9b90b40>
+Did you mean?  garage_type):
+    15:     <p>Тип сервісу:</br>
+    16:       <div class="serviceTypes">
+    17: 
+    18:         <%= f.input :garage_types, collection: Garage.garage_types.options, as: :check_boxes, label: "Послуги сервісу:" %>
+    19:       </div>
+    20:   </p>
+    21:   <p>Графік роботи</br>
+  
+app/views/admin/garages/new.html.erb:18:in `block in _app_views_admin_garages_new_html_erb__236747648573743183_69953822695660'
+app/views/admin/garages/new.html.erb:2:in `_app_views_admin_garages_new_html_erb__236747648573743183_69953822695660'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-20 21:54:03 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 175ms (Views: 169.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 21:54:10 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.1ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 110ms (Views: 102.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2018-03-20 21:55:31 +0200
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 134ms (Views: 128.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 21:55:33 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (2.6ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 121ms (Views: 112.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-20 21:57:57 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 114ms (Views: 109.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/brands" for 127.0.0.1 at 2018-03-20 21:58:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/brands"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-20 22:02:56 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 154ms (Views: 104.1ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:03:21 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'={:roles=>"Власник СТО"}):
+  
+app/controllers/admin/garages_controller.rb:11:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:04:01 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 401 Unauthorized in 69ms (ActiveRecord: 5.6ms)
+
+
+  
+TypeError (can't cast Hash):
+  
+app/controllers/admin/garages_controller.rb:11:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:05:39 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (130.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."roles" = $1[0m  [["roles", "Власник СТО"]]
+Completed 401 Unauthorized in 198ms (ActiveRecord: 132.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  malformed array literal: "Власник СТО"
+DETAIL:  Array value must start with "{" or dimension information.
+: SELECT "users".* FROM "users" WHERE "users"."roles" = $1):
+  
+app/controllers/admin/garages_controller.rb:13:in `puts'
+app/controllers/admin/garages_controller.rb:13:in `puts'
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:06:12 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."roles" = $1[0m  [["roles", "Власник СТО"]]
+Completed 401 Unauthorized in 95ms (ActiveRecord: 2.4ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  malformed array literal: "Власник СТО"
+DETAIL:  Array value must start with "{" or dimension information.
+: SELECT "users".* FROM "users" WHERE "users"."roles" = $1):
+  
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:06:32 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."roles" = $1[0m  [["roles", "Власник СТО"]]
+Completed 401 Unauthorized in 59ms (ActiveRecord: 2.9ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  malformed array literal: "Власник СТО"
+DETAIL:  Array value must start with "{" or dimension information.
+: SELECT "users".* FROM "users" WHERE "users"."roles" = $1):
+  
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:09:27 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."roles" = $1[0m  [["roles", "Власник СТО"]]
+Completed 401 Unauthorized in 46ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  malformed array literal: "Власник СТО"
+DETAIL:  Array value must start with "{" or dimension information.
+: SELECT "users".* FROM "users" WHERE "users"."roles" = $1):
+  
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:09:28 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."roles" = $1[0m  [["roles", "Власник СТО"]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 2.3ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  malformed array literal: "Власник СТО"
+DETAIL:  Array value must start with "{" or dimension information.
+: SELECT "users".* FROM "users" WHERE "users"."roles" = $1):
+  
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:09:45 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."roles" = $1[0m  [["roles", "Власник СТО"]]
+Completed 401 Unauthorized in 55ms (ActiveRecord: 5.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  malformed array literal: "Власник СТО"
+DETAIL:  Array value must start with "{" or dimension information.
+: SELECT "users".* FROM "users" WHERE "users"."roles" = $1):
+  
+app/controllers/admin/garages_controller.rb:13:in `collect'
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:10:21 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."roles" = $1[0m  [["roles", "Власник СТО"]]
+Completed 401 Unauthorized in 65ms (ActiveRecord: 4.0ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  malformed array literal: "Власник СТО"
+DETAIL:  Array value must start with "{" or dimension information.
+: SELECT "users".* FROM "users" WHERE "users"."roles" = $1):
+  
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:10:23 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."roles" = $1[0m  [["roles", "Власник СТО"]]
+Completed 401 Unauthorized in 9ms (ActiveRecord: 1.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  malformed array literal: "Власник СТО"
+DETAIL:  Array value must start with "{" or dimension information.
+: SELECT "users".* FROM "users" WHERE "users"."roles" = $1):
+  
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:10:29 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."roles" = $1[0m  [["roles", "Власник СТО"]]
+Completed 401 Unauthorized in 87ms (ActiveRecord: 10.2ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  malformed array literal: "Власник СТО"
+DETAIL:  Array value must start with "{" or dimension information.
+: SELECT "users".* FROM "users" WHERE "users"."roles" = $1):
+  
+app/controllers/admin/garages_controller.rb:14:in `puts'
+app/controllers/admin/garages_controller.rb:14:in `puts'
+app/controllers/admin/garages_controller.rb:14:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:10:52 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."roles" = $1[0m  [["roles", "Власник СТО"]]
+Completed 401 Unauthorized in 69ms (ActiveRecord: 3.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  malformed array literal: "Власник СТО"
+DETAIL:  Array value must start with "{" or dimension information.
+: SELECT "users".* FROM "users" WHERE "users"."roles" = $1):
+  
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:11:17 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."roles" = $1[0m  [["roles", "Власник СТО"]]
+Completed 401 Unauthorized in 64ms (ActiveRecord: 1.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  malformed array literal: "Власник СТО"
+DETAIL:  Array value must start with "{" or dimension information.
+: SELECT "users".* FROM "users" WHERE "users"."roles" = $1):
+  
+app/controllers/admin/garages_controller.rb:13:in `puts'
+app/controllers/admin/garages_controller.rb:13:in `puts'
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:11:30 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (2.0ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 169ms (Views: 110.1ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:11:43 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."roles" = $1[0m  [["roles", "Власник СТО"]]
+Completed 401 Unauthorized in 51ms (ActiveRecord: 1.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  malformed array literal: "Власник СТО"
+DETAIL:  Array value must start with "{" or dimension information.
+: SELECT "users".* FROM "users" WHERE "users"."roles" = $1):
+  
+app/controllers/admin/garages_controller.rb:13:in `puts'
+app/controllers/admin/garages_controller.rb:13:in `puts'
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:13:26 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (49.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (roles ='Власник СТО')[0m
+Completed 401 Unauthorized in 97ms (ActiveRecord: 49.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  malformed array literal: "Власник СТО"
+LINE 1: SELECT "users".* FROM "users" WHERE (roles ='Власник СТО')
+                                                    ^
+DETAIL:  Array value must start with "{" or dimension information.
+: SELECT "users".* FROM "users" WHERE (roles ='Власник СТО')):
+  
+app/controllers/admin/garages_controller.rb:13:in `puts'
+app/controllers/admin/garages_controller.rb:13:in `puts'
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:13:58 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (roles = Власник СТО)[0m
+Completed 401 Unauthorized in 66ms (ActiveRecord: 1.6ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near "СТО"
+LINE 1: SELECT "users".* FROM "users" WHERE (roles = Власник СТО)
+                                                             ^
+: SELECT "users".* FROM "users" WHERE (roles = Власник СТО)):
+  
+app/controllers/admin/garages_controller.rb:13:in `puts'
+app/controllers/admin/garages_controller.rb:13:in `puts'
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:13:59 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (roles = Власник СТО)[0m
+Completed 401 Unauthorized in 7ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::SyntaxError: ERROR:  syntax error at or near "СТО"
+LINE 1: SELECT "users".* FROM "users" WHERE (roles = Власник СТО)
+                                                             ^
+: SELECT "users".* FROM "users" WHERE (roles = Власник СТО)):
+  
+app/controllers/admin/garages_controller.rb:13:in `puts'
+app/controllers/admin/garages_controller.rb:13:in `puts'
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:14:27 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (roles = 'Власник СТО')[0m
+Completed 401 Unauthorized in 66ms (ActiveRecord: 6.9ms)
+
+
+  
+ActiveRecord::StatementInvalid (PG::InvalidTextRepresentation: ERROR:  malformed array literal: "Власник СТО"
+LINE 1: SELECT "users".* FROM "users" WHERE (roles = 'Власник СТО')
+                                                     ^
+DETAIL:  Array value must start with "{" or dimension information.
+: SELECT "users".* FROM "users" WHERE (roles = 'Власник СТО')):
+  
+app/controllers/admin/garages_controller.rb:13:in `puts'
+app/controllers/admin/garages_controller.rb:13:in `puts'
+app/controllers/admin/garages_controller.rb:13:in `index'
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:19:46 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (27.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."roles" = $1[0m  [["roles", "{\"Власник СТО\"}"]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.8ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (72.1ms)
+Completed 200 OK in 241ms (Views: 149.8ms | ActiveRecord: 34.0ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:23:03 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE ('Власник СТО' = ANY (roles))[0m
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.8ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 188ms (Views: 126.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/admin/users" for 127.0.0.1 at 2018-03-20 22:23:11 +0200
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/users/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 115ms (Views: 107.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:24:27 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (0.9ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 170ms (Views: 98.0ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-20 22:24:29 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/new.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 107ms (Views: 99.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-20 22:24:52 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  Rendered admin/garages/new.html.erb within layouts/application (7.4ms)
+Completed 401 Unauthorized in 17ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `collect' for nil:NilClass):
+    4:       <p>
+    5:       <%= f.input :garage_name, label: 'Назва СТО' %></p>
+    6:       <p>Власник
+    7:         <%= f.select("user_id", @users.collect{|p| [ p.surname,  p.id] }) %>
+    8:       </p>
+    9:       <p>
+   10:         <%= f.input :city, label: "Місто" %></p>
+  
+app/views/admin/garages/new.html.erb:7:in `block in _app_views_admin_garages_new_html_erb__236747648573743183_69953947053240'
+app/views/admin/garages/new.html.erb:2:in `_app_views_admin_garages_new_html_erb__236747648573743183_69953947053240'
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-20 22:25:05 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE ('Власник СТО' = ANY (roles))[0m
+  Rendered admin/garages/new.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 127ms (Views: 118.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/admin/garages/new" for 127.0.0.1 at 2018-03-20 22:25:14 +0200
+Processing by Admin::GaragesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/new.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE ('Власник СТО' = ANY (roles))[0m
+  Rendered admin/garages/new.html.erb within layouts/application (56.8ms)
+Completed 200 OK in 138ms (Views: 132.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/admin/garages" for 127.0.0.1 at 2018-03-20 22:26:27 +0200
+Processing by Admin::GaragesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9kcoWIkgFz6aQ71BfX0PHCDJ7V13BoMduGcPljqpyYGb7JqbTTfGj4/JZIMYppL9VCIwEatrQ77TjCYdnY/gCw==", "garage"=>{"garage_name"=>"Seat Service", "user_id"=>"4", "city"=>"Lviv", "address"=>"Soborna str", "phone"=>"096554745", "garage_types"=>["", "Майстерня", "Шиномонтаж"], "work_shedule"=>["10-18", "10-15", "Вихідний"], "diler"=>"1", "description"=>"идфидффф", "remote_image_url"=>"http://i.wheelsage.org/image/format/picture/picture-medium/seat/logotypes/autowp.ru_seat_logo_2.jpeg"}, "commit"=>"Додати СТО"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (53.5ms)[0m  [1m[32mINSERT INTO "garages" ("user_id", "garage_name", "description", "city", "address", "phone", "diler", "image", "garage_types", "work_shedule", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["user_id", 4], ["garage_name", "Seat Service"], ["description", "идфидффф"], ["city", "Lviv"], ["address", "Soborna str"], ["phone", "096554745"], ["diler", "t"], ["image", "autowp.ru_seat_logo_2.jpeg"], ["garage_types", "{\"\",Майстерня,Шиномонтаж}"], ["work_shedule", "{10-18,10-15,Вихідний}"], ["created_at", "2018-03-20 20:26:28.809317"], ["updated_at", "2018-03-20 20:26:28.809317"]]
+  [1m[35m (9.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/admin/garages
+Completed 302 Found in 1606ms (ActiveRecord: 66.1ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:26:28 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.1ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 100ms (Views: 92.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin/garages" for 127.0.0.1 at 2018-03-20 22:27:41 +0200
+Processing by Admin::GaragesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/index.html.erb within layouts/application
+  [1m[36mGarage Load (1.3ms)[0m  [1m[34mSELECT users.surname, users.name, garages.garage_name, garages.description,
+        garages.city, garages.address, garages.phone, garages.diler,
+        garages.image, garages.garage_rating, garages.garage_types,
+        garages.work_shedule, garages.id FROM "garages" LEFT OUTER JOIN "users" ON "users"."id" = "garages"."user_id"[0m
+  Rendered admin/garages/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 111ms (Views: 104.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/admin/garages/2/edit" for 127.0.0.1 at 2018-03-20 22:28:14 +0200
+Processing by Admin::GaragesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mGarage Load (1.9ms)[0m  [1m[34mSELECT  "garages".* FROM "garages" WHERE "garages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering admin/garages/edit.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered admin/garages/edit.html.erb within layouts/application (41.0ms)
+Completed 401 Unauthorized in 55ms (ActiveRecord: 3.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `garage_types' for #<Class:0x007f3ece74bdc8>
+Did you mean?  garage_type):
+    15:   <p>Тип сервісу:</br>
+    16:     <div class="serviceTypes">
+    17:       <%= f.label "Майстерня" %>
+    18:       <%= f.input :garage_types, collection: Garage.garage_types.options, as: :check_boxes %>
+    19:     </div>
+    20: </p>
+    21: <p>Графік роботи</br>
+  
+app/views/admin/garages/edit.html.erb:18:in `block in _app_views_admin_garages_edit_html_erb___1565193198783067572_69953863245020'
+app/views/admin/garages/edit.html.erb:2:in `_app_views_admin_garages_edit_html_erb___1565193198783067572_69953863245020'

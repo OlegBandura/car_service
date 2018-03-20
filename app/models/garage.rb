@@ -5,8 +5,8 @@ class Garage < ApplicationRecord
 
   extend Enumerize
 
-  serialize :garage_types, Array
-  enumerize :garage_types, in:
+  serialize :garage_type, Array
+  enumerize :garage_type, in:
   {
     'Майстерня' => ':service', 'Шиномонтаж' => ':vulcanization',
     'Автомийка' => ':car_wash'

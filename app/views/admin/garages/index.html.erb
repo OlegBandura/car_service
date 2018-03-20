@@ -41,18 +41,13 @@
     <td><%= garage.garage_rating %></td>
     <td>
       <% garage.garage_types.each do |garage_type| %>
-        <% if garage_type == "car_wash" %>
-        <%= "Автомийка" %>
-        <% elsif garage_type == "vulcanization" %>
-        <%= "Вулканізація" %>
-        <% elsif garage_type == "service" %>
-        <%= "Автомайстерня" %>
-        <% end %>
+        <%= garage_type %>
       <% end %>
+
     </td>
     <td>
       Робочі дні: <%= garage.work_shedule[0] %>
-      Субота: <%= garage.work_shedule[1] %>
+      Субота: <%= garage.work_shedule[1] %></br>
       Неділя: <%= garage.work_shedule[2] %>
     </td>
 

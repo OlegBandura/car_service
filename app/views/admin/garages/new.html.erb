@@ -4,7 +4,7 @@
       <p>
       <%= f.input :garage_name, label: 'Назва СТО' %></p>
       <p>Власник
-        <%= f.select("user_id", User.all.collect{|p| [ p.surname,  p.id] }) %>
+        <%= f.select("user_id", @user.collect{|p| [ p.surname,  p.id] }) %>
       </p>
       <p>
         <%= f.input :city, label: "Місто" %></p>
@@ -15,7 +15,7 @@
     <p>Тип сервісу:</br>
       <div class="serviceTypes">
 
-        <%= f.input :garage_types, collection: Garage.garage_types.options, as: :check_boxes, label: "Послуги сервісу:" %>
+        <%= f.input :garage_types, collection: Garage.garage_type.options, as: :check_boxes, label: "Послуги сервісу:" %>
       </div>
   </p>
   <p>Графік роботи</br>
