@@ -5,7 +5,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
-
+  #
   # ROLES = %i[client director]
   # def roles=(roles)
   #   roles = [*roles].map { |r| r.to_sym }
@@ -21,17 +21,18 @@ class User < ApplicationRecord
   # def has_role?(role)
   #   roles.include?(role)
   # end
-
+  #
   extend Enumerize
 
   serialize :user_roles, Array
   enumerize :user_roles, in:
   {
     'Клієнт' => ':client', 'Власник СТО' => ':director'
-  }, multiple: true
+  }
+
   serialize :admin_role, Array
   enumerize :admin_role, in:
   {
     'Адміністратор' => ':admin'
-  }, multiple: true
+  }
 end

@@ -7,7 +7,6 @@ module Admin
 
     def edit
       @user = User.find(params[:id])
-      
     end
 
     def update
@@ -22,7 +21,7 @@ module Admin
     private
 
     def user_params
-      params.require(:user).permit(:admin)
+      params.require(:user).permit(roles:[])
     end
   end
 end

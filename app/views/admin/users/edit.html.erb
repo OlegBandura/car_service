@@ -16,14 +16,18 @@
 
       </p>
       <p class="user_paragraph">set admin:</p>
-        <% if @user.admin == true %>
+        <% if @user.roles == "admin" %>
         <%= simple_form_for :user, url: admin_user_path(@user), :method => :PUT do |f| %>
-          <%= f.check_box :admin, checked: false, class: "check_box_hidden" %>
+          <%= f.input :roles, collection: User.admin_role.options, as: :check_boxes, checked: false, class: "check_box_hidden"  %>
+          <!-- <%= f.check_box :admin, checked: false, class: "check_box_hidden" %> -->
           <%= f.submit 'Destroy admin', data: {confirm: 'Ви хочете цьому користувачеві видалити права адміністратора?' }%>
           <% end %>
+
         <% else %>
-          <%= form_for :user, url: admin_user_path(@user), :method => :PUT do |f| %>
-          <%= f.check_box :admin, checked: true, class: "check_box_hidden" %>
+          <%= simple_form_for :user, url: admin_user_path(@user), :method => :PUT do |f| %>
+          <%= f.input :roles, collection: User.admin_role.options, as: :check_boxes, checked: true, class: "check_box_hidden"  %>
+
+        <!-- <%= f.check_box :admin, checked: true, class: "check_box_hidden" %> -->
           <%= f.submit 'Set admin', data: {confirm: 'Ви хочете цьому користувачеві надати права адміністратора?' } %>
         <% end %>
       <% end %>

@@ -10,5 +10,5 @@ class Garage < ApplicationRecord
   {
     'Майстерня' => ':service', 'Шиномонтаж' => ':vulcanization',
     'Автомийка' => ':car_wash'
-  }, multiple: true
+  }
 end
