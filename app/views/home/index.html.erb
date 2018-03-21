@@ -1,1 +1,20 @@
-Hello
+<div class="block">
+  <% @types_count.each do |type| %>
+  <div class="preview_service" style="width: 18rem;">
+    <%= image_tag("/images/car-logo.png", size: "10x190", class: "card-img-top") %>
+    <div class="card-body">
+      <h5 class="card-title">
+        <% if type.include?('service') %>
+          Автосервіси
+        <% elsif type.include?('car_wash') %>
+          Автомийки
+        <% elsif type.include?('vulcanization') %>
+          Вулканізації
+        <% end %>
+      </h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary float-right">Вибрати</a>
+    </div>
+  </div>
+  <% end %>
+</div>
