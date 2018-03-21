@@ -54360,3 +54360,1609 @@ Processing by ProfileController#index as HTML
 Completed 200 OK in 108ms (Views: 86.5ms | ActiveRecord: 9.9ms)
 
 
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:01:05 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.4ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 117ms (Views: 107.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:01:41 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.1ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 77ms (Views: 69.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:01:46 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.0ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 106ms (Views: 95.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:02:33 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.7ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.8ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 97ms (Views: 87.3ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:02:49 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.1ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 84ms (Views: 74.9ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:03:07 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.1ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 89ms (Views: 81.1ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-21 15:03:16 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ptRUL+vt1OgY9tsDD4je/ZZ+I4I+wQPYG6Q0FXMiV1CMx8OQFbRClP/Ijg+IGbFMAA9/6UjOZ1rQxWtpYjUR9g==", "commit"=>"Видалити авто", "profile"=>{"brand_id"=>"1", "car_model_id"=>"4", "car_year"=>"2018"}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "user_cars" ("brand_id", "car_model_id", "user_id", "car_year", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand_id", 1], ["car_model_id", 4], ["user_id", 2], ["car_year", 2018], ["created_at", "2018-03-21 13:03:16.489580"], ["updated_at", "2018-03-21 13:03:16.489580"]]
+  [1m[35m (26.9ms)[0m  [1m[35mCOMMIT[0m
+No template found for ProfileController#create, rendering head :no_content
+Completed 204 No Content in 78ms (ActiveRecord: 30.3ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:03:18 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.1ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (1.0ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 85ms (Views: 75.9ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:03:58 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  Rendered profile/index.html.erb within layouts/application (2.5ms)
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.7ms)
+
+
+  
+SyntaxError (/home/olko/rails/car_service/app/views/profile/index.html.erb:35: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/olko/rails/car_service/app/views/profile/index.html.erb:37: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/views/profile/index.html.erb:35: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/profile/index.html.erb:37: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:04:25 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.1ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 85ms (Views: 74.8ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-21 15:04:27 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cjtbQD1aCL5jWJfuzspNr9vc+fQ7kB0C6FxhcM+K0fdYKMz/wwOewoRmwuJJWyIeTa2ln02feYAjPT4M3p2XUQ==", "commit"=>"Видалити авто"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: profile):
+  
+app/controllers/profile_controller.rb:24:in `profile_params'
+app/controllers/profile_controller.rb:17:in `create'
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:04:52 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (4.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.8ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 86ms (Views: 73.4ms | ActiveRecord: 8.6ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-21 15:04:54 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ouwQzjYGbqHQPIKsEYL3f/uak62RPDe0UP6MpGzvpEKI/4dxyF/43TcC16CWE5jObevPxuczUzabn9PYffji5A==", "commit"=>"Видалити авто"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: profile):
+  
+app/controllers/profile_controller.rb:24:in `profile_params'
+app/controllers/profile_controller.rb:17:in `create'
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:05:05 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 91ms (Views: 81.9ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:05:35 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (0.9ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  Rendered profile/index.html.erb within layouts/application (196.6ms)
+Completed 401 Unauthorized in 206ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `link_to' for #<SimpleForm::FormBuilder:0x007fc4d8896cd8>):
+    10:     <%= car.brand_name %>
+    11:     <%= car.model %>
+    12:     <%= car.car_year %>
+    13:     <%= f.link_to "Delete car" %></br>
+    14:   <% end %>
+    15: <% end %>
+    16:   <%= simple_form_for :profile, url: profile_index_path do |form|%>
+  
+app/views/profile/index.html.erb:13:in `block (2 levels) in _app_views_profile_index_html_erb__2403233791176186869_70241711934280'
+app/views/profile/index.html.erb:9:in `block in _app_views_profile_index_html_erb__2403233791176186869_70241711934280'
+app/views/profile/index.html.erb:7:in `_app_views_profile_index_html_erb__2403233791176186869_70241711934280'
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:05:44 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (1.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 85ms (Views: 75.5ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:05:48 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (0.9ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 93ms (Views: 81.6ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:05:48 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.2ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 93ms (Views: 83.1ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:05:48 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.4ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (31.3ms)
+Completed 200 OK in 94ms (Views: 84.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:05:49 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (1.0ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (1.0ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 114ms (Views: 102.8ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:05:49 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 101ms (Views: 90.7ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:05:50 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.5ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (2.1ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.2ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 118ms (Views: 107.5ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:05:50 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.9ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (1.1ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 93ms (Views: 82.2ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:05:50 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.7ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (1.2ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 91ms (Views: 79.1ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:08:53 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  Rendered profile/index.html.erb within layouts/application (1.3ms)
+Completed 401 Unauthorized in 58ms (ActiveRecord: 7.9ms)
+
+
+  
+SyntaxError (/home/olko/rails/car_service/app/views/profile/index.html.erb:13: syntax error, unexpected ':'
+...ppend=( link_to "Delete car", : );@output_buffer.safe_append...
+...                               ^
+/home/olko/rails/car_service/app/views/profile/index.html.erb:14: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/home/olko/rails/car_service/app/views/profile/index.html.erb:36: syntax error, unexpected keyword_ensure, expecting ')'
+/home/olko/rails/car_service/app/views/profile/index.html.erb:38: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/profile/index.html.erb:13: syntax error, unexpected ':'
+app/views/profile/index.html.erb:14: syntax error, unexpected keyword_end, expecting ')'
+app/views/profile/index.html.erb:36: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/profile/index.html.erb:38: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:10:41 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  Rendered profile/index.html.erb within layouts/application (2.4ms)
+Completed 401 Unauthorized in 58ms (ActiveRecord: 7.2ms)
+
+
+  
+SyntaxError (/home/olko/rails/car_service/app/views/profile/index.html.erb:13: syntax error, unexpected '(', expecting ')'
+...lete car", :profile_index_path(car) );@output_buffer.safe_ap...
+...                               ^):
+  
+app/views/profile/index.html.erb:13: syntax error, unexpected '(', expecting ')'
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:10:54 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  Rendered profile/index.html.erb within layouts/application (2.0ms)
+Completed 401 Unauthorized in 11ms (ActiveRecord: 1.2ms)
+
+
+  
+SyntaxError (/home/olko/rails/car_service/app/views/profile/index.html.erb:13: syntax error, unexpected '(', expecting ')'
+...lete car", :profile_index_path(car.id) );@output_buffer.safe...
+...                               ^
+/home/olko/rails/car_service/app/views/profile/index.html.erb:13: syntax error, unexpected ')', expecting keyword_end
+..., :profile_index_path(car.id) );@output_buffer.safe_append='...
+...                               ^):
+  
+app/views/profile/index.html.erb:13: syntax error, unexpected '(', expecting ')'
+app/views/profile/index.html.erb:13: syntax error, unexpected ')', expecting keyword_end
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:11:05 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  Rendered profile/index.html.erb within layouts/application (1.5ms)
+Completed 401 Unauthorized in 10ms (ActiveRecord: 1.3ms)
+
+
+  
+SyntaxError (/home/olko/rails/car_service/app/views/profile/index.html.erb:13: syntax error, unexpected '(', expecting ')'
+...lete car", :profile_index_path(@user_car) );@output_buffer.s...
+...                               ^):
+  
+app/views/profile/index.html.erb:13: syntax error, unexpected '(', expecting ')'
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:11:30 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (2.0ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (80.4ms)
+Completed 200 OK in 141ms (Views: 114.9ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/profile.%23%3CUserCar::ActiveRecord_Relation:0x007fc4d9d9f940%3E" for 127.0.0.1 at 2018-03-21 15:11:34 +0200
+Processing by ProfileController#index as 
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 123ms (Views: 108.4ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:11:45 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.3ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.8ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 100ms (Views: 87.4ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/profile.%23%3CUserCar::ActiveRecord_Relation:0x007fc4d8296518%3E" for 127.0.0.1 at 2018-03-21 15:11:56 +0200
+Processing by ProfileController#index as 
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.0ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (49.9ms)
+Completed 200 OK in 113ms (Views: 100.8ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/profile.%23%3CUserCar::ActiveRecord_Relation:0x007fc4d8296518%3E" for 127.0.0.1 at 2018-03-21 15:12:11 +0200
+Processing by ProfileController#index as 
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (0.9ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (2.9ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 101ms (Views: 87.7ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/profile.%23%3CUserCar::ActiveRecord_Relation:0x007fc4d8296518%3E" for 127.0.0.1 at 2018-03-21 15:12:12 +0200
+Processing by ProfileController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (0.9ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 106ms (Views: 93.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/profile.%23%3CUserCar::ActiveRecord_Relation:0x007fc4d8296518%3E" for 127.0.0.1 at 2018-03-21 15:12:13 +0200
+Processing by ProfileController#index as 
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (0.9ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 95ms (Views: 80.1ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:12:21 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.3ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 86ms (Views: 73.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:13:59 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 91ms (Views: 80.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:14:11 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.1ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.9ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (1.2ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 92ms (Views: 82.1ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/profile.2" for 127.0.0.1 at 2018-03-21 15:14:13 +0200
+Processing by ProfileController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.0ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (1.0ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 123ms (Views: 109.9ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/profile/2" for 127.0.0.1 at 2018-03-21 15:14:21 +0200
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for ProfileController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/profile.2" for 127.0.0.1 at 2018-03-21 15:14:25 +0200
+Processing by ProfileController#index as 
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.3ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (1.2ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 105ms (Views: 92.6ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/profile.4" for 127.0.0.1 at 2018-03-21 15:14:27 +0200
+Processing by ProfileController#index as 
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (0.9ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.2ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 95ms (Views: 82.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:14:38 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.0ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (1.1ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (1.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (1.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 96ms (Views: 84.0ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:14:57 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  Rendered profile/index.html.erb within layouts/application (22.4ms)
+Completed 401 Unauthorized in 31ms (ActiveRecord: 0.8ms)
+
+
+  
+SyntaxError (/home/olko/rails/car_service/app/views/profile/index.html.erb:13: unknown regexp options - br
+unmatched close parenthesis: /car.id) );@output_buffer.safe_append='</
+/home/olko/rails/car_service/app/views/profile/index.html.erb:17: syntax error, unexpected '<', expecting ')'
+  <p>Інформація про авто:</p>
+   ^
+/home/olko/rails/car_service/app/views/profile/index.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  <p>Інформація про авто:</p>
+                                ^
+/home/olko/rails/car_service/app/views/profile/index.html.erb:21: unknown regexp options - dv
+/home/olko/rails/car_service/app/views/profile/index.html.erb:22: syntax error, unexpected '<'
+  <div class = "field">
+   ^
+/home/olko/rails/car_service/app/views/profile/index.html.erb:25: syntax error, unexpected '<', expecting ')'
+  </div>
+   ^
+/home/olko/rails/car_service/app/views/profile/index.html.erb:29: unknown regexp options - dv
+/home/olko/rails/car_service/app/views/profile/index.html.erb:30: syntax error, unexpected '<'
+    <div class = "field">
+     ^
+/home/olko/rails/car_service/app/views/profile/index.html.erb:33: unterminated regexp meets end of file
+/home/olko/rails/car_service/app/views/profile/index.html.erb:33: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/profile/index.html.erb:13: unknown regexp options - br
+app/views/profile/index.html.erb:17: syntax error, unexpected '<', expecting ')'
+app/views/profile/index.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/profile/index.html.erb:21: unknown regexp options - dv
+app/views/profile/index.html.erb:22: syntax error, unexpected '<'
+app/views/profile/index.html.erb:25: syntax error, unexpected '<', expecting ')'
+app/views/profile/index.html.erb:29: unknown regexp options - dv
+app/views/profile/index.html.erb:30: syntax error, unexpected '<'
+app/views/profile/index.html.erb:33: unterminated regexp meets end of file
+app/views/profile/index.html.erb:33: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:15:55 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (1.2ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 118ms (Views: 107.7ms | ActiveRecord: 5.7ms)
+
+
+Started DELETE "/profile/2" for 127.0.0.1 at 2018-03-21 15:16:09 +0200
+Processing by ProfileController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HLxUSqX9XHohQI3T7z6WQxECHJaDjtM6yCkh5qEipYo2r8P1W6TKBsZ+2N9or/nyh3NA/fWBt7gDSH6asDXjLA==", "id"=>"2"}
+  [1m[36mUserCar Load (1.4ms)[0m  [1m[34mSELECT  "user_cars".* FROM "user_cars" WHERE "user_cars"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[31mDELETE FROM "user_cars" WHERE "user_cars"."id" = $1[0m  [["id", 2]]
+  [1m[35m (22.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to 
+Completed 401 Unauthorized in 335ms (ActiveRecord: 25.9ms)
+
+
+  
+NoMethodError (undefined method `profile_index_path_url' for #<ProfileController:0x007fc4d40ea5d8>
+Did you mean?  profile_index_path
+               profile_index_url):
+  
+app/controllers/profile_controller.rb:21:in `destroy'
+Started GET "/profile/" for 127.0.0.1 at 2018-03-21 15:16:28 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (0.9ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (29.2ms)
+Completed 200 OK in 120ms (Views: 108.2ms | ActiveRecord: 4.7ms)
+
+
+Started DELETE "/profile/3" for 127.0.0.1 at 2018-03-21 15:16:43 +0200
+Processing by ProfileController#destroy as HTML
+  Parameters: {"authenticity_token"=>"QSOASPU0cXIWfozt/dQsADIzQgk08lcfH+lq3thH1lBrMBf3C23nDvFA2eF6RUOxpEIeYkL9M53UiDWiyVCQ9g==", "id"=>"3"}
+  [1m[36mUserCar Load (0.8ms)[0m  [1m[34mSELECT  "user_cars".* FROM "user_cars" WHERE "user_cars"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[31mDELETE FROM "user_cars" WHERE "user_cars"."id" = $1[0m  [["id", 3]]
+  [1m[35m (31.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to 
+Completed 401 Unauthorized in 428ms (ActiveRecord: 34.2ms)
+
+
+  
+NoMethodError (undefined method `profile_index_path_url' for #<ProfileController:0x007fc4d0444e30>
+Did you mean?  profile_index_path
+               profile_index_url):
+  
+app/controllers/profile_controller.rb:21:in `destroy'
+Started GET "/profile/3" for 127.0.0.1 at 2018-03-21 15:16:45 +0200
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for ProfileController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:17:06 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.3ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 133ms (Views: 119.7ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:17:47 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.0ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.1ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (110.2ms)
+Completed 200 OK in 263ms (Views: 147.0ms | ActiveRecord: 33.7ms)
+
+
+Started DELETE "/profile/4" for 127.0.0.1 at 2018-03-21 15:17:50 +0200
+Processing by ProfileController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rKuCWf38adXbVRkFVt/REejDSIA56auLlAvgv4U2M6GGuBXmA6X/qTxrTAnRTr6gfrIU60/mzwlfar/DlCF1Bw==", "id"=>"4"}
+  [1m[36mUserCar Load (1.5ms)[0m  [1m[34mSELECT  "user_cars".* FROM "user_cars" WHERE "user_cars"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "user_cars" WHERE "user_cars"."id" = $1[0m  [["id", 4]]
+  [1m[35m (27.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to 
+Completed 401 Unauthorized in 407ms (ActiveRecord: 29.4ms)
+
+
+  
+NoMethodError (undefined method `profile_index_path_url' for #<ProfileController:0x007fc4d0865e10>
+Did you mean?  profile_index_path
+               profile_index_url):
+  
+app/controllers/profile_controller.rb:21:in `destroy'
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:18:04 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (0.8ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (87.3ms)
+Completed 200 OK in 188ms (Views: 117.6ms | ActiveRecord: 20.9ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-21 15:18:08 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FX6fxNQDGIRgR6u011v7Bgx4dEjTbTHmY5JihapRiXs/bQh7KlqO+Id5/rhQypS3mgkoI6ViVWSo8z35u0bP3Q==", "profile"=>{"brand_id"=>"1", "car_model_id"=>"4", "car_year"=>"2018"}, "commit"=>"Вибрати авто"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "user_cars" ("brand_id", "car_model_id", "user_id", "car_year", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand_id", 1], ["car_model_id", 4], ["user_id", 2], ["car_year", 2018], ["created_at", "2018-03-21 13:18:08.193226"], ["updated_at", "2018-03-21 13:18:08.193226"]]
+  [1m[35m (24.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 38ms (ActiveRecord: 27.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:18:08 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 73ms (Views: 63.4ms | ActiveRecord: 4.6ms)
+
+
+Started DELETE "/profile/5" for 127.0.0.1 at 2018-03-21 15:18:11 +0200
+Processing by ProfileController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3a6W5WNk92f5I+dxsr/PMWSZBzEfLpBEAXHGURSjX8D3vQFanT1hGx4dsn01LqCA8uhbWmkh9MbKEJktBbQZZg==", "id"=>"5"}
+  [1m[36mUserCar Load (0.5ms)[0m  [1m[34mSELECT  "user_cars".* FROM "user_cars" WHERE "user_cars"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "user_cars" WHERE "user_cars"."id" = $1[0m  [["id", 5]]
+  [1m[35m (19.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 26ms (ActiveRecord: 20.9ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:18:11 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 92ms (Views: 83.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:18:33 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.1ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 89ms (Views: 79.0ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:18:46 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.7ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (30.3ms)
+Completed 200 OK in 120ms (Views: 110.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:19:04 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.0ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 103ms (Views: 93.4ms | ActiveRecord: 4.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-21 15:27:19 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xrARQDqWzLEKVkkhiUg93sq8CKzC3ixv1hqwK52ulHTso4b/xM9aze1oHC0O2VJvXM1Ux7TRSO0de+9XjLnS0g=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 60ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 15:27:19 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 73ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-21 15:27:20 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (76.1ms)
+Completed 200 OK in 154ms (Views: 151.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-21 15:27:22 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eN2Z5tEwsO+km9W00x7HXr3MXYkhj2tc0oZ6nSwdbfavocpvcWkP1bwVGwEJgN2MmANQvWJWdTAsJSEe+XhAPw==", "user"=>{"email"=>"aaaaaa@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "aaaaaa@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2018-03-21 13:27:23.212020"], ["last_sign_in_at", "2018-03-21 10:32:16.479132"], ["sign_in_count", 12], ["updated_at", "2018-03-21 13:27:23.215206"], ["id", 3]]
+  [1m[35m (16.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 469ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 15:27:23 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:27:25 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.5ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 3 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (1.1ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 101ms (Views: 89.3ms | ActiveRecord: 5.9ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-21 15:27:29 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lkKC/DH7SEYwneSfcw07Fa/2hijHp+1WKenFFsQyfcNemlNrTY+jddMPlT3bKU7UADUgB1jDQbWuOEJrHk424w==", "profile"=>{"brand_id"=>"6", "car_model_id"=>"12", "car_year"=>"2018"}, "commit"=>"Вибрати авто"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "user_cars" ("brand_id", "car_model_id", "user_id", "car_year", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand_id", 6], ["car_model_id", 12], ["user_id", 3], ["car_year", 2018], ["created_at", "2018-03-21 13:27:29.319801"], ["updated_at", "2018-03-21 13:27:29.319801"]]
+  [1m[35m (15.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 29ms (ActiveRecord: 17.7ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:27:29 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (2.3ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 3 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.8ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 88ms (Views: 78.3ms | ActiveRecord: 6.2ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-21 15:27:32 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a9v6msL7kQ5HywJG2BrtLaBkjaxcTt8nyNkl5kmNu5OS5qgj4/T4Ss0LnG4Lmgk4NQ5xHHdplebeIL0dnHCTqA==", "profile"=>{"brand_id"=>"7", "car_model_id"=>"11", "car_year"=>"2018"}, "commit"=>"Вибрати авто"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "user_cars" ("brand_id", "car_model_id", "user_id", "car_year", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand_id", 7], ["car_model_id", 11], ["user_id", 3], ["car_year", 2018], ["created_at", "2018-03-21 13:27:32.734634"], ["updated_at", "2018-03-21 13:27:32.734634"]]
+  [1m[35m (12.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 27ms (ActiveRecord: 15.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:27:32 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.4ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 3 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 91ms (Views: 80.6ms | ActiveRecord: 5.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-21 15:27:47 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eKvnMU5R9GMLOKe0J8JAroKUguXOTiiWjma2E3v1DIaBlrWIb16dJ4H4OZz0QqS7F/5+VeVpYleYny7orggkvQ=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 15:27:47 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 97ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-21 15:27:47 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 69ms (Views: 66.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-21 15:27:49 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AQ015xOBT/ZbcO5/Ccs8U1GyZROBw7xNq6KbadvRLMXLzqPOr1GbVXb/H+Xbn9CZDoM71+WY8k62D5W40FSZrg==", "user"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2018-03-21 13:27:49.785079"], ["last_sign_in_at", "2018-03-21 10:32:28.396551"], ["sign_in_count", 24], ["updated_at", "2018-03-21 13:27:49.786883"], ["id", 2]]
+  [1m[35m (48.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 282ms (ActiveRecord: 50.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 15:27:49 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 61ms (Views: 57.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:27:52 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (2.0ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 99ms (Views: 89.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:28:16 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 79ms (Views: 68.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:28:37 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.3ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.8ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 81ms (Views: 69.5ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:28:46 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.3ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 77ms (Views: 67.5ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-21 15:28:55 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oAWPAfNcFnmZYJp51vuTXJMFom5wXmMjRKGyz4vhMQ7jmyIkWckyWycWPBdnBJdYZ5KfiAP50M89CSSq4PuoUA==", "profile"=>{"brand_id"=>"1", "car_model_id"=>"4", "car_year"=>"2018"}, "commit"=>"Вибрати авто"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "user_cars" ("brand_id", "car_model_id", "user_id", "car_year", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand_id", 1], ["car_model_id", 4], ["user_id", 2], ["car_year", 2018], ["created_at", "2018-03-21 13:28:55.277154"], ["updated_at", "2018-03-21 13:28:55.277154"]]
+  [1m[35m (10.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 27ms (ActiveRecord: 15.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:28:55 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.0ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.9ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 83ms (Views: 74.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:29:09 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.1ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 94ms (Views: 83.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:29:24 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (0.9ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 111ms (Views: 100.8ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:29:25 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.0ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 2 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.6ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 77ms (Views: 68.4ms | ActiveRecord: 4.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-21 15:29:28 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Bbo8+Rl0tDhjxrxFCmmE07ZE3NUFuVNvtW5WYME/0r1GJJHcs+GQGt2wGiu7loDXQtPhM3Ye4IPMxsAFqiVL4w=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 15:29:28 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 79ms (Views: 77.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-21 15:29:29 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-21 15:29:32 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0A2DCN16Azqhbyu3IC3UlKzv/Ik/0OvSypxJagt7DUuwkRc9/MdGGp8p288IhxjPCeTH/wPd2/9KaJJAomKxRQ==", "user"=>{"email"=>"andrew@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "andrew@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2018-03-21 13:29:32.584087"], ["last_sign_in_at", "2018-03-21 09:03:15.833804"], ["sign_in_count", 6], ["updated_at", "2018-03-21 13:29:32.585838"], ["id", 6]]
+  [1m[35m (38.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 269ms (ActiveRecord: 40.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 15:29:32 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+Completed 200 OK in 97ms (Views: 94.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:29:34 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.0ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 6 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (1.1ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 114ms (Views: 104.8ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-21 15:29:38 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"13jvu0anzIqwF3JIPH1R7HuiTxigiNxX+gRnZRKMLyk8NKUxnuxKYDfZJ5lKvQot2WJWf9W18Xf+ssFzFxEPpA==", "profile"=>{"brand_id"=>"6", "car_model_id"=>"13", "car_year"=>"2018"}, "commit"=>"Вибрати авто"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBrand Load (0.3ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "user_cars" ("brand_id", "car_model_id", "user_id", "car_year", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand_id", 6], ["car_model_id", 13], ["user_id", 6], ["car_year", 2018], ["created_at", "2018-03-21 13:29:38.238640"], ["updated_at", "2018-03-21 13:29:38.238640"]]
+  [1m[35m (11.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 23ms (ActiveRecord: 13.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:29:38 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.5ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 6 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.7ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.6ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 88ms (Views: 78.7ms | ActiveRecord: 5.3ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-21 15:29:41 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mcoqXDbUEvLxI7gyUBwUx5fCRw3K8H1h43C7ufR+aUP8keGVTm/M3s/wKDVkXqJrRYUBlhPjx+aOjO+V0jFMzA==", "profile"=>{"brand_id"=>"5", "car_model_id"=>"9", "car_year"=>"2018"}, "commit"=>"Вибрати авто"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "user_cars" ("brand_id", "car_model_id", "user_id", "car_year", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand_id", 5], ["car_model_id", 9], ["user_id", 6], ["car_year", 2018], ["created_at", "2018-03-21 13:29:41.269114"], ["updated_at", "2018-03-21 13:29:41.269114"]]
+  [1m[35m (14.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 30ms (ActiveRecord: 17.0ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:29:41 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.0ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 6 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.5ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.1ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 81ms (Views: 72.6ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/profile" for 127.0.0.1 at 2018-03-21 15:29:43 +0200
+Processing by ProfileController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S0lyQuehrAUWKnf0nqrljDoNRh+va4GgXF4m3/yxwp0uErmLnxpyKSj55/Oq6FMg6EoAhHZ4OycxonLz2v7nEg==", "profile"=>{"brand_id"=>"7", "car_model_id"=>"11", "car_year"=>"2018"}, "commit"=>"Вибрати авто"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBrand Load (0.4ms)[0m  [1m[34mSELECT  "brands".* FROM "brands" WHERE "brands"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT  "car_models".* FROM "car_models" WHERE "car_models"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "user_cars" ("brand_id", "car_model_id", "user_id", "car_year", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["brand_id", 7], ["car_model_id", 11], ["user_id", 6], ["car_year", 2018], ["created_at", "2018-03-21 13:29:43.301717"], ["updated_at", "2018-03-21 13:29:43.301717"]]
+  [1m[35m (15.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 29ms (ActiveRecord: 18.6ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:29:43 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.7ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 6 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.9ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.3ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 91ms (Views: 82.1ms | ActiveRecord: 5.0ms)
+
+
+Started DELETE "/profile/11" for 127.0.0.1 at 2018-03-21 15:29:46 +0200
+Processing by ProfileController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qDyWkKMr7lhY8OofWMag1oIg3oBXuN29mXt3WtHAEt/NZ11Z25AwdGYjehhshBZ6UGeYG46rZzr0hyN29483UA==", "id"=>"11"}
+  [1m[36mUserCar Load (0.6ms)[0m  [1m[34mSELECT  "user_cars".* FROM "user_cars" WHERE "user_cars"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "user_cars" WHERE "user_cars"."id" = $1[0m  [["id", 11]]
+  [1m[35m (169.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/profile
+Completed 302 Found in 176ms (ActiveRecord: 170.8ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:29:46 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.2ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 6 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (0.8ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (1.0ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.7ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 80ms (Views: 69.4ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/profile" for 127.0.0.1 at 2018-03-21 15:29:50 +0200
+Processing by ProfileController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering profile/index.html.erb within layouts/application
+  [1m[36mUserCar Load (1.3ms)[0m  [1m[34mSELECT car_models.model, user_cars.car_year, brands.brand_name, user_cars.id FROM "user_cars" INNER JOIN "car_models" ON "car_models"."id" = "user_cars"."car_model_id" INNER JOIN "brands" ON "brands"."id" = "user_cars"."brand_id" WHERE (user_id = 6 and brands.id = user_cars.brand_id)[0m
+  [1m[36mBrand Load (1.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCACHE Brand Load (0.0ms)[0m  [1m[34mSELECT "brands".* FROM "brands" ORDER BY "brands"."brand_name" ASC[0m
+  [1m[36mCarModel Load (0.4ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 1]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 3]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 5]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 6]]
+  [1m[36mCarModel Load (0.5ms)[0m  [1m[34mSELECT "car_models".* FROM "car_models" WHERE "car_models"."brand_id" = $1[0m  [["brand_id", 7]]
+  Rendered profile/index.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 93ms (Views: 81.2ms | ActiveRecord: 5.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-21 15:29:52 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ls4/012Aydn3FHeP/b9d9J7tPFdJju9O70R5n0eI9kjzlfQaJTsX9cnH54jJ/etYTKp6zJCdVcmCuC2zYcfTxw=="}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 15:29:52 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 63ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-03-21 15:29:54 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 92ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-03-21 15:29:56 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j7+BXb1dc5yT8W/DKmCaXn9DDJopKqtRlBxAs+Nc57fsVNMGL7bs1zWx/JpCTT5Ro1+wo7O2Lqgqzl1JJBc96A==", "user"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["current_sign_in_at", "2018-03-21 13:29:56.619503"], ["last_sign_in_at", "2018-03-21 13:27:49.785079"], ["sign_in_count", 25], ["updated_at", "2018-03-21 13:29:56.621213"], ["id", 2]]
+  [1m[35m (51.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 293ms (ActiveRecord: 53.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 15:29:56 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 62ms (Views: 59.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-21 15:29:59 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 59ms (Views: 56.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/about/index" for 127.0.0.1 at 2018-03-21 15:30:13 +0200
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 85ms (Views: 57.6ms | ActiveRecord: 0.5ms)
+
+

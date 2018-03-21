@@ -2,16 +2,20 @@
 <p>Name: <%= current_user.name %></p>
 <p>Surname: <%= current_user.surname %></p>
 <p>Email: <%= current_user.email %></p>
-
 <div class="form">
-  <p>Ваші авто:</p>
+
+<%= simple_form_for :drop_car, url: profile_index_path do |f|%>
+  <p>
+    Ваші авто:</br>
   <% @user_car.each do |car| %>
     <%= car.brand_name %>
     <%= car.model %>
-    <%= car.car_year %></br>
+    <%= car.car_year %>
+    <a href="/profile/<%= car.id %>" data-confirm="Are you sure?" data-method="delete" >Видалити авто</a></br>
   <% end %>
-
-<%= simple_form_for :profile, url: profile_index_path do |form|%>
+<% end %>
+  </p>
+  <%= simple_form_for :profile, url: profile_index_path do |form|%>
   <p>Інформація про авто:</p>
   <div class = "field">
     <%= form.label "Марка"%>
