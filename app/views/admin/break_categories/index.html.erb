@@ -20,13 +20,13 @@
           <div class="dropdown pull-right">
             <button type="button" class="btn btn-default btn-xs dropdown-toggle btn-xs-caret" data-toggle="dropdown"> <span class="caret"></span></button>
             <ul class="dropdown-menu">
-                <li><%= link_to "Додати нову категорію поломки", new_admin_break_category_path %></li>
-                <li><a href="/admin/break_categories/<%= key["break_category_id"] %>/edit">Редагувати категорію поломки</a></li>
-                <li><a href="/admin/break_categories/<%= key["break_category_id"] %>" data-confirm="Are you sure?" data-method="delete" >Видалити категорію поломки</a></li>
+                <li><%= link_to "Add new destroy category", new_admin_break_category_path %></li>
+                <li><a href="/admin/break_categories/<%= key["break_category_id"] %>/edit">Update destroy category</a></li>
+                <li><a href="/admin/break_categories/<%= key["break_category_id"] %>" data-confirm="Are you sure?" data-method="delete" >Delete destroy category</a></li>
               <hr>
-                <li><%= link_to "Додати поломку", new_admin_break_sub_category_path %></li>
-                <li><a href="/admin/break_sub_categories/<%= key["id"] %>/edit">Редагувати категорію поломки</a></li>
-                <li><a href="/admin/break_sub_categories/<%= key["id"] %>" data-confirm="Are you sure?" data-method="delete" >Видалити категорію поломки</a></li>
+                <li><%= link_to "Add destroy", new_admin_break_sub_category_path %></li>
+                <li><a href="/admin/break_sub_categories/<%= key["id"] %>/edit">Update destroy</a></li>
+                <li><a href="/admin/break_sub_categories/<%= key["id"] %>" data-confirm="Are you sure?" data-method="delete" >Delete destroy</a></li>
 
             </ul>
           </div>

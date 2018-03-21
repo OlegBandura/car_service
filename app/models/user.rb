@@ -12,7 +12,7 @@ class User < ApplicationRecord
 
   enumerize :user_roles, in:
   # {client: 0, owner: 1}
-    %i[client director], predicates: true
+    %i[client owner], predicates: true
 
   serialize :admin_role, Array
   enumerize :admin_role, in: %i[admin], predicates: true

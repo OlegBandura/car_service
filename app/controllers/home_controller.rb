@@ -1,7 +1,10 @@
 # home controller
 class HomeController < ApplicationController
   def index
-    @garages = Garage.all
-    @types_count = Garage.garage_type.options
+    @garage_types = Garage.garage_type.options
+
+    @garages = Garage.where('garage_types @> ARRAY[?]::varchar[]', [@type]).count
+    puts "____________"
+    puts @garages
   end
 end

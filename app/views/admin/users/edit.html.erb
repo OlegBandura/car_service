@@ -1,15 +1,15 @@
 <div class="admin_form center-block col-md-5">
   <%= simple_form_for :user, url: admin_user_path(@user), method: :put do |f| %>
-  <p>Інформація про користувача:</p>
-      <p>Ім`я: <%=  @user.name %></p>
-      <p>Прізвище: <%= @user.surname %></p>
+  <p>User information:</p>
+      <p>Name: <%=  @user.name %></p>
+      <p>Surname: <%= @user.surname %></p>
       <p>Email: <%= @user.email %></p>
-      <p>Кількість входів на сторінку: <%= @user.sign_in_count %></p>
-      <p>Роль користувача:
+      <p>Sign in count: <%= @user.sign_in_count %></p>
+      <p>User role:
         <%= f.input :roles, collection: User.user_roles.options, as: :check_boxes, label: "" %>
       </p>
       <p class="user_paragraph">set admin:</p>
       <%= f.input :roles, collection: User.admin_role.options, as: :check_boxes,  label: "" %>
-      <%= f.submit 'Редагувати інформацію'%>
+      <%= f.submit 'Update information'%>
   <% end %>
 </div>

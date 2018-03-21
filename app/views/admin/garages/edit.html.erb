@@ -1,36 +1,35 @@
 <div class="admin_form center-block col-md-5">
   <%= simple_form_for :garage, url: admin_garage_path(@garage), method: :put do |f| %>
-  <p>Інформація про СТО</p>
+  <p>Service station information</p>
     <p>
-    <%= f.input :garage_name, label: 'Назва СТО' %></p>
-    <p>Власник
+    <%= f.input :garage_name, label: 'Service station name' %></p>
+    <p>Owner
       <%= f.select("user_id", @user.collect{|p| [ p.surname,  p.id] }) %>
     </p>
     <p>
-      <%= f.input :city, label: "Місто" %></p>
+      <%= f.input :city, label: "City" %></p>
     <p>
-  <%= f.input :address, label: "Адреса" %></p>
+  <%= f.input :address, label: "Address" %></p>
   <p>
-    <%= f.input :phone, label: "Номер телефону" %></p>
+    <%= f.input :phone, label: "Phone number" %></p>
   <p>Тип сервісу:</br>
     <div class="serviceTypes">
-      <%= f.label "Майстерня" %>
       <%= f.input :garage_types, collection: Garage.garage_type.options, as: :check_boxes %>
     </div>
 </p>
-<p>Графік роботи</br>
+<p>Work shedule</br>
   <% @garage.work_shedule.each do |shedule| %>
     <%= f.text_field :work_shedule, :value => shedule %>
   <% end %>
 
 </p>
   <p>
-    <%= f.input :diler, as: :boolean, label: "Диллерська компанія:"%>
+    <%= f.input :diler, as: :boolean, label: "Diller:"%>
   <p></p>
-    <%= f.input :description, label: "Інформація про автосервіс:", as: :text %></p>
-  <p>Додати логотип<br>
+    <%= f.input :description, label: "Service station information:", as: :text %></p>
+  <p>Add logo<br>
     <%= f.file_field :image_url %></p>
-  <%= f.input :remote_image_url, label: "Вставте сюди посилання на картинку" %>
+  <%= f.input :remote_image_url, label: "Put here image link" %>
   <small>Enter URL to an image</small>
     <% if @garage.image? %>
     <%= image_tag @garage.image.thumb.url %>
@@ -41,6 +40,6 @@
       <% end %>
     </div>
 <% end %>
-    <p><%= f.submit 'Редагувати СТО' %></p>
+    <p><%= f.submit 'Update service station' %></p>
   <% end %>
 </div>

@@ -6,30 +6,30 @@
 
 <%= simple_form_for :drop_car, url: profile_index_path do |f|%>
   <p>
-    Ваші авто:</br>
+    Your cars:</br>
   <% @user_car.each do |car| %>
     <%= car.brand_name %>
     <%= car.model %>
     <%= car.car_year %>
-    <a href="/profile/<%= car.id %>" data-confirm="Are you sure?" data-method="delete" >Видалити авто</a></br>
+    <a href="/profile/<%= car.id %>" data-confirm="Are you sure?" data-method="delete" >|Delete car</a></br>
   <% end %>
 <% end %>
   </p>
   <%= simple_form_for :profile, url: profile_index_path do |form|%>
-  <p>Інформація про авто:</p>
+  <p>Add new car:</p>
   <div class = "field">
-    <%= form.label "Марка"%>
+    <%= form.label "Brand"%>
     <%= form.collection_select :brand_id, Brand.order(:brand_name), :id, :brand_name %>
   </div>
   <div class = "field">
-    <%= form.label "Модель"%>
+    <%= form.label "Model"%>
     <%= form.grouped_collection_select :car_model_id, Brand.order(:brand_name), :car_models, :brand_name, :id, :model %>
   </div>
     <div class = "field">
-      <%= form.label "Рік випуску"%>
+      <%= form.label "Release year"%>
       <%= form.select(:car_year, @year)  %>
     </div>
     <div class = "field">
-      <%= form.submit "Вибрати авто" %>
+      <%= form.submit "Add car" %>
   <% end %>
 </div>

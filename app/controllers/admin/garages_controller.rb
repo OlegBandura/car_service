@@ -11,7 +11,7 @@ module Admin
     end
 
     def new
-      @user = User.where("'Власник СТО' = ANY (roles)")
+      @user = User.where("'owner' = ANY (roles)")
     end
 
     def create
@@ -21,7 +21,7 @@ module Admin
 
     def edit
       @garage = Garage.find(params[:id])
-      @user = User.where("'Власник СТО' = ANY (roles)")
+      @user = User.where("'owner' = ANY (roles)")
     end
 
     def update

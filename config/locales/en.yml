@@ -30,4 +30,22 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  "Файл не вибрано.": "File not found"
+
+en:
+  enumerize:
+    user:
+      user_roles:
+        client: "Client"
+        owner: "Owner"
+
+      admin_role:
+          admin: "Administrator"
+
+en:
+  enumerize:
+    garage:
+      garage_type:
+        service: "Service station"
+        vulcanization: "Tire fitting"
+        car_wash: "Сar wash"

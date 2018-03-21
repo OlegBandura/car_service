@@ -1,10 +1,10 @@
 <div class="admin_form">
   <%= form_for :sub_category, url: admin_break_sub_category_path(@sub_category), method: :put do |form| %>
-    <p>Оновити назву поломки авто</p>
-    <p>Назва поломки авто
+    <p>Update destroy</p>
+    <p>Destroy name
       <%= form.text_field :break_sub_category_name %></p>
-      <p>Ціна
+      <p>Price
         <%= form.text_field :price %></p>
-    <p><%= form.submit 'Оновити назву поломки авто'%></p>
+    <p><%= form.submit 'Update destroy'%></p>
   <% end %>
 </div>
