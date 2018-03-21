@@ -1,6 +1,6 @@
 $( document ).on('turbolinks:load', function() {
   var car_models;
-  car_models = $('#profile_model_id').html();
+  car_models = $('#profile_car_model_id').html();
   console.log(car_models);
   return $('#profile_brand_id').change(function() {
     var brand, options;
@@ -8,9 +8,9 @@ $( document ).on('turbolinks:load', function() {
     options = $(car_models).filter("optgroup[label=" + brand + "]").html();
     console.log(options);
     if (options) {
-      return $('#profile_model_id').html(options);
+      return $('#profile_car_model_id').html(options);
     } else {
-      return $('#profile_model_id').empty();
+      return $('#profile_car_model_id').empty();
     }
   });
 });

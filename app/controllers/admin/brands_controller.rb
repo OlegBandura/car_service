@@ -1,12 +1,14 @@
 class Admin::BrandsController < Admin::BaseController
   # load_and_authorize_resource
   def index
-    cars = Brand.left_joins(:car_models).select('car_models.id, car_models.brand_id,
-      brands.brand, car_models.model')
+    cars = Brand.left_joins(:car_models).select(
+      'car_models.id, car_models.brand_id,
+      brands.brand_name, car_models.model'
+    )
 
     @cars = Hash.new { |hsh, key| hsh[key] = [] }
     cars.each do |car|
-      @cars[car[:brand]].push(car)
+      @cars[car[:brand_name]].push(car)
     end
   end
 
@@ -37,6 +39,6 @@ class Admin::BrandsController < Admin::BaseController
   private
 
   def brand_params
-    params.require(:brand).permit(:brand)
+    params.require(:brand_name).permit(:brand_name)
   end
 end

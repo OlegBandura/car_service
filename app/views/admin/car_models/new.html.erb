@@ -3,7 +3,7 @@
 
     <p>Інформація про авто</p>
     <p>Марка
-      <%= form.select("brand_id", Brand.all.collect{|p| [ p.brand, p.id] }) %>
+      <%= form.select("brand_id", Brand.all.collect{|p| [ p.brand_name, p.id] }) %>
     </p>
     <p>Модель
       <%= form.text_field :model %></p>
