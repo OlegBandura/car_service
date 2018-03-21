@@ -33,6 +33,8 @@
               <%= link_to "Про нас", about_index_path, class: "nav-link" %>
             </li>
 
+            <% if can? :update, @user %>
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                   Administrator
@@ -44,6 +46,8 @@
                   <%= link_to "Робота з користувачами", admin_users_path, class: "dropdown-item" %>
                 </div>
               </li>
+            <% end %>
+
 
           </ul>
         </div>
