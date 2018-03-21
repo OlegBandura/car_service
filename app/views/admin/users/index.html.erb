@@ -8,7 +8,6 @@
     <th>Created account</th>
     <th onclick="sort_services_table(6)">Role</th>
     <th onclick="sort_services_table(7)">Admin</th>
-
     <th>Options</th>
   </tr>
 <%  @users.each do |user| %>
@@ -21,16 +20,16 @@
     <td><%= user.created_at%></td>
     <td>
     <% user.roles.each do |role| %>
-      <% if role == "Клієнт" %>
+      <% if role == 'client' %>
         Клієнт,
-      <% elsif role == "Власник СТО" %>
+      <% elsif role == 'director' %>
         Власник СТО
       <% end %>
     <% end %>
     </td>
     <td>
     <% user.roles.each do |role| %>
-      <% if role == "Адміністратор" %>
+      <% if role == 'admin' %>
         Адміністратор
       <% end %>
     <% end %>

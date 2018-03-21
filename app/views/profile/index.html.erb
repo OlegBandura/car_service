@@ -4,11 +4,11 @@
 <p>Email: <%= current_user.email %></p>
 
 <div class="form">
-<%= form_for :profile, url: profile_index_path do |form|%>
+<%= simple_form_for :profile, url: profile_index_path do |form|%>
   <p>Інформація про авто:</p>
   <div class = "field">
     <%= form.label "Марка"%>
-    <%= form.collection_select :brand_id, Brand.order(:brand), :id, :brand, include_blank: true%>
+    <%= form.collection_select :brand_id, Brand.order(:brand), :id, :brand %>
   </div>
   <div class = "field">
     <%= form.label "Модель"%>

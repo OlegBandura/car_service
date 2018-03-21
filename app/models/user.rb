@@ -25,14 +25,11 @@ class User < ApplicationRecord
   extend Enumerize
 
   serialize :user_roles, Array
+
   enumerize :user_roles, in:
-  {
-    'Клієнт' => ':client', 'Власник СТО' => ':director'
-  }
+  # {client: 0, owner: 1}
+    %i[client director], predicates: true
 
   serialize :admin_role, Array
-  enumerize :admin_role, in:
-  {
-    'Адміністратор' => ':admin'
-  }
+  enumerize :admin_role, in: %i[admin]
 end
