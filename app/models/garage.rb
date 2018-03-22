@@ -2,6 +2,7 @@
 class Garage < ApplicationRecord
   mount_uploader :image, ImageUploader
   belongs_to :user
+  has_many :comment_garages
 
   extend Enumerize
 
