@@ -30,9 +30,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  "Файл не вибрано.": "File not found"
-
-en:
   enumerize:
     user:
       user_roles:

@@ -1,0 +1,48 @@
+<div class="service">
+  <p class="service-title">
+    <%= @garage.garage_name %>
+      <% if @garage.diler %>
+        |Diler
+      <% end %>
+  </p>
+  <div class="work-shedule">
+    <%= image_tag("/images/clock.jpg", size: "100x100") %></br>
+    Mon-Fri:<%= @garage.work_shedule[0] %></br>
+    Sat:<%= @garage.work_shedule[1] %></br>
+    Sun:<%= @garage.work_shedule[2] %></br>
+</div>
+
+  <%= image_tag(@garage.image, size: "200x250", class: "image-style") %>
+    <p><%= link_to 'Go back', services_path, class: 'btn show_block-button'%>
+    <%= submit_tag 'Registration to the service station', class: 'btn btn-primary show_block-button'%></p>
+    <div class = "service-attributes">
+      <p>Information about service:</p>
+      <p>Rating:</br>
+      <%= @garage.garage_rating %>
+      </p>
+        City <%= @garage.city %>
+      </p>
+      <p>
+        Address <%= @garage.address %>
+      </p>
+      <p>Phone:
+        <%= @garage.phone %>
+      </p>
+      <p>Type of service:</br>
+        <% @garage.garage_types.each do |type| %>
+          <%= type %>
+        <% end %>
+      </p>
+      <p>
+        About service:</br>
+        <%= @garage.description %>
+      </p>
+    </div>
+
+  <div class="comment">
+    <%= simple_form_for %>
+
+    <% end %>
+  </div>
+
+</div>

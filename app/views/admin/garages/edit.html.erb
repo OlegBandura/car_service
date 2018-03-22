@@ -1,6 +1,6 @@
 <div class="admin_form center-block col-md-5">
   <%= simple_form_for :garage, url: admin_garage_path(@garage), method: :put do |f| %>
-  <p>Service station information</p>
+  <h2>Service station information</h2>
     <p>
     <%= f.input :garage_name, label: 'Service station name' %></p>
     <p>Owner
@@ -12,16 +12,15 @@
   <%= f.input :address, label: "Address" %></p>
   <p>
     <%= f.input :phone, label: "Phone number" %></p>
-  <p>Тип сервісу:</br>
+  <p>Service type:</br>
     <div class="serviceTypes">
-      <%= f.input :garage_types, collection: Garage.garage_type.options, as: :check_boxes %>
+      <%= f.input :garage_types, collection: Garage.garage_type.options, as: :check_boxes, label: "" %>
     </div>
 </p>
-<p>Work shedule</br>
+<p>Work shedule (Workdays, Saturday, Sunday)</br>
   <% @garage.work_shedule.each do |shedule| %>
-    <%= f.text_field :work_shedule, :value => shedule %>
+    <%= f.input_field :work_shedule, multiple: true, :value => shedule %></br>
   <% end %>
-
 </p>
   <p>
     <%= f.input :diler, as: :boolean, label: "Diller:"%>

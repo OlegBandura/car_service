@@ -1,1 +1,15 @@
-tire stations
+<% @tire_services.each do |service| %>
+  <div class="preview_service">
+    <%= image_tag(service.image, :alt => "logo", size: "80", class: "card-img-top") if service.image? %>
+    <div class="card-body">
+      <h5 class="card-title">
+        <%= service.garage_name %></br>
+      </h5>
+      <p class="card-text">
+         <%= service.city %>,
+         <%= service.address %>
+      </p>
+      <%= link_to "Read more", tire_station_path(service), class: "btn btn-dark float-right" %>
+    </div>
+  </div>
+<% end %>
