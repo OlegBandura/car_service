@@ -4,9 +4,9 @@
     <%= image_tag("/images/car-logo.png", size: "10x190", class: "card-img-top") %>
     <div class="card-body">
       <h5 class="card-title">
-        <% type.each do |t| %>
-          <%= t %>
-        <% end %>
+
+          <%= t type %>
+
       </h5>
       <p class="card-text">Доступно:
         <% if type.include?('service') %>

@@ -1,0 +1,2 @@
+class TireStationsController < ApplicationController
+end

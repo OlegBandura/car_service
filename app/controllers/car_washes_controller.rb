@@ -1,0 +1,2 @@
+class CarWashesController < ApplicationController
+end

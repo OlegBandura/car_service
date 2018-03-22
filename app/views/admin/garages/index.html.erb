@@ -1,6 +1,6 @@
 <div id="car_nav_bar">
   <ul>
-    <li><%= link_to "Додати новий автосервіс",  new_admin_garage_path %></li>
+    <li><%= link_to "Add new service station",  new_admin_garage_path %></li>
   </ul>
 </div>
 <input type="text" id="searsh_input" onkeyup="SearchFunction()" placeholder="Search for names..">
@@ -42,9 +42,9 @@
       <% end %>
     </td>
     <td>
-      <span id="days">Робочі дні:</span> <%= garage.work_shedule[0] %>
-      <span id="days">Субота:</span> <%= garage.work_shedule[1] %>
-      <span id="days">Неділя:</span> <%= garage.work_shedule[2] %></br>
+      <span id="days">Work days:</span> <%= garage.work_shedule[0] %>
+      <span id="days">Saturday:</span> <%= garage.work_shedule[1] %>
+      <span id="days">Sunday:</span> <%= garage.work_shedule[2] %></br>
     </td>
           <td><%= link_to "Edit", edit_admin_garage_path(garage) %>
           |<%= link_to "Delete", admin_garage_path(garage) ,method: :delete, data: {confirm: 'Are you sure?' } %>
