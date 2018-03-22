@@ -9,5 +9,8 @@ Rails.application.routes.draw do
     resources :brands, :car_models, :break_categories, :break_sub_categories
     resources :garages, :users
   end
+
+  resources :tire_stations, :car_washes, :services
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

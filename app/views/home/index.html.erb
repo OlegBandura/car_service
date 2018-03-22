@@ -1,6 +1,6 @@
 <div class="block">
   <% @garage_types.each do |type| %>
-  <div class="preview_service" style="width: 18rem;">
+  <div class="preview_services" style="width: 18rem;">
     <%= image_tag("/images/car-logo.png", size: "10x190", class: "card-img-top") %>
     <div class="card-body">
       <h5 class="card-title">
@@ -11,12 +11,14 @@
       <p class="card-text">Доступно:
         <% if type.include?('service') %>
           <%= Garage.where("garage_types @> ARRAY[?]::varchar[]", ["service"]).count %>
+          <%= link_to "Select", services_path, class: "btn btn-primary float-right" %>
         <% elsif type.include?('car_wash') %>
           <%= Garage.where("garage_types @> ARRAY[?]::varchar[]", ["car_wash"]).count %>
+          <%= link_to "Select", car_washes_path, class: "btn btn-primary float-right" %>
         <% elsif type.include?('vulcanization') %>
           <%= Garage.where("garage_types @> ARRAY[?]::varchar[]", ["vulcanization"]).count %>
+          <%= link_to "Select", tire_stations_path, class: "btn btn-primary float-right" %>
         <% end %>
-      <a href="#" class="btn btn-primary float-right">Select</a>
       </p>
     </div>
   </div>
