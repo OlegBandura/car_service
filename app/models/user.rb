@@ -1,6 +1,7 @@
 # User mogel
 class User < ApplicationRecord
   has_many :garages, dependent: :destroy
+  has_many :garage_comments
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,

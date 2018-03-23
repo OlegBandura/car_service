@@ -37,20 +37,25 @@
         <%= @garage.description %>
       </p>
     </div>
-  <div class="comment">
-    <%= simple_form_for([@garage, @garage.garage_comments.build]) do |f| %>
+  <% @garage.garage_comments.each do |comment| %>
+    <div class="comment" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="comment-card-title">
+          <%= comment.user_id %> said:
+        </h5>
+        <p class="card-text">
+        <%= comment.comment %>
+        </p>
+      </div>
+    </div>
+  <% end %>
+  <div class="comment-garage">
+    <%= simple_form_for ([@garage, @garage.garage_comments.build]) do |f| %>
       <%= f.input :comment, as: :text %>
       <%= f.button :submit do %>
         <i class="icon-save"></i>
         Add new comment
       <% end %>
-    <% end %>
-  </div>
-
-  <div class="show-comment">
-    <p>Comments:</p>
-    <% @garage.garage_comments.each do |comment| %>
-
     <% end %>
   </div>
 </div>
