@@ -10,10 +10,10 @@ Rails.application.routes.draw do
     resources :garages, :users
   end
 
-  resources :tire_stations, :car_washes
+  resources :tire_stations, :car_washes, :services
 
-  resources :services do
-    resources :comment_garages
+  resources :garages do
+    resources :garage_comments
   end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
