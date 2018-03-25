@@ -46,6 +46,7 @@ gem 'bootstrap-timepicker-rails'
 gem 'enumerize'
 gem 'simple_form'
 
+gem 'rails_admin', '~> 1.3'
 
 
 group :development, :test do

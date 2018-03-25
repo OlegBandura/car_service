@@ -41,14 +41,16 @@
     <div class="comment" style="width: 18rem;">
       <div class="card-body">
         <h5 class="comment-card-title">
-          <%= comment.user_id %> said:
+          <%= comment.user_id %> say:
         </h5>
         <p class="card-text">
         <%= comment.comment %>
         </p>
+        <p><%= comment.created_at.strftime("%Y/%m/%d") %></p>
       </div>
     </div>
   <% end %>
+
   <div class="comment-garage">
     <%= simple_form_for ([@garage, @garage.garage_comments.build]) do |f| %>
       <%= f.input :comment, as: :text %>

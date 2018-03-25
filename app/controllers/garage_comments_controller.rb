@@ -6,11 +6,6 @@ class GarageCommentsController < ApplicationController
     @garage = Garage.find(params[:garage_id])
     @garage.garage_comments.create(comment_params)
     redirect_to garage_path(@garage)
-
-    @user = User.find(current_user.id)
-    puts "_______________"
-    puts @user
-
   end
 
   private
