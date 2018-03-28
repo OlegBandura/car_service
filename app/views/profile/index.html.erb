@@ -23,7 +23,7 @@
   </div>
   <div class = "field">
     <%= form.label "Model"%>
-    <%= form.grouped_collection_select :car_model_id, Brand.order(:brand_name), :car_models, :brand_name, :id, :model %>
+    <%= form.grouped_collection_select :car_model_id, Brand.order(:brand_name).includes(:car_models), :car_models, :brand_name, :id, :model %>
   </div>
     <div class = "field">
       <%= form.label "Release year"%>
