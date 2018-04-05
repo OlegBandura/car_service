@@ -1,0 +1,20 @@
+<div>
+  <%= simple_form_for :order, url: orders_path do |form|%>
+    <p>Select car:</p>
+    <div class = "field">
+      <%= form.label "Brand"%>
+      <%= form.collection_select :brand_id, Brand.order(:brand_name), :id, :brand_name %>
+    </div>
+    <div class = "field">
+      <%= form.label "Model"%>
+      <%= form.grouped_collection_select :car_model_id, Brand.order(:brand_name).includes(:car_models), :car_models, :brand_name, :id, :model %>
+    </div>
+      <div class = "field">
+        <%= form.label "Release year"%>
+        <%= form.select(:car_year, @year)  %>
+      </div>
+      <div class = "field">
+      <%= form.submit "Select car" %>
+    </div>
+  <% end %>
+</div>

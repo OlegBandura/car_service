@@ -13,7 +13,9 @@
 </div>
   <%= image_tag(@garage.image, size: "200x250", class: "image-style") %>
     <p><%= link_to 'Go back', services_path, class: 'btn show_block-button'%>
-    <%= submit_tag 'Registration to the service station', class: 'btn btn-primary show_block-button'%></p>
+    <%= submit_tag 'Registration to the service station',
+      class: 'btn btn-primary show_block-button',  
+      :onclick => "location.href = '#{orders_path()}'" %></p>
     <div class = "service-attributes">
       <p>Information about service:</p>
       <p>Rating:</br>
