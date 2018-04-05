@@ -14,7 +14,7 @@
   <%= image_tag(@garage.image, size: "200x250", class: "image-style") %>
     <p><%= link_to 'Go back', services_path, class: 'btn show_block-button'%>
     <%= submit_tag 'Registration to the service station',
-      class: 'btn btn-primary show_block-button',  
+      class: 'btn btn-primary show_block-button',
       :onclick => "location.href = '#{orders_path()}'" %></p>
     <div class = "service-attributes">
       <p>Information about service:</p>
@@ -39,6 +39,12 @@
         <%= @garage.description %>
       </p>
     </div>
+
+  <div class="destroy-types">
+    
+  </div>
+
+
   <% @garage.garage_comments.each do |comment| %>
     <div class="comment" style="width: 18rem;">
       <div class="card-body">

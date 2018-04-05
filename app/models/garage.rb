@@ -4,6 +4,8 @@ class Garage < ApplicationRecord
   belongs_to :user
   has_many :garage_comments
 
+  has_many :break_categories
+
   extend Enumerize
 
   serialize :garage_type, Array

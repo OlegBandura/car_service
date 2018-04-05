@@ -1,20 +1,34 @@
-<div>
-  <%= simple_form_for :order, url: orders_path do |form|%>
-    <p>Select car:</p>
-    <div class = "field">
-      <%= form.label "Brand"%>
-      <%= form.collection_select :brand_id, Brand.order(:brand_name), :id, :brand_name %>
-    </div>
-    <div class = "field">
-      <%= form.label "Model"%>
-      <%= form.grouped_collection_select :car_model_id, Brand.order(:brand_name).includes(:car_models), :car_models, :brand_name, :id, :model %>
-    </div>
-      <div class = "field">
-        <%= form.label "Release year"%>
-        <%= form.select(:car_year, @year)  %>
+
+  <h5>Please select car in your list or find in brands</h5>
+  <div class="select-car">
+
+    <%= simple_form_for :user_car_select, url: orders_path do |f|%>
+      <p>
+        Your cars:</br>
+      <% @user_car.each do |car| %>
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">
+          <%= car.brand_name %>, <%= car.model %>, <%= car.car_year %></a>
       </div>
+      <% end %>
+    <% end %>
+    </p>
+  </div>
+  <div class="add-new-car">
+    <%= simple_form_for :order, url: orders_path do |form|%>
+      <p>Select car:</p>
       <div class = "field">
-      <%= form.submit "Select car" %>
-    </div>
-  <% end %>
-</div>
+        <%= form.label "Brand"%>
+        <%= form.collection_select :brand_id, Brand.order(:brand_name), :id, :brand_name %>
+
+        <%= form.label "Model"%>
+        <%= form.grouped_collection_select :car_model_id, Brand.order(:brand_name).includes(:car_models), :car_models, :brand_name, :id, :model %>
+
+          <%= form.label "Release year"%>
+          <%= form.select(:car_year, @year)  %>
+        </div>
+        <div class = "field">
+        <%= form.submit "Select car" %>
+      </div>
+    <% end %>
+  </div>

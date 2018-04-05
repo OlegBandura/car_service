@@ -1,3 +1,24 @@
 // Place all the styles related to the orders controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container{
+
+}
+
+.select-car{
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+  padding: 10px;
+  display: block;
+}
+
+.add-new-car{
+  border-style: solid;
+  border-width: 1px;
+  border-color: green;
+  border-top: none;
+  padding: 10px;
+  display: block;
+}
