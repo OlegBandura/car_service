@@ -1,3 +1,4 @@
+<div id="modal-holder"></div>
 <div class="service">
   <p class="service-title">
     <%= @garage.garage_name %>
@@ -73,3 +74,6 @@
     <% end %>
   </div>
 </div>
+
+<%= link_to 'Create category', order_path,
+            data: { modal: true } %>
