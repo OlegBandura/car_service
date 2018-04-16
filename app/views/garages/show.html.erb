@@ -41,9 +41,13 @@
     </div>
 
   <div class="destroy-types">
-    
+    <div class="list-group">
+      <% @break_categories.each do |break_category| %>
+        <%= break_category.name %>
+        <a href="/orders" class="list-group-item"><%= break_category.break_sub_category_name %></a>
+      <% end %>
+    </div>
   </div>
-
 
   <% @garage.garage_comments.each do |comment| %>
     <div class="comment" style="width: 18rem;">
