@@ -22,3 +22,22 @@
   padding: 10px;
   display: block;
 }
+
+button.link {
+
+  overflow: visible;
+  width: auto;
+
+  margin: 0;
+  padding: 0;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+button.link span {
+  color: #00f;
+  text-decoration: underline;
+}

@@ -1,34 +1,39 @@
-
-  <h5>Please select car in your list or find in brands</h5>
-  <div class="select-car">
-
-    <%= simple_form_for :user_car_select, url: orders_path do |f|%>
-      <p>
-        Your cars:</br>
-      <% @user_car.each do |car| %>
-      <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action">
-          <%= car.brand_name %>, <%= car.model %>, <%= car.car_year %></a>
-      </div>
-      <% end %>
-    <% end %>
-    </p>
-  </div>
-  <div class="add-new-car">
-    <%= simple_form_for :order, url: orders_path do |form|%>
+<h5>Please select car in your list or find in brands</h5>
+<div class="select-car">
+  <%= simple_form_for :order, url: orders_path do |form|%>
+    <div class="add-new-car">
       <p>Select car:</p>
       <div class = "field">
         <%= form.label "Brand"%>
         <%= form.collection_select :brand_id, Brand.order(:brand_name), :id, :brand_name %>
 
         <%= form.label "Model"%>
-        <%= form.grouped_collection_select :car_model_id, Brand.order(:brand_name).includes(:car_models), :car_models, :brand_name, :id, :model %>
+        <%= form.grouped_collection_select :car_model_id, Brand.order(:brand_name).includes(:car_models),
+        :car_models, :brand_name, :id, :model %>
 
-          <%= form.label "Release year"%>
-          <%= form.select(:car_year, @year)  %>
-        </div>
-        <div class = "field">
+        <%= form.label "Release year"%>
+        <%= form.select(:car_year, @year)  %>
         <%= form.submit "Confirm" %>
       </div>
-    <% end %>
-  </div>
+      <p>Your cars:</p>
+      <% @user_car.each do |car| %>
+        <div class="list-group">
+          <p>
+            <!-- <%= form.hidden_field :car_model_id, value: car.car_model_id %>
+            <%= form.hidden_field :brand_id, value: car.brand_id %> -->
+            <%= car.brand_name %>
+            <%= car.model %>
+            <%= car.car_year %>
+            <!-- <%= form.hidden_field :car_year, value: car.car_year %> -->
+            <!-- <button type="submit" class="link"><span>Confirm</span></button> -->
+          </p>
+
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+
+<div>
+  
+</div>

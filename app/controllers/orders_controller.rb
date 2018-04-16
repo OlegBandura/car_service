@@ -4,10 +4,13 @@ class OrdersController < ApplicationController
     @user_id = current_user.id
     @user_car = UserCar.joins(:car_model, :brand).select(
       'car_models.model, user_cars.car_year, brands.brand_name, user_cars.id,
-       brands.id, car_models.id'
+       brands.id, user_cars.brand_id, user_cars.car_model_id'
     ).where('user_id = ? and brands.id = user_cars.brand_id', @user_id)
+
+    puts '__________________________'
+    puts @user_car['brands.id'.to_i]
     @year = Array[]
-    Time.current.year.downto(1970) { |n| @year.push(n) }
+    Time.current.year.downto(1980) { |n| @year.push(n) }
   end
 
   def new
