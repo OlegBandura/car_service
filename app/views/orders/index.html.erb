@@ -31,9 +31,18 @@
         </div>
       <% end %>
     </div>
-  <% end %>
-</div>
 
-<div>
-  
 </div>
+<div>
+  <p>About client:</p>
+  Name: <%= form.text_field :username, value: current_user.name if current_user %></br>
+  Surname: <%= form.text_field :surname, value: current_user.surname if current_user %></br>
+  Phone: <%= form.text_field :phone %></br>
+  Email: <%= form.email_field :email, value: current_user.email if current_user %></br>
+  Date/Time:<%= form.datetime_select :published_at %></br>
+  Comment: <%= form.text_field :comment %>
+</br>
+  <%= form.submit "Send" %>
+
+</div>
+<% end %>
