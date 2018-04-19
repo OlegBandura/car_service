@@ -18,10 +18,11 @@ class OrdersController < ApplicationController
   end
 
   def create
-    car = order_params
+    @car = order_params
     puts '___________________'
-    puts car
+    puts @car
     redirect_to orders_path
+    ClientMailer.client_email(@car).deliver
   end
 
   private

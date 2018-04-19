@@ -49,7 +49,7 @@ gem 'simple_form'
 gem 'responders', '~> 2.0'
 
 gem 'rails_admin', '~> 1.3'
-
+gem "figaro"
 gem 'bullet', group: :development
 
 group :development, :test do
