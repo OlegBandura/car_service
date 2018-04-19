@@ -14,9 +14,9 @@
 </div>
   <%= image_tag(@garage.image, size: "200x250", class: "image-style") %>
     <p><%= link_to 'Go back', services_path, class: 'btn show_block-button'%>
-    <%= submit_tag 'Registration to the service station',
-      class: 'btn btn-primary show_block-button',
-      :onclick => "location.href = '#{orders_path()}'" %></p>
+      <%= link_to 'Registration to the service station', orders_path(3),
+          class: 'btn btn-primary show_block-button' %></p>
+
     <div class = "service-attributes">
       <p>Information about service:</p>
       <p>Rating:</br>
@@ -30,6 +30,11 @@
       <p>Phone:
         <%= @garage.phone %>
       </p>
+      <p>CEO:
+      <%= @director.name %>
+      <%= @director.surname %>
+      </p>
+
       <p>Type of service:</br>
         <% @garage.garage_types.each do |type| %>
           <%= type %>
@@ -54,7 +59,8 @@
     <div class="comment" style="width: 18rem;">
       <div class="card-body">
         <h5 class="comment-card-title">
-          <%= comment.user_id %> say:
+          <%= @commentor.name %>
+          <%= @commentor.surname %> say:
         </h5>
         <p class="card-text">
         <%= comment.comment %>

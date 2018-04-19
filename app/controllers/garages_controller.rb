@@ -5,6 +5,7 @@ class GaragesController < ApplicationController
     @user = User.joins(:garage_comments).select('name, surname').where(
       'users.id = garage_comments.user_id and garage_id = ?', @garage.id
     )
+    @director = User.find(@garage.user_id)
 
     @break_categories = BreakCategory.joins(:break_sub_categories).select(
       'break_categories.name, break_sub_categories.break_sub_category_name, break_sub_categories.id'
@@ -14,6 +15,8 @@ class GaragesController < ApplicationController
     @break_categories.each do |break_category|
       puts "#{break_category.name}  #{break_category.break_sub_category_name}"
     end
-
+    @garage.garage_comments.each do |comment|
+      @commentor = User.find(comment.user_id)
+    end
   end
 end

@@ -19,13 +19,9 @@
       <% @user_car.each do |car| %>
         <div class="list-group">
           <p>
-            <!-- <%= form.hidden_field :car_model_id, value: car.car_model_id %>
-            <%= form.hidden_field :brand_id, value: car.brand_id %> -->
             <%= car.brand_name %>
             <%= car.model %>
             <%= car.car_year %>
-            <!-- <%= form.hidden_field :car_year, value: car.car_year %> -->
-            <!-- <button type="submit" class="link"><span>Confirm</span></button> -->
           </p>
 
         </div>

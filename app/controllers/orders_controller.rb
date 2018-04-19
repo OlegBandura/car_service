@@ -1,6 +1,7 @@
 # orders controller
 class OrdersController < ApplicationController
   def index
+
     @user_id = current_user.id
     @user_car = UserCar.joins(:car_model, :brand).select(
       'car_models.model, user_cars.car_year, brands.brand_name, user_cars.id,
@@ -13,16 +14,16 @@ class OrdersController < ApplicationController
     Time.current.year.downto(1980) { |n| @year.push(n) }
   end
 
-  def new
-
-  end
+  def new; end
 
   def create
+    @user = User.find(3)
     @car = order_params
-    puts '___________________'
+    puts'_____________'
     puts @car
+
     redirect_to orders_path
-    ClientMailer.client_email(@car).deliver
+    ClientMailer.send_order(@user, @car).deliver
   end
 
   private
