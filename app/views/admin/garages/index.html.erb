@@ -13,10 +13,11 @@
     <th onclick="sort_garages_table(4)">Address</th>
     <th onclick="sort_garages_table(5)">Description</th>
     <th onclick="sort_garages_table(6)">Phone</th>
-    <th onclick="sort_garages_table(7)">Diller</th>
-    <th onclick="sort_garages_table(8)">Garage rating</th>
-    <th onclick="sort_garages_table(9)">Garage types</th>
-    <th onclick="sort_garages_table(10)">Work shedule</th>
+    <th onclick="sort_garages_table(7)">Email</th>
+    <th onclick="sort_garages_table(8)">Diller</th>
+    <th onclick="sort_garages_table(9)">Garage rating</th>
+    <th onclick="sort_garages_table(10)">Garage types</th>
+    <th onclick="sort_garages_table(11)">Work shedule</th>
     <th>Edit  / Delete</th>
   </tr>
   <% @garages.each do |garage| %>
@@ -28,6 +29,7 @@
     <td><%= garage.address %></td>
     <td class="td_description"><%= garage.description %></td>
     <td><%= garage.phone %></td>
+    <td><%= garage.garage_email %></td>
     <td>
       <%= if garage.diler == true
         "Diller"

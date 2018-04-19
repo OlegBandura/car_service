@@ -1,15 +1,15 @@
 <h5>Please select car in your list or find in brands</h5>
 <div class="select-car">
   <p>Your cars:</p>
-  <%= @garage.garage_name %>
   <% @user_car.each do |car| %>
     <div class="list-group">
 
 <div class="list-group">
-  <a href="new/<%=car.id%>" class="list-group-item list-group-item-action">Select car|<%= car.brand_name %> <%= car.model %> <%= car.car_year %></a>
+  <a href="#<%=car.id%>" class="list-group-item list-group-item-action">Select car|<%= car.brand_name %> <%= car.model %> <%= car.car_year %></a>
 </div>
   </div>
   <% end %>
+
 </div>
 <%= simple_form_for :car, url: garage_orders_path do |form|%>
 <div class="add-new-car">

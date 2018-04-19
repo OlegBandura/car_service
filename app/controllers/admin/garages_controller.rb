@@ -6,7 +6,7 @@ module Admin
         'users.surname, users.name, garages.garage_name, garages.description,
         garages.city, garages.address, garages.phone, garages.diler,
         garages.image, garages.garage_rating, garages.garage_types,
-        garages.work_shedule, garages.id'
+        garages.work_shedule, garages.id, garage_email'
       )
     end
 
@@ -44,7 +44,8 @@ module Admin
     def garage_params
       params.require(:garage).permit(
         :user_id, :garage_name, :city, :address, :description, :phone, :diler,
-        :image_url, :remote_image_url, :remove_image, work_shedule: [], garage_types: []
+        :garage_email, :image_url, :remote_image_url, :remove_image,
+        work_shedule: [], garage_types: []
       )
     end
   end

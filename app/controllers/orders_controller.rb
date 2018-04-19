@@ -11,18 +11,17 @@ class OrdersController < ApplicationController
     ).where('user_id = ? and brands.id = user_cars.brand_id', @user_id)
     @year = Array[]
     Time.current.year.downto(1980) { |n| @year.push(n) }
-
   end
 
   def create
-    user_car = UserCar.new(car_params)
-    user_car.save
+    # user_car = UserCar.new(car_params)
+    # user_car.save
     redirect_to new_garage_order_url
 
     @user = current_user
     @garage = Garage.find(params[:garage_id])
     @destroy = 'engine'
-    @car = 'Subaru'
+    @car = "Honda"
 
     @info = order_params
 
@@ -32,11 +31,11 @@ class OrdersController < ApplicationController
 
   private
 
-  def car_params
-    params.require(:car).permit(:brand_id, :car_model_id, :car_year).merge(
-      user_id: current_user.id
-    )
-  end
+  # def car_params
+  #   params.require(:car).permit(:brand_id, :car_model_id, :car_year).merge(
+  #     user_id: current_user.id
+  #   )
+  # end
 
   def order_params
     params.require(:order).permit(:user_car_id, :garage_id,
