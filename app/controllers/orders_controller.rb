@@ -16,8 +16,17 @@ class OrdersController < ApplicationController
   def create
     # user_car = UserCar.new(car_params)
     # user_car.save
-    redirect_to new_garage_order_url
 
+    date = Date.civil(params[:date][:year].to_i, params[:date][:month].to_i, params[:date][:day].to_i)
+    # time = params[:time].to_s
+    # time Time.civil(params[:time]['time(5i)'].to_i)
+
+
+    puts '______________________'
+    puts date
+    # puts time
+
+    @date = "#{date}  at " 
     @user = current_user
     @garage = Garage.find(params[:garage_id])
     @destroy = 'engine'
@@ -25,8 +34,8 @@ class OrdersController < ApplicationController
 
     @info = order_params
 
+    ClientMailer.send_order(@user, @garage, @destroy, @car, @info, @date).deliver
     redirect_to new_garage_order_url
-    ClientMailer.send_order(@user, @garage, @destroy, @car, @info).deliver
   end
 
   private
@@ -36,6 +45,7 @@ class OrdersController < ApplicationController
   #     user_id: current_user.id
   #   )
   # end
+
 
   def order_params
     params.require(:order).permit(:user_car_id, :garage_id,

@@ -46,22 +46,24 @@
       </p>
     </div>
 
-  <div class="destroy-types">
-    <div class="list-group">
+  <div class="list-group">
+    <% @arr.each do |arr| %>
+      <a class="list-group-item list-group-item-action"><%= arr %></a>
       <% @break_categories.each do |break_category| %>
-        <%= break_category.name %>
-        <a href="/orders" class="list-group-item"><%= break_category.break_sub_category_name %></a>
+        <ul>
+          <li class="list-group-item list-group-item-action"><%= break_category.break_sub_category_name %></li>
+        </ul>
       <% end %>
-    </div>
+    <% end %>
   </div>
 
   <% @garage.garage_comments.each do |comment| %>
     <div class="comment" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="comment-card-title">
+        <h6 class="comment-card-title">
           <%= @commentor.name %>
           <%= @commentor.surname %> say:
-        </h5>
+        </h6>
         <p class="card-text">
         <%= comment.comment %>
         </p>

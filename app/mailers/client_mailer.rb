@@ -2,8 +2,9 @@
 class ClientMailer < ApplicationMailer
   default from: 'default@mail.com'
 
-  def send_order(user, garage, destroy, car, info)
+  def send_order(user, garage, destroy, car, info, date)
     @user = user
+    @date = date
     @info = info
     @garage = garage
     @car = car

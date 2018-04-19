@@ -45,6 +45,8 @@ gem 'simple_token_authentication', '~> 1.0'
 gem 'bootstrap-timepicker-rails'
 gem 'enumerize'
 gem 'simple_form'
+gem "combined_time_select", "~> 2.0.0"
+
 
 gem 'responders', '~> 2.0'
 

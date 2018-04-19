@@ -33,7 +33,18 @@
   Surname: <%= form.text_field :surname, value: current_user.surname if current_user %></br>
   Phone: <%= form.text_field :phone %></br>
   Email: <%= form.email_field :email, value: current_user.email if current_user %></br>
-  Date/Time:<%= form.datetime_select :times %></br>
+
+  Date/Time:<%= select_date Date.today, :prefix => :date %> -
+  <%= form.time_select :time,
+    :combined => true,
+    :default => Time.now.change(:hour => 11, :min => 30),
+    :minute_interval => 30,
+    :start_hour => 8,
+    :start_minute => 00,
+    :end_hour => 23,
+    :end_minute => 00
+  %></br>
+
   Comment: <%= form.text_field :description %></br>
   <%= form.submit "Send" %>
 <% end %>

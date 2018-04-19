@@ -13,9 +13,19 @@ class GaragesController < ApplicationController
     ).where('break_categories.garage_id = ? and
       break_sub_categories.break_category_id = break_categories.id', @garage.id)
 
+
+    @arr = Array.new
     @break_categories.each do |break_category|
-      puts "#{break_category.name}  #{break_category.break_sub_category_name}"
+      @arr.push(break_category.name)
+      @arr = @arr.uniq
     end
+
+    @break_sub_categories = BreakSubCategory.where('break_sub_categories.break_category_id = 2')
+    @break_sub_categories.each do |c|
+      puts '__________________'
+      puts c.break_sub_category_name
+    end
+
     @garage.garage_comments.each do |comment|
       @commentor = User.find(comment.user_id)
     end
