@@ -1,29 +1,29 @@
 # orders controller
 class OrdersController < ApplicationController
-  def index
+  def index; end
 
+  def new
     @user_id = current_user.id
     @user_car = UserCar.joins(:car_model, :brand).select(
       'car_models.model, user_cars.car_year, brands.brand_name, user_cars.id,
        brands.id, user_cars.brand_id, user_cars.car_model_id'
     ).where('user_id = ? and brands.id = user_cars.brand_id', @user_id)
-
-    puts '__________________________'
-    puts @user_car['brands.id'.to_i]
     @year = Array[]
     Time.current.year.downto(1980) { |n| @year.push(n) }
   end
 
-  def new; end
-
   def create
-    @user = User.find(3)
-    @car = order_params
-    puts'_____________'
-    puts @car
+    user_car = UserCar.new(order_params)
+    user_car.save
+    redirect_to new_garage_order_url
 
-    redirect_to orders_path
-    ClientMailer.send_order(@user, @car).deliver
+    # @user = User.find(3)
+    # @car = order_params
+    # puts'_____________'
+    # puts @car
+    #
+    # redirect_to orders_path
+    # ClientMailer.send_order(@user, @car).deliver
   end
 
   private

@@ -7,8 +7,6 @@ Rails.application.routes.draw do
 
   resources :profile
 
-  resources :orders
-
   namespace :admin do
     resources :brands, :car_models, :break_categories, :break_sub_categories
     resources :garages, :users
@@ -18,6 +16,7 @@ Rails.application.routes.draw do
 
   resources :garages do
     resources :garage_comments
+    resources :orders
   end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

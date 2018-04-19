@@ -8,7 +8,8 @@ class GaragesController < ApplicationController
     @director = User.find(@garage.user_id)
 
     @break_categories = BreakCategory.joins(:break_sub_categories).select(
-      'break_categories.name, break_sub_categories.break_sub_category_name, break_sub_categories.id'
+      'break_categories.name, break_sub_categories.break_sub_category_name,
+      break_sub_categories.id'
     ).where('break_categories.garage_id = ? and
       break_sub_categories.break_category_id = break_categories.id', @garage.id)
 
@@ -18,5 +19,6 @@ class GaragesController < ApplicationController
     @garage.garage_comments.each do |comment|
       @commentor = User.find(comment.user_id)
     end
+
   end
 end
