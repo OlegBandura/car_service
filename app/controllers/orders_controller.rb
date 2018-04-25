@@ -18,15 +18,12 @@ class OrdersController < ApplicationController
     # user_car.save
 
     date = Date.civil(params[:date][:year].to_i, params[:date][:month].to_i, params[:date][:day].to_i)
-    # time = params[:time].to_s
-    # time Time.civil(params[:time]['time(5i)'].to_i)
-
-
+    time = params[:time].parse_time_select! :time
     puts '______________________'
     puts date
-    # puts time
+    puts time
 
-    @date = "#{date}  at " 
+    @date = "#{date}  at "
     @user = current_user
     @garage = Garage.find(params[:garage_id])
     @destroy = 'engine'
