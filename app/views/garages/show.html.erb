@@ -57,13 +57,13 @@
     <% end %>
   </div>
 
-  <% @garage.garage_comments.each do |comment| %>
+  <%     @comment.each do |comment| %>
     <div class="comment" style="width: 18rem;">
       <div class="card-body">
         <h6 class="comment-card-title">
-          <% @commentor = User.find(comment.user_id) %>
-          <%= @commentor.name %>
-          <%= @commentor.surname %> say:
+
+          <%= comment.name %>
+          <%= comment.surname %> say:
         </h6>
         <p class="card-text">
         <%= comment.comment %>

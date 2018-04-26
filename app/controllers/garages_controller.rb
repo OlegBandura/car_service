@@ -2,7 +2,6 @@
 class GaragesController < ApplicationController
   def show
     @garage = Garage.find(params[:id])
-    @user = User.commentor.comment_property, @garage.id
     @director = User.find(@garage.user_id)
 
     @break_categories = BreakCategory.break_sub_category.where(
@@ -15,5 +14,7 @@ class GaragesController < ApplicationController
       @arr = @arr.uniq
     end
 
+    @comment = GarageComment.comment.where('users.id = garage_comments.user_id and
+      garage_id = ?', @garage.id)
   end
 end
