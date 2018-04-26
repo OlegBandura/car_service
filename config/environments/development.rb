@@ -1,18 +1,13 @@
 Rails.application.configure do
 
   config.after_initialize do
-    Bullet.n_plus_one_query_enable = false
-    Bullet.unused_eager_loading_enable = false
-    Bullet.counter_cache_enable = false
-
     Bullet.enable = true
     Bullet.sentry = true
     Bullet.alert = true
     Bullet.bullet_logger = true
     Bullet.console = true
-    Bullet.growl = false
 
-    Bullet.rails_logger = false
+    Bullet.rails_logger = true
     Bullet.honeybadger = true
     Bullet.bugsnag = true
     Bullet.airbrake = true
@@ -20,6 +15,9 @@ Rails.application.configure do
     Bullet.add_footer = true
     Bullet.stacktrace_includes = [ 'your_gem', 'your_middleware' ]
     Bullet.stacktrace_excludes = [ 'their_gem', 'their_middleware' ]
+    Bullet.n_plus_one_query_enable = true
+    Bullet.unused_eager_loading_enable = true
+    Bullet.counter_cache_enable = true
   end
 
   # Settings specified here will take precedence over those in config/application.rb.

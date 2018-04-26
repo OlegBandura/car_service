@@ -46,7 +46,7 @@
       </p>
     </div>
 
-  <!-- <div class="list-group">
+  <div class="list-group">
     <% @arr.each do |arr| %>
       <a class="list-group-item list-group-item-action"><%= arr %></a>
       <% @break_categories.each do |break_category| %>
@@ -55,13 +55,12 @@
         </ul>
       <% end %>
     <% end %>
-  </div> -->
+  </div>
 
   <% @garage.garage_comments.each do |comment| %>
     <div class="comment" style="width: 18rem;">
       <div class="card-body">
         <h6 class="comment-card-title">
-
           <% @commentor = User.find(comment.user_id) %>
           <%= @commentor.name %>
           <%= @commentor.surname %> say:
@@ -73,7 +72,6 @@
       </div>
     </div>
   <% end %>
-
   <div class="comment-garage">
     <%= simple_form_for ([@garage, @garage.garage_comments.build]) do |f| %>
       <%= f.input :comment, as: :text %>

@@ -17,4 +17,9 @@ class User < ApplicationRecord
 
   serialize :admin_role, Array
   enumerize :admin_role, in: %i[admin], predicates: true
+
+  scope :commentor, -> { joins(:garage_comments).select('name, surname') }
+  scope :comment_property, -> { where('users.id = garage_comments.user_id and
+    garage_id = ?') }
+
 end
