@@ -61,6 +61,8 @@
     <div class="comment" style="width: 18rem;">
       <div class="card-body">
         <h6 class="comment-card-title">
+
+          <% @commentor = User.find(comment.user_id) %>
           <%= @commentor.name %>
           <%= @commentor.surname %> say:
         </h6>

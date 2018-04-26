@@ -26,11 +26,11 @@ class GaragesController < ApplicationController
     end
 
     # @commentor = User.find(@garage.garage_comments.user_id)
-    @garage.garage_comments.each do |comment|
-      @commentor = User.find(comment.user_id)
-      # puts '__________________'
-      # puts "#{@commentor.name} #{@commentor.surname}"
-    end
+    # @garage.garage_comments.each do |comment|
+    #   @commentor = User.find(comment.user_id)
+    #   # puts '__________________'
+    #   # puts "#{@commentor.name} #{@commentor.surname}"
+    # end
 
   end
 end
