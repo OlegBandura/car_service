@@ -5,10 +5,8 @@ class OrdersController < ApplicationController
   def new
     @garage = Garage.find(params[:garage_id])
     @user_id = current_user.id
-    @user_car = UserCar.joins(:car_model, :brand).select(
-      'car_models.model, user_cars.car_year, brands.brand_name, user_cars.id,
-       brands.id, user_cars.brand_id, user_cars.car_model_id'
-    ).where('user_id = ? and brands.id = user_cars.brand_id', @user_id)
+    @user_car = UserCar.user_car_property.where(
+      'user_id = ? and brands.id = user_cars.brand_id', @user_id)
     @year = Array[]
     Time.current.year.downto(1980) { |n| @year.push(n) }
   end
@@ -37,13 +35,6 @@ class OrdersController < ApplicationController
   end
 
   private
-
-  # def car_params
-  #   params.require(:car).permit(:brand_id, :car_model_id, :car_year).merge(
-  #     user_id: current_user.id
-  #   )
-  # end
-
 
   def order_params
     params.require(:order).permit(:user_car_id, :garage_id,

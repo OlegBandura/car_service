@@ -2,9 +2,7 @@
 class ProfileController < ApplicationController
   def index
     @user_id = current_user.id
-    @user_car = UserCar.joins(:car_model, :brand).select(
-      'car_models.model, user_cars.car_year, brands.brand_name, user_cars.id'
-    ).where('user_id = ? and brands.id = user_cars.brand_id', @user_id)
+    @user_car = UserCar.user_car_property.where('user_id = ? and brands.id = user_cars.brand_id', @user_id)
     @year = Array[]
     Time.current.year.downto(1970) { |n| @year.push(n) }
   end
