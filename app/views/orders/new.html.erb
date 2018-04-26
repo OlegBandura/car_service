@@ -35,14 +35,15 @@
   Email: <%= form.email_field :email, value: current_user.email if current_user %></br>
 
   Date/Time:<%= select_date Date.today, :prefix => :date %> -
-  <%= form.time_select :time,
+  <%= form.time_select(:pickup_at, 
+    :ignore_date => false,
     :combined => true,
-    :default => Time.now.change(:hour => 11, :min => 30),
-    :minute_interval => 30,
+    :default => Time.now.change(:hour => 11, :min => 00),
+    :minute_interval => 60,
     :start_hour => 8,
     :start_minute => 00,
-    :end_hour => 23,
-    :end_minute => 00
+    :end_hour => 22,
+    :end_minute => 00)
   %></br>
 
   Comment: <%= form.text_field :description %></br>

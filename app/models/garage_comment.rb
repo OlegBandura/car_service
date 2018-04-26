@@ -7,4 +7,5 @@ class GarageComment < ApplicationRecord
 
   scope :comment, -> { joins(:garage, :user).select('users.name, users.surname,
     garage_comments.comment, garage_comments.created_at') }
+
 end

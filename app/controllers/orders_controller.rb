@@ -11,27 +11,27 @@ class OrdersController < ApplicationController
     Time.current.year.downto(1980) { |n| @year.push(n) }
   end
 
-  def create
+  def add_car
     user_car = UserCar.new(car_params)
     user_car.save
     redirect_to new_garage_order_url
+  end
 
-    # date = Date.civil(params[:date][:year].to_i, params[:date][:month].to_i, params[:date][:day].to_i)
-    # time = params[:time].parse_time_select! :time
-    # puts '______________________'
-    # puts date
-    # puts time
-    #
-    # @date = "#{date}  at "
-    # @user = current_user
-    # @garage = Garage.find(params[:garage_id])
-    # @destroy = 'engine'
-    # @car = "Honda"
-    #
-    # @info = order_params
-    #
-    # ClientMailer.send_order(@user, @garage, @destroy, @car, @info, @date).deliver
-    # redirect_to new_garage_order_url
+  def create
+
+    date = Date.civil(params[:date][:year].to_i, params[:date][:month].to_i, params[:date][:day].to_i)
+    time = "#{params[:order]['pickup_at(4i)']}:#{params[:order]['pickup_at(5i)']}"
+    
+    @date = "#{date}  at #{time}"
+    @user = current_user
+    @garage = Garage.find(params[:garage_id])
+    @destroy = 'engine'
+    @car = "Honda"
+
+    @info = order_params
+
+    ClientMailer.send_order(@user, @garage, @destroy, @car, @info, @date).deliver
+    redirect_to new_garage_order_url
   end
 
   private
