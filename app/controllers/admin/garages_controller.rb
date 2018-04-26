@@ -2,16 +2,11 @@ module Admin
   # GaragesController
   class GaragesController < BaseController
     def index
-      @garages = Garage.left_joins(:user).select(
-        'users.surname, users.name, garages.garage_name, garages.description,
-        garages.city, garages.address, garages.phone, garages.diler,
-        garages.image, garages.garage_rating, garages.garage_types,
-        garages.work_shedule, garages.id, garage_email'
-      )
+      @garages = Garage.get_user
     end
 
     def new
-      @user = User.where("'owner' = ANY (roles)")
+      @user = User.role
     end
 
     def create
@@ -21,7 +16,7 @@ module Admin
 
     def edit
       @garage = Garage.find(params[:id])
-      @user = User.where("'owner' = ANY (roles)")
+      @user = User.role
     end
 
     def update

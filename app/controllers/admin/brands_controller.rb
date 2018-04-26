@@ -1,10 +1,7 @@
 class Admin::BrandsController < Admin::BaseController
   # load_and_authorize_resource
   def index
-    cars = Brand.left_joins(:car_models).select(
-      'car_models.id, car_models.brand_id,
-      brands.brand_name, car_models.model'
-    )
+    cars = Brand.get_car
 
     @cars = Hash.new { |hsh, key| hsh[key] = [] }
     cars.each do |car|

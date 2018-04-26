@@ -1,3 +1,8 @@
+
+  <div class="alert alert-success" role="alert">
+    <strong>Well done!</strong> Email successfully delivered.
+  </div>
+
 <h5>Please select car in your list or find in brands</h5>
 <div class="select-car">
   <p>Your cars:</p>
@@ -35,7 +40,7 @@
   Email: <%= form.email_field :email, value: current_user.email if current_user %></br>
 
   Date/Time:<%= select_date Date.today, :prefix => :date %> -
-  <%= form.time_select(:pickup_at, 
+  <%= form.time_select(:pickup_at,
     :ignore_date => false,
     :combined => true,
     :default => Time.now.change(:hour => 11, :min => 00),

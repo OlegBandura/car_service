@@ -21,8 +21,8 @@ class OrdersController < ApplicationController
 
     date = Date.civil(params[:date][:year].to_i, params[:date][:month].to_i, params[:date][:day].to_i)
     time = "#{params[:order]['pickup_at(4i)']}:#{params[:order]['pickup_at(5i)']}"
-    
-    @date = "#{date}  at #{time}"
+
+    @date = "#{date} at #{time}"
     @user = current_user
     @garage = Garage.find(params[:garage_id])
     @destroy = 'engine'
