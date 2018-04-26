@@ -1,9 +1,7 @@
 # CarWashesController
 class CarWashesController < ApplicationController
   def index
-    @car_washes = Garage.where(
-      'garage_types @> ARRAY[?]::varchar[]', ['car_wash']
-    )
+    @car_washes = Garage.car_wash_property
   end
 
   def show

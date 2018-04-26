@@ -1,9 +1,7 @@
 # TireStationsController
 class TireStationsController < ApplicationController
   def index
-    @tire_services = Garage.where(
-      'garage_types @> ARRAY[?]::varchar[]', ['vulcanization']
-    )
+    @tire_services = Garage.tire_stations_property
   end
 
   def show

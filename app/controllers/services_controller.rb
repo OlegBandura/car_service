@@ -1,9 +1,6 @@
 # ServicesController
 class ServicesController < ApplicationController
   def index
-    @services = Garage.where('garage_types @> ARRAY[?]::varchar[]', ['service'])
+    @services = Garage.service_property
   end
-  # def show
-  #   @garage = Garage.find(params[:id])
-  # end
 end
