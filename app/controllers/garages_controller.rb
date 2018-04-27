@@ -4,9 +4,9 @@ class GaragesController < ApplicationController
     @garage = Garage.find(params[:id])
     @director = User.find(@garage.user_id)
 
-    @break_categories = BreakCategory.break_sub_category.select('break_categories.name').where(
-      'break_sub_categories.break_category_id = break_categories.id and
-      break_categories.garage_id = ?', @garage.id)
+    # @break_categories = BreakCategory.break_sub_category.select('break_categories.name').where(
+    #   'break_sub_categories.break_category_id = break_categories.id and
+    #   break_categories.garage_id = ?', @garage.id)
 
     # @arr = []
     # @break_categories.each do |break_category|

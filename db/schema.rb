@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180427090004) do
+ActiveRecord::Schema.define(version: 20180427091030) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20180427090004) do
     t.string "break_sub_category_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.float "price"
+    t.integer "price"
     t.index ["break_category_id"], name: "index_break_sub_categories_on_break_category_id"
   end
 

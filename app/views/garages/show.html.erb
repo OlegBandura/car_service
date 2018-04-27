@@ -47,24 +47,8 @@
     </div>
 
   <h3>Car destroys</h3>
-
-    <div class="list-group col-xs-6 col-md-4 category-group">
-      <% @break_categories.each do |arr| %>
-        <a class="list-group-item list-group-item-action"><%= arr.name %></a>
-        <!-- <% @break_categories.each do |break_category| %>
-          <ul>
-            <li class="list-group-item list-group-item-action"><%= break_category.break_sub_category_name %></li>
-          </ul>
-        <% end %> -->
-      <% end %>
-    </div>
-    <div class="list-group col-xs-10 col-md-6 sub-category-group">
-      <% @break_categories.each do |break_category| %>
-        <ul class="list-sub-category">
-          <li class="list-group-item list-group-item-action"><%= break_category.break_sub_category_name %></li>
-        </ul>
-      <% end %>
-    </div>
+<!-- break categories -->
+  
 
   <% @comment.each do |comment| %>
     <div class="comment" style="width: 18rem;">
