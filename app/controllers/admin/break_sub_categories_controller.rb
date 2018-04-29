@@ -33,7 +33,7 @@ module Admin
     private
 
     def category_params
-      params.require(:sub_category).permit(:break_category_id)
+      params.require(:break_sub_category).permit(:break_category_id)
     end
 
     def break_sub_category_params

@@ -3,11 +3,7 @@ module Admin
   class BreakCategoriesController < BaseController
 
     def index
-      categories = BreakCategory.joins(:break_sub_categories).select(
-        'break_categories.break_category_name,
-        break_sub_categories.break_sub_category_name,
-        break_sub_categories.price'
-      )
+      categories = BreakCategory.select_category_sub_category
 
       @categories = Hash.new { |hsh, key| hsh[key] = [] }
       categories.each do |c|

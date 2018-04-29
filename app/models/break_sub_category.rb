@@ -1,3 +1,4 @@
+# BreakSubCategory model
 class BreakSubCategory < ApplicationRecord
   belongs_to :break_category
 
