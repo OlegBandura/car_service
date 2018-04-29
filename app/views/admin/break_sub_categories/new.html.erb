@@ -3,7 +3,7 @@
 
     <p>Add new destroy</p>
     <p>Name destroy category
-      <%= form.select("break_category_id", BreakCategory.all.collect{|p| [ p.name, p.id ] }) %>
+      <%= form.select("break_category_id", BreakCategory.all.collect{|p| [ p.break_category_name, p.id ] }) %>
     </p>
     <p>Destroy name
       <%= form.text_field :break_sub_category_name %></p>
