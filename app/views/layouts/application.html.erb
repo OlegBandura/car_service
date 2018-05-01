@@ -34,7 +34,6 @@
             </li>
 
             <% if can? :update, @user %>
-
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                   Administrator
@@ -48,6 +47,17 @@
               </li>
             <% end %>
 
+            <% if can? :update, @user %>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Owner
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <%= link_to "Service Station", admin_garages_path, class: "dropdown-item" %>
+                  <%= link_to "Add break categories to garage", about_index_path, class: "nav-link" %>
+                </div>
+              </li>
+            <% end %>
 
           </ul>
         </div>

@@ -2,10 +2,10 @@
 class Garage < ApplicationRecord
   mount_uploader :image, ImageUploader
   belongs_to :user
-  belongs_to :garage_break_category
+  # belongs_to :garage_break_category
   has_many :garage_comments
 
-  has_many :break_categories
+  # has_many :break_categories
 
   extend Enumerize
 

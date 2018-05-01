@@ -10,6 +10,7 @@ module Admin
     end
 
     def create
+      # render plain: garage_params
       Garage.create(garage_params)
       redirect_to admin_garages_path
     end
