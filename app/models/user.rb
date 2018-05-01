@@ -17,4 +17,5 @@ class User < ApplicationRecord
   serialize :admin_role, Array
   enumerize :admin_role, in: %i[admin], predicates: true
   scope :role, -> { where("'owner' = ANY (roles)") }
+
 end

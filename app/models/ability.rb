@@ -3,8 +3,7 @@ class Ability
   include CanCan::Ability
 
   def initialize(user)
-    # Define abilities for the passed in user here. For example:
-    #
+
     user ||= User.new # guest user (not logged in)
     if user.roles.include?('admin')
       can :manage, :all
@@ -13,10 +12,23 @@ class Ability
     end
 
     if user.roles.include?('owner')
-      can :manage, Garage
+       # can :manage, Garage, user_id: user.id
+       can :manage, :all
     else
       can :read, :all
     end
+
+    # def initialize(user)
+    #   user ||= User.new
+    #   if user.owner?
+    #     can :manage, Garage, user_id: user.id
+    #   elsif user.admin?
+    #     can :manage,
+    #   else
+    #     can :read, :all
+    #   end
+
+
 
     # can :manage, :all if user.roles.include?("Адміністратор")
 

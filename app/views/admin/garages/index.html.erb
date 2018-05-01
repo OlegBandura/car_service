@@ -11,13 +11,14 @@
     <th onclick="sort_garages_table(2)">Director</th>
     <th onclick="sort_garages_table(3)">City</th>
     <th onclick="sort_garages_table(4)">Address</th>
-    <th onclick="sort_garages_table(5)">Description</th>
+    <!-- <th onclick="sort_garages_table(5)">Description</th> -->
     <th onclick="sort_garages_table(6)">Phone</th>
     <th onclick="sort_garages_table(7)">Email</th>
     <th onclick="sort_garages_table(8)">Diller</th>
     <th onclick="sort_garages_table(9)">Garage rating</th>
     <th onclick="sort_garages_table(10)">Garage types</th>
     <th onclick="sort_garages_table(11)">Work shedule</th>
+    <th>Destroys</th>
     <th>Edit  / Delete</th>
   </tr>
   <% @garages.each do |garage| %>
@@ -27,7 +28,7 @@
     <td><%= garage.name %> <%= garage.surname %></td>
     <td><%= garage.city %></td>
     <td><%= garage.address %></td>
-    <td class="td_description"><%= garage.description %></td>
+    <!-- <td class="td_description"><%= garage.description %></td> -->
     <td><%= garage.phone %></td>
     <td><%= garage.garage_email %></td>
     <td>
@@ -48,8 +49,12 @@
       <span id="days">Saturday:</span> <%= garage.work_shedule[1] %>
       <span id="days">Sunday:</span> <%= garage.work_shedule[2] %></br>
     </td>
-          <td><%= link_to "Edit", edit_admin_garage_path(garage) %>
-          |<%= link_to "Delete", admin_garage_path(garage) ,method: :delete, data: {confirm: 'Are you sure?' } %>
+    <td>
+      <%= link_to "Add destroys", edit_admin_garage_path(garage) %>
+    </td>
+    <td><%= link_to "Edit", edit_admin_garage_path(garage) %>
+      |<%= link_to "Delete", admin_garage_path(garage) ,method: :delete, data: {confirm: 'Are you sure?' } %>
+    </td>
   </tr>
   <% end %>
 </table>
