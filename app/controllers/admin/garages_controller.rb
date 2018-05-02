@@ -3,14 +3,16 @@ module Admin
   class GaragesController < BaseController
     def index
       @garages = Garage.get_user
+
     end
 
     def new
       @user = User.role
+      @break_categories = BreakCategory.select_category
     end
 
     def create
-      # render plain: garage_params
+      # render plain: break_category_params
       Garage.create(garage_params)
       redirect_to admin_garages_path
     end

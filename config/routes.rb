@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :brands, :car_models, :break_categories, :break_sub_categories
     resources :garages, :users
+
+    resources :garages do
+      resources :garage_break_categories
+    end
   end
 
   resources :tire_stations, :car_washes, :services

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180427091030) do
+ActiveRecord::Schema.define(version: 20180502182906) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,13 +44,15 @@ ActiveRecord::Schema.define(version: 20180427091030) do
     t.index ["brand_id"], name: "index_car_models_on_brand_id"
   end
 
-  create_table "garage_break_caregories", force: :cascade do |t|
-    t.bigint "break_categories_id"
+  create_table "garage_break_categories", force: :cascade do |t|
+    t.bigint "break_categories_ids_id", default: [], array: true
+    t.bigint "integer_id", default: [], array: true
     t.bigint "garages_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["break_categories_id"], name: "index_garage_break_caregories_on_break_categories_id"
-    t.index ["garages_id"], name: "index_garage_break_caregories_on_garages_id"
+    t.index ["break_categories_ids_id"], name: "index_garage_break_categories_on_break_categories_ids_id"
+    t.index ["garages_id"], name: "index_garage_break_categories_on_garages_id"
+    t.index ["integer_id"], name: "index_garage_break_categories_on_integer_id"
   end
 
   create_table "garage_comments", force: :cascade do |t|

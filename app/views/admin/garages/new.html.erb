@@ -16,10 +16,10 @@
       <%= f.input :garage_email, label: "Email" %></p>
     <p>Service type:</br>
       <div class="serviceTypes">
-
         <%= f.input :garage_types, collection: Garage.garage_type.options, as: :check_boxes %>
       </div>
   </p>
+
   <p>Work shedule</br>
     Workdays
     <%= f.input_field :work_shedule, multiple: true %></br>

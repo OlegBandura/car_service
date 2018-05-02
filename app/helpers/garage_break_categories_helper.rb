@@ -1,0 +1,2 @@
+module GarageBreakCategoriesHelper
+end
