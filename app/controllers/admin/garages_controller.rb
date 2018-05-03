@@ -3,6 +3,15 @@ module Admin
   class GaragesController < BaseController
     def index
       @garages = Garage.get_user
+
+      # @break_categories = GarageBreakCategory.joins(:garage).select(
+      #   'garages.garage_name'
+      # ).where('garage_break_categories.garage_id = 7')
+      #
+      # @break_categories.each do |b|
+      #   puts '_______________'
+      #   puts b.garage_name
+      # end
     end
 
     def show

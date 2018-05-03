@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     resources :garages, :users
 
     resources :garages do
-      resources :garage_break_categories
+      resources :joins_garages_break_categories
     end
   end
 
