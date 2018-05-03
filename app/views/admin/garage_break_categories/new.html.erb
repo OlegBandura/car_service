@@ -1,7 +1,7 @@
 <div>
   <h5>Destroys</h5>
 
-  <%= simple_form_for :garage_break_category, path: admin_garage_garage_break_categories_path do |f| %>
+  <%= simple_form_for :garage_break_category, path: admin_garage_break_categories_path do |f| %>
     <% @break_categories.each do |destroy| %>
       <%= f.input_field :break_category_id, as: :boolean %>
       <%= destroy.break_category_name %>, <%= destroy.id %></br>

@@ -1,6 +1,6 @@
 # garage break category
 class GarageBreakCategory < ApplicationRecord
-  belongs_to :garages
-  belongs_to :break_categories
+  belongs_to :garage
+  # belongs_to :break_category
 
 end

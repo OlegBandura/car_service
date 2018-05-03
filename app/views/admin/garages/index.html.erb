@@ -50,7 +50,7 @@
       <span id="days">Sunday:</span> <%= garage.work_shedule[2] %></br>
     </td>
     <td>
-      <%= link_to "Add destroys", new_admin_garage_garage_break_category_path(garage) %>
+      <%= link_to "Add destroys", admin_garage_path(garage) %>
     </td>
     <td><%= link_to "Edit", edit_admin_garage_path(garage) %>
       |<%= link_to "Delete", admin_garage_path(garage) ,method: :delete, data: {confirm: 'Are you sure?' } %>

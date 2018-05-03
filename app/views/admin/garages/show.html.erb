@@ -1,0 +1,13 @@
+<div>
+  <h5>Destroys</h5>
+
+  <%= @garage.garage_name %>, <%= @garage.id %>
+
+  <%= form_tag admin_garage_garage_break_categories_path(@garage) do %>
+    <% @break_categories.each do |breaks| %>
+      <%= check_box_tag 'garage_break_categories[break_category_ids][]', breaks.id, false %>
+      <%= breaks.break_category_name %>, <%= breaks.id %></br>
+    <% end %>
+    <%= submit_tag 'Add category destroys' %>
+  <% end %>
+</div>

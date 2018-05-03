@@ -3,7 +3,11 @@ module Admin
   class GaragesController < BaseController
     def index
       @garages = Garage.get_user
+    end
 
+    def show
+      @garage = Garage.find(params[:id])
+      @break_categories = BreakCategory.select_category
     end
 
     def new
