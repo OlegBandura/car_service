@@ -7,13 +7,16 @@ module Admin
       # @garage.update_attributes(break_category_params)
       @garage_break_categories = GarageBreakCategory.create(break_category_params)
       # @garage_destroys = GarageBreakCategory.create(break_category_params)
-      render plain: @garage.id
+      render plain: break_category_params
+
     end
 
     private
 
     def break_category_params
-      params.require(:garage_break_categories).permit(:break_category_ids)
+      params.require(:garage_break_categories).permit(break_category_ids: []).merge(
+        garage_id: @garage.id
+      )
     end
   end
 end
