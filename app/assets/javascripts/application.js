@@ -14,16 +14,10 @@
 //= require turbolinks
 //= require_tree .
 
-
   $(document).ready(function(){
-    setTimeout(function(){
-      $('.notice_wrapper').fadeOut("slow", function() {
-        $(this).remove();
-      })
-    }, 2000);
-  });
-
-
+  	    setTimeout(function(){
+  	        $('#notice_wrapper').slideUp('slow');}, 2000);
+  	});
 
 function sort_car_table(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
