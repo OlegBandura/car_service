@@ -13,6 +13,19 @@ module Admin
       redirect_to admin_garages_path
     end
 
+    def edit
+      @category = JoinsGaragesBreakCategory.find(params[:garage_id])
+    end
+
+    def update
+      category = JoinsGaragesBreakCategory.find(params[:garage_id])
+      if user.update(break_category_params)
+        redirect_to admin_garages_path
+      else
+        render action: 'edit'
+      end
+    end
+
     private
 
     def break_category_params

@@ -1,11 +1,12 @@
 <div>
+  <%= @garage.garage_name %> Has break categories</br>
+  <% @garage_break_categories.each do |g| %>
+  <%= g.break_category_name %></br>
+  <% end %>
   <h5>Destroys</h5>
-
-  <%= @garage.garage_name %>, <%= @garage.id %>
-
   <%= form_tag admin_garage_joins_garages_break_categories_path(@garage) do %>
     <% @break_categories.each do |break_category| %>
-      <%= check_box_tag 'garage_break_categories[break_category_ids][]', break_category.id, false %>
+      <%= check_box_tag 'garage_break_categories[break_category_ids][]', break_category.id %>
       <%= break_category.break_category_name %>, <%= break_category.id %></br>
     <% end %>
     <%= submit_tag 'Add category destroys' %>
