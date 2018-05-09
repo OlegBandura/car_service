@@ -18,7 +18,27 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
 
 
+.notice_wrapper{
+  width: 100%;
+  z-index: 000;
+  background-color: #DFF0D8;
+  text-align: center;
+  padding: 10px;
 
+
+   .alert{
+     text-align: center;
+     margin: 0;
+     font-size: 16px;
+     letter-spacing: 1px;
+  }
+  .notice{
+   text-align: center;
+   margin: 0;
+   font-size: 16px;
+   letter-spacing: 1px;
+ }
+}
 
 
 body{
