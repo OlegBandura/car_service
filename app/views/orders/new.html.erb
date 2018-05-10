@@ -1,7 +1,6 @@
-
-  <div class="alert alert-success" role="alert">
-    <strong>Well done!</strong> Email successfully delivered.
-  </div>
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>" id="notice_wrapper"><%= value %></div>
+<% end %>
 
 <h5>Please select car in your list or find in brands</h5>
 <div class="select-car">

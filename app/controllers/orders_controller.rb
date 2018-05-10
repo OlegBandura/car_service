@@ -31,6 +31,7 @@ class OrdersController < ApplicationController
     @info = order_params
 
     ClientMailer.send_order(@user, @garage, @destroy, @car, @info, @date).deliver
+    flash[:success] = "Your message sended"
     redirect_to new_garage_order_url
   end
 
