@@ -10,7 +10,8 @@ class ProfileController < ApplicationController
   def create
     user_car = UserCar.new(profile_params)
     user_car.save
-    redirect_to profile_index_path
+    redirect_to(request.env["HTTP_REFERER"])
+
   end
 
   def destroy
