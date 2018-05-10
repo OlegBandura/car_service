@@ -22,18 +22,17 @@ class OrdersController < ApplicationController
     @user = current_user
     @garage = Garage.find(params[:garage_id])
     @destroy = 'engine'
-    car = UserCar.get_selected_user_car(order_params[:user_car_id])
-    car.each do |c|
-      puts '______________________'
-      puts c.brand_name
+    get_car = UserCar.get_selected_user_car(order_params[:user_car_id])
+    user_car = Array[]
+    get_car.each do |car|
+      user_car = "#{car.brand_name} #{car.model} #{car.car_year}"
     end
-
 
     @info = order_params
 
-    # ClientMailer.send_order(
-    #   @user, @garage, @destroy, car, @info, @date
-    # ).deliver
+    ClientMailer.send_order(
+      @user, @garage, @destroy, user_car, @info, @date
+    ).deliver
     flash[:success] = 'Your message sended'
     redirect_to garage_orders_url
 
