@@ -46,19 +46,16 @@
       </p>
     </div>
 
-
-
   <div>
     <h3>Car destroys</h3>
-    <% @cars.each do |brand, cars| %>
-      <%= brand %></br>
-      <% models = Array.new %>
-      <% cars.each do |key| %>
-        <%= key["break_sub_category_name"]%>
-      <% end %>
+    <% @categories.each do |category| %>
+      <%= category %></br>
+    <% end %>
+</br>
+    <% @s_categories.each do |category| %>
+      <%= category.break_sub_category_name %></br>
     <% end %>
   </div>
-
 
 
   <% @comment.each do |comment| %>
