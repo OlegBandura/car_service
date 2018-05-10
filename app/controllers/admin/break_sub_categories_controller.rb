@@ -37,7 +37,9 @@ module Admin
     end
 
     def break_sub_category_params
-      params.require(:break_sub_category).permit(:break_sub_category_name, :price)
+      params.require(:break_sub_category).permit(
+        :break_sub_category_name, :price
+      )
     end
   end
 end

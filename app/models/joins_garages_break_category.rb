@@ -4,6 +4,8 @@ class JoinsGaragesBreakCategory < ApplicationRecord
 
   scope :select_added_category, -> (id) { joins(
     :garage, :break_category).select(
-      'garages.garage_name, break_categories.break_category_name').where(
-    'joins_garages_break_categories.garage_id = ?', id) }
+      'garages.garage_name, break_categories.break_category_name,
+      joins_garages_break_categories.break_category_id').where(
+      'joins_garages_break_categories.garage_id = ?', id
+    ) }
 end

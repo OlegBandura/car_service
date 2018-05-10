@@ -4,10 +4,10 @@ module Admin
     def index
       @garages = Garage.get_user
     end
+
     def show
       @garage = Garage.find(params[:id])
       @garage_break_categories = JoinsGaragesBreakCategory.select_added_category(@garage.id)
-
       @break_categories = BreakCategory.select_category
 
     end
@@ -18,7 +18,6 @@ module Admin
     end
 
     def create
-      # render plain: break_category_params
       Garage.create(garage_params)
       redirect_to admin_garages_path
     end
