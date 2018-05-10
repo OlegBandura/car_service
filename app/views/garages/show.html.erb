@@ -46,15 +46,20 @@
       </p>
     </div>
 
+
+
   <div>
     <h3>Car destroys</h3>
-  <!-- break categories -->
-    <% @break_categories.each do |category| %>
-      <%= category.break_category_name %></br>
+    <% @cars.each do |brand, cars| %>
+      <%= brand %></br>
+      <% models = Array.new %>
+      <% cars.each do |key| %>
+        <%= key["break_sub_category_name"]%>
+      <% end %>
     <% end %>
-
-      <%= @bsc %>
   </div>
+
+
 
   <% @comment.each do |comment| %>
     <div class="comment" style="width: 18rem;">

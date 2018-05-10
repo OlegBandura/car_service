@@ -23,9 +23,9 @@
 <%= simple_form_for :order, url: garage_orders_path do |form|%>
   <div class="select-car">
     <p>Your cars:</p>
-    <%= form.collection_select :user_car_id, @user_car.map{
-      |car| ["#{car.brand_name} #{car.model} #{car.car_year} year", car.id]
-      },:second,:first %>
+    <%= form.select :user_car_id, @user_car.map{
+      |car| ["#{car.brand_name} #{car.model} #{car.car_year} year", car.id]},
+      class: "chosen-select", multiple: true %>
   </div>
 
   <p>About client:</p>
