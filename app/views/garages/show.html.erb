@@ -14,7 +14,7 @@
 </div>
   <%= image_tag(@garage.image, size: "200x250", class: "image-style") %>
     <p><%= link_to 'Go back', services_path, class: 'btn show_block-button'%>
-      <%= link_to 'Registration to the service station', new_garage_order_path(@garage.id),
+      <%= link_to 'Registration to the service station', garage_orders_path(@garage.id),
           class: 'btn btn-primary show_block-button' %></p>
 
     <div class = "service-attributes">

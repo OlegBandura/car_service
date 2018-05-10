@@ -2,18 +2,12 @@
 class OrdersController < ApplicationController
   def index; end
 
-  def new
+  def index
     @garage = Garage.find(params[:garage_id])
     @user_id = current_user.id
     @user_car = UserCar.user_car_property(@user_id)
     @year = Array[]
     Time.current.year.downto(1980) { |n| @year.push(n) }
-  end
-
-  def add_car
-    user_car = UserCar.new(car_params)
-    user_car.save
-    redirect_to new_garage_order_url
   end
 
   def create
@@ -24,12 +18,20 @@ class OrdersController < ApplicationController
     time = "#{params[:order]['pickup_at(4i)']}:
       #{params[:order]['pickup_at(5i)']}"
 
+  puts @user_car.id
+    #   car = UserCar.joins(:car_model, :brand).select(
+    #     'brands.brand_name, car_models.model, user_cars.car_year'
+    #   ).where('user_cars.id = ?', a.id)
+    puts '___________________________________________'
+    # car.each do |c|
+    #   puts '___________________________________________'
+    #   puts "#{c.brand_name}, #{c.model}"
+    # end
     @date = "#{date} at #{time}"
     @user = current_user
     @garage = Garage.find(params[:garage_id])
     @destroy = 'engine'
     @car = 'Honda'
-
     @info = order_params
 
     ClientMailer.send_order(
