@@ -3,16 +3,7 @@
 <% end %>
 
 <h5>Please select car in your list or find in brands</h5>
-<div class="select-car">
-  <p>Your cars:</p>
 
-  <%= form_for :order, url: garage_orders_path do |f|%>
-  <%= f.collection_select :car_id, @user_car.map{
-    |car| ["#{car.brand_name} #{car.model} #{car.car_year} year", car.id]
-    },:second,:first %>
-  <% end %>
-
-</div>
 <%= simple_form_for :profile, url: profile_index_path do |form|%>
 <div class="add-new-car">
   Select car:
@@ -30,6 +21,13 @@
 <% end %>
 <div>
 <%= simple_form_for :order, url: garage_orders_path do |form|%>
+  <div class="select-car">
+    <p>Your cars:</p>
+    <%= form.collection_select :user_car_id, @user_car.map{
+      |car| ["#{car.brand_name} #{car.model} #{car.car_year} year", car.id]
+      },:second,:first %>
+  </div>
+
   <p>About client:</p>
   Name: <%= form.text_field :username, value: current_user.name if current_user %></br>
   Surname: <%= form.text_field :surname, value: current_user.surname if current_user %></br>

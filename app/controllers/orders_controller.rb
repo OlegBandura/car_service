@@ -18,27 +18,25 @@ class OrdersController < ApplicationController
     time = "#{params[:order]['pickup_at(4i)']}:
       #{params[:order]['pickup_at(5i)']}"
 
-  puts @user_car.id
-    #   car = UserCar.joins(:car_model, :brand).select(
-    #     'brands.brand_name, car_models.model, user_cars.car_year'
-    #   ).where('user_cars.id = ?', a.id)
-    puts '___________________________________________'
-    # car.each do |c|
-    #   puts '___________________________________________'
-    #   puts "#{c.brand_name}, #{c.model}"
-    # end
     @date = "#{date} at #{time}"
     @user = current_user
     @garage = Garage.find(params[:garage_id])
     @destroy = 'engine'
-    @car = 'Honda'
+    car = UserCar.get_selected_user_car(order_params[:user_car_id])
+    car.each do |c|
+      puts '______________________'
+      puts c.brand_name
+    end
+
+
     @info = order_params
 
-    ClientMailer.send_order(
-      @user, @garage, @destroy, @car, @info, @date
-    ).deliver
+    # ClientMailer.send_order(
+    #   @user, @garage, @destroy, car, @info, @date
+    # ).deliver
     flash[:success] = 'Your message sended'
-    redirect_to new_garage_order_url
+    redirect_to garage_orders_url
+
   end
 
   private
