@@ -16,18 +16,22 @@
 
 }
 .content{
-  border-style: solid;
-  border-color: red;
-  border-radius: 10px;
+  // border-style: solid;
+  // border-color: red;
+  // border-radius: 10px;
   margin: 10px;
   padding: 10px;
 
 }
 .footer{
-  border-style: solid;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
+  background-color: #343A40;
+  p, h6{
+    color: white;
+  }
+  // border-style: solid;
+  // border-radius: 10px;
+  // margin: 10px;
+  // padding: 10px;
 }
 
 .preview_services{
