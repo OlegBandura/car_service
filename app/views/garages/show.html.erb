@@ -48,13 +48,15 @@
 
   <div>
     <h3>Car destroys</h3>
-    <% @categories.each do |category| %>
-      <%= category %></br>
+    <% @cats.each do |cat_id, category| %>
+      <%= cat_id %>
+
+      <% category.each do |c| %>
+        <%= c["id"] %>
+      <% end %>
     <% end %>
-</br>
-    <% @s_categories.each do |category| %>
-      <%= category.break_sub_category_name %></br>
-    <% end %>
+
+
   </div>
 
   <% @comment.each do |comment| %>
