@@ -1,23 +1,38 @@
 <div class="block">
   <% @garage_types.each do |type| %>
   <div class="preview_services" style="width: 18rem;">
-    <%= image_tag("/images/car-logo.png", size: "10x190", class: "card-img-top") %>
     <div class="card-body">
+
       <h5 class="card-title">
           <%= t type %>
       </h5>
-      <p class="card-text">Avaliable:
         <% if type.include?('service') %>
+        <%= image_tag("/images/garages/service_station.jpg", size: "10x190", class: "card-img-top") %>
+        <hr>
+        <p class="card-text">Avaliable:
+
           <%= Garage.where("garage_types @> ARRAY[?]::varchar[]", ["service"]).count %>
           <%= link_to "Select", services_path, class: "btn btn-primary float-right" %>
+          <hr>
         <% elsif type.include?('car_wash') %>
+        <%= image_tag("/images/garages/car_washes.jpg", size: "10x190", class: "card-img-top") %>
+        <hr>
+        <p class="card-text">Avaliable:
           <%= Garage.where("garage_types @> ARRAY[?]::varchar[]", ["car_wash"]).count %>
           <%= link_to "Select", car_washes_path, class: "btn btn-primary float-right" %>
+          <hr>
         <% elsif type.include?('vulcanization') %>
+        <%= image_tag("/images/garages/tire_station.jpg", size: "10x190", class: "card-img-top") %>
+        <hr>
+        <p class="card-text">Avaliable:
+
           <%= Garage.where("garage_types @> ARRAY[?]::varchar[]", ["vulcanization"]).count %>
           <%= link_to "Select", tire_stations_path, class: "btn btn-primary float-right" %>
+          <hr>
         <% end %>
+
       </p>
+
     </div>
   </div>
   <% end %>

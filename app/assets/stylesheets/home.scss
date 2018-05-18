@@ -19,8 +19,9 @@
   // border-style: solid;
   // border-color: red;
   // border-radius: 10px;
-  margin: 10px;
+  margin: 10px 10% 10px 10%;
   padding: 10px;
+  text-align: center;
 
 }
 .footer{
@@ -41,12 +42,22 @@
   display: inline-block;
 }
 
+.preview_service{
+  margin: 10px auto 10px auto;
+}
+
+
 .btn{
-  color: #f85c37;
+  // color: #f85c37;
+  margin-top: 10px;
+}
+
+.btn-primary{
+  background-color: #ccc;
 }
 
 .block{
   // height: 96px;
-  line-height: 96px;
+  line-height: 56px;
   text-align: center;
 }
