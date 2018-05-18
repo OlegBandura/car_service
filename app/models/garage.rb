@@ -14,7 +14,7 @@ class Garage < ApplicationRecord
 
   scope :tire_stations_property, -> { where('garage_types @> ARRAY[?]::varchar[]', ['vulcanization']) }
   scope :service_property, -> { where('garage_types @> ARRAY[?]::varchar[]', ['service']) }
-  scope :car_wash_property, -> { where('garage_types @> ARRAY[?]::varchar[]', ['service']) }
+  scope :car_wash_property, -> { where('garage_types @> ARRAY[?]::varchar[]', ['car_wash']) }
   scope :count_property, -> { where('garage_types @> ARRAY[?]::varchar[]', [@type]) }
   scope :get_user, -> { left_joins(:user).select(
     'users.surname, users.name, garages.garage_name, garages.description,
