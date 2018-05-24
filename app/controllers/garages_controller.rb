@@ -33,8 +33,6 @@ class GaragesController < ApplicationController
 
     end
 
-
-
     puts '-' * 50
     puts @cats
 
