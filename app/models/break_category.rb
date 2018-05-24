@@ -19,4 +19,13 @@ class BreakCategory < ApplicationRecord
       'break_sub_categories.break_category_id = ?', category_id
     ) }
 
+  scope :select_added_category, -> (id) { joins(
+    :joins_garages_break_categories, :break_sub_categories).select(
+      'break_categories.break_category_name,
+      break_sub_categories.break_sub_category_name,
+      break_sub_categories.price,
+      joins_garages_break_categories.break_category_id').where(
+      'joins_garages_break_categories.garage_id = ?', id
+    ) }
+
 end

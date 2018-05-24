@@ -47,11 +47,12 @@
   <div>
     <h3>Car destroys</h3>
 
-    <% @cats.each do |category, cars| %>
-      <%= category %><br>
-        <% cars.each do |key| %>
-            <%= key["break_sub_category_name"] %></br>
-      <% end %>
+    <% @categories.each do |category, sub_category| %>
+      <%= category %>:</br>
+      <% sub_category.each do |val| %>
+        <%= val["break_sub_category_name"] %>
+        Price:<%= val["price"] %>$  </br>
+      <% end %></br>
     <% end %>
 
   </div>
