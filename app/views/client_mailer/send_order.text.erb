@@ -1,11 +1,11 @@
 Hello <%= @garage.garage_name %>,
 You have new order:
   Brand car <%= @car %>
-  Destroy <%= @destroy %>
-  Comment <%= @info[:description] %>
+  Destroy <%= @destroy[:destroy] %>
+  Comment <%= @comment[:comment] %>
   Date/Time <%= @date %>
 
 Client information:
   name <%= @user.name %> <%= @user.surname %>
   email <%= @user.email %>
-  phone <%= @info[:phone] %>
+  phone <%= @comment[:phone] %>

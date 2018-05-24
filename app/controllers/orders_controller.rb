@@ -21,17 +21,15 @@ class OrdersController < ApplicationController
     date = "#{date} at #{time}"
     user = current_user
     garage = Garage.find(params[:garage_id])
-    destroy = 'engine'
+    destroy = order_params
     get_car = UserCar.get_selected_user_car(order_params[:user_car_id])
     user_car = Array[]
     get_car.each do |car|
       user_car = "#{car.brand_name} #{car.model} #{car.car_year}"
     end
-
-    info = order_params
-
+    comment = order_params
     ClientMailer.send_order(
-      user, garage, destroy, user_car, info, date
+      user, garage, destroy, user_car, comment, date
     ).deliver
     flash[:success] = 'Your message sended'
     redirect_to garage_orders_url
@@ -42,8 +40,8 @@ class OrdersController < ApplicationController
 
   def order_params
     params.require(:order).permit(
-      :user_car_id, :garage_id, :break_sub_category_id, :description, :status,
-      :times, :phone
+      :user_car_id, :garage_id, :break_sub_category_id, :comment, :status,
+      :times, :phone, :destroy
     )
   end
 
