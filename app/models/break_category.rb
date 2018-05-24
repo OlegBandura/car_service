@@ -11,14 +11,6 @@ class BreakCategory < ApplicationRecord
   }
   scope :select_category, -> { order(break_category_name: :asc) }
 
-  scope :get_category_properties, -> (category_id) {
-    joins(:break_sub_categories).select(
-      'break_sub_categories.break_sub_category_name, break_sub_categories.id,
-      break_categories.break_category_name,
-      break_sub_categories.break_category_id').where(
-      'break_sub_categories.break_category_id = ?', category_id
-    ) }
-
   scope :select_added_category, -> (id) { joins(
     :joins_garages_break_categories, :break_sub_categories).select(
       'break_categories.break_category_name,
