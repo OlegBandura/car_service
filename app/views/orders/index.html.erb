@@ -29,7 +29,7 @@
       class: "chosen-select", multiple: true %>
   </div>
 </div>
-<div class="col-md-15">
+<div class="col-md-15 order">
   <p>About client:</p>
   Name: <%= form.text_field :username, value: current_user.name if current_user %></br>
   Surname: <%= form.text_field :surname, value: current_user.surname if current_user %></br>

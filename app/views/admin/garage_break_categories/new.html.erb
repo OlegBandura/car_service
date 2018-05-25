@@ -4,7 +4,7 @@
   <%= simple_form_for :garage_break_category, path: admin_garage_break_categories_path do |f| %>
     <% @break_categories.each do |destroy| %>
       <%= f.input_field :break_category_id, as: :boolean %>
-      <%= destroy.break_category_name %>, <%= destroy.id %></br>
+      <%= destroy.break_category_name %></br>
     <% end %>
     <%= f.button :submit, 'Add category destroys' %>
   <% end %>
