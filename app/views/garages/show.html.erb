@@ -11,13 +11,14 @@
     Mon-Fri:<%= @garage.work_shedule[0] %></br>
     Sat:<%= @garage.work_shedule[1] %></br>
     Sun:<%= @garage.work_shedule[2] %></br>
-</div>
+  </div>
   <%= image_tag(@garage.image, size: "200x250", class: "image-style") %>
+  <div class = "col-md-8 info">
     <p><%= link_to 'Go back', services_path, class: 'btn show_block-button'%>
       <%= link_to 'Registration to the service station', garage_orders_path(@garage.id),
           class: 'btn btn-primary show_block-button' %></p>
 
-    <div class = "service-attributes">
+
       <p>Information about service:</p>
       <p>
         City <%= @garage.city %>
@@ -42,7 +43,6 @@
         About service:</br>
         <%= @garage.description %>
       </p>
-    </div>
 
   <div>
     <h3>Car destroys</h3>
@@ -50,12 +50,14 @@
     <% @categories.each do |category, sub_category| %>
       <%= category %>:</br>
       <% sub_category.each do |val| %>
-        <%= val["break_sub_category_name"] %>
+      <span class="sub-cat">  <%= val["break_sub_category_name"] %>
         Price:<%= val["price"] %>$  </br>
+      </span>
       <% end %></br>
     <% end %>
 
   </div>
+</div>
 
   <% @comment.each do |comment| %>
     <div class="comment" style="width: 18rem;">
