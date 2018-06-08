@@ -1,6 +1,5 @@
 # orders controller
 class OrdersController < ApplicationController
-  def index; end
 
   def index
     @garage = Garage.find(params[:garage_id])
